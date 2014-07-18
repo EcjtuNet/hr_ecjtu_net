@@ -1,0 +1,208 @@
+<?php
+/**
+ *
+ * 日新网2012招新专题
+ * 
+ * @package   hr_ecjtu_net
+ * @author    homker
+ * @datatime  2013-09-01
+ * @link    http://hr.ecjtu.net/index.php/bg
+ * @version   1.0.1
+ */
+
+ // ------------------------------------------------------------------------//
+
+/**
+ *
+ *  hr_ecjtu_net 后台控制器
+ *
+ *  主要用于将报名信息显示
+ *
+ */
+class Bg extends CI_Controller 
+{
+  public $access;
+  public function __construct()
+  {
+    parent::__construct();
+    $this->load->helper(array('form', 'url'));
+    $this->load->library('form_validation');
+    $this->load->library('session');
+    $this->load->library('table');
+    $this->load->library('pagination');
+    $this->access=5;
+  }
+  public function index()
+  {
+    $this->load->view('login');
+  }
+ 
+  public function chenck($int=0)
+  {
+    if($this->loginchenck())
+    {
+      if($this->session->userdata('pages')=="ok")
+      {
+        $name=$this->session->userdata('name');
+        $password=$this->session->userdata('password');
+      }
+      else
+      {
+        $name     =$this->input->post('loginName');
+        $password =$this->input->post('passWord');
+      }
+      $this->load->model('admin_mdl');
+      //var_dump($name);
+      //var_dump($password);
+      if($result=$this->admin_mdl->password_chenck($name,$password))
+      {
+          $name         =$result['0']->username;
+          $password     =$result['0']->password;
+          $center       =$result['0']->center;
+          $department   =$result['0']->department;
+          $this->access =$result['0']->access;
+          //var_dump($this->access);
+          $session=array('name'=>$name,'password'=>$password,'center'=>$center,'department'=>$department,'access'=>$this->access,'pages'=>"ok");
+          $this->session->set_userdata($session);
+          $this->display($int,$result);
+      }
+      else
+      {
+        echo "密码错误~！";
+        $this->load->view('login');
+      }
+    }
+    else
+    {
+        $this->load->view('login');
+    }
+  }
+   public function loginchenck()
+  {
+    //var_dump($this->session->userdata('pages'));
+    if($this->session->userdata('pages')=="ok") return true;
+    else
+    {
+      $this->form_validation->set_rules('loginName','用户名','trim|require|xss_clean|callback_namechenck');
+      $this->form_validation->set_rules('passWord','密码','require|md5|callback_passwordchenck');
+      if($this->form_validation->run()==false)  return false;//$this->load->view('login');
+      else return true;
+    }
+  }
+  public function namechenck($str)
+  {
+    $this->load->model('admin_mdl');
+    if($this->admin_mdl->Name_chenck($str)) 
+      {
+        $session=array('str'=>$str);
+        $this->session->set_userdata($session);
+        return true;
+      }
+    else return false;
+  }
+  public function passwordchenck($str)
+  {
+    $name=$this->session->userdata('str');
+    $password=$str;
+  //var_dump($password);
+    $this->load->model('admin_mdl');
+    if($result=$this->admin_mdl->password_chenck($name,$password)) return true;
+    else return false;
+  }
+  public function fnamechenck($str)
+  {
+    $this->load->model('admin_mdl');
+    if($this->admin_mdl->Name_chenck($str)) return false;
+    else return true;
+  }
+  public function wifichenck($str)
+  {
+    if($str=="ecjtuhome") return true;
+    else return false;
+  }
+  function display($int=0,$result)
+  {
+          //var_dump($this->session->userdata('access'));
+      $this->load->model('admin_mdl');
+      $department=$this->session->userdata('department');
+      if($this->session->userdata('access')==1) 
+      {
+        $result=$this->admin_mdl->get_info($department,$config['per_page']=15,$int);
+        $rows=$this->admin_mdl->get_some_rows($department);
+      }
+      else if($this->session->userdata('access')==2||$this->session->userdata('access')==3) 
+      {
+        $result=$this->admin_mdl->get_all_info($config['per_page']=15,$int);
+        $rows=$this->admin_mdl->get_rows();
+      }
+
+      
+       //echo $this->pagination->create_links();
+      $data['name']   =$this->session->userdata('name');
+      $data['access'] =$this->session->userdata('access');
+      $data['info']   =$result;
+      $data['rows']   =$rows;
+      $this->load->view('loginsuccess',$data);
+  }
+  public function del($id)
+  {
+    if($this->session->userdata('access')==3)
+    {
+      $this->load->model('admin_mdl');
+      if($this->admin_mdl->del($id))
+      {
+        echo "删除成功";
+        $this->chenck();
+      }
+      else echo "删除出现错误";
+    }else echo "对不起，无此权限！";
+  }
+  public function insertchenck()
+  {
+    $this->form_validation->set_rules('Rname','用户名','require|trim|xss_clean|callback_fnamechenck');
+    $this->form_validation->set_rules('Rpassword','密码','require|md5');
+    $this->form_validation->set_rules('Ranswer','wifi密码','require|trim|callback_wifichenck');
+    $this->form_validation->set_rules('Rcenter','注册中心','require|trim');
+    $this->form_validation->set_rules('Rdepartment','注册部门','require|trim');
+   if($this->form_validation->run()==false) 
+   {
+    echo "注册失败";
+    $this->load->view('rlogin');
+    }
+    else return true;
+  }
+
+  public function rlogin()
+  {
+      $this->load->view('rlogin');
+  }
+  public function rinsert()
+  {
+    if($this->insertchenck())
+    {
+      $rname=$this->input->post('Rname');
+      $rpassword=$this->input->post('Rpassword');
+      $rcenter=$this->input->post('Rcenter');
+      $rdepartment=$this->input->post('Rdepartment');
+      $arr=array('username'=>$rname,'password'=>$rpassword,'center'=>$rcenter,'department'=>$rdepartment,'access'=>'1');
+      $this->load->model('admin_mdl');
+      if($this->admin_mdl->insert($arr))
+      {
+        echo "注册成功~！";
+        $this->load->view('login');
+      }
+      else 
+      {
+        echo "注册失败";
+        $this->load->view('rlogin');
+      }
+    }
+  }
+  public function out()
+  {
+    $this->session->sess_destroy();
+    $this->load->view('login');
+  }
+}
+//////////////////////////the end of php  ,the bground of hr_ecjtu_net; 
+//////////////////////////power by homker 20130901;

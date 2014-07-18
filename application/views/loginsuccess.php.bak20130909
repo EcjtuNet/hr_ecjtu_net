@@ -1,0 +1,102 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>后台登录</title>
+<style type="text/css">
+*{ margin:0; padding:0;}
+@charset "utf-8";
+  a{ text-decoration:none; color: #367E2C;}
+    h3{height: 27px; background: #6fb43d; padding: 0 200px 0 200px; line-height: 2; font-size: 13px; color: #ffffff; position: fixed; width: 100%; top: 0; width: 963px;}
+  ol{font-family:"Microsoft Yahei"; width: 1202px; margin:25px auto; padding:1px; margin-top:50px;}
+  .all{ border: 1px solid #333;}
+    .list{ border:#666 1px solid;}
+      li{ list-style: none; line-height:1.5; width:1200px;}
+        span{word-wrap: break-word; float:left; padding: 0 10px 0 10px; width: 100px; text-align:center; vertical-align:central; overflow: hidden;white-space: nowrap; text-overflow: ellipsis;}
+         .mark{ width: 220px;}
+        .head span{ height:26px; background-color:#6fb43d;}
+        .single{ background: #bbee92; color: #ffffff; border-bottom:#333 dashed 1px;}
+        .double{ background: #ffffff; color: #367E2C; border-bottom:#cccccc dashed 1px;}
+        .last,.major{ display:block;}
+      .bottom a:hover{ text-decoration: underline;}
+      .quit{ text-align:center; color:#FFF; display:block; line-height:1.5; font-size:18px; background: #6fb43d; width:80px; margin:5px 10px 5px 10px;}
+      .quit:hover{ background-color:#bbee92; color: #367E2C;}
+      </style>
+ <script type="text/javascript" src="../../../js/jquery-1.9.1_2.js"></script>
+   <script type="text/javascript">
+    $(document).ready(function(){ 
+        $("span").mouseover(function(){ 
+      var span = $(this).parent().find("span"),
+        height = 0;
+            span.css({"white-space":"normal", "overflow": "none", "text-overflow": "clip"});
+      for(var i=0; i<span.length; i++){
+        var arr = span.eq(i).css("height").split("p")
+        var h = arr[0] -1 +1;
+        if(height<h){
+          height = h;
+          }         
+      }
+            $(this).parent().find("span").css("height",height);
+            });
+        $("span").mouseout(function(){
+      var span = $(this).parent().find("span");
+            span.css("height","auto");
+            span.css({"white-space":"nowrap", "overflow": "hidden", "text-overflow": "ellipsis"});
+            });
+        
+    });
+    </script>
+</head>
+<body>
+
+<h3>欢迎登录HR后台管理系统，<?php echo $name; ?></h3>
+<ol>
+<div class="head">
+    <span class="name single" style="height: auto;">用户姓名</span>
+    <span class="sex double" style="height: auto;">用户性别</span>
+    <span class="center single" style="height: auto;">注册中心</span>
+    <span class="department double" style="height: auto;">注册部门</span>
+    <span class="colleage single" style="height: auto;">所在学院</span>
+    <span class="major double" style="height: auto;">所属专业</span>
+    <span class="phone single" style="height: auto;">用户手机</span>
+    <span class="qq double" style="height: auto;">qq</span>
+    <span class="mark single last" style="white-space: nowrap; overflow: hidden; height: auto;">用户备注</span>
+</div>
+
+
+  
+<?php 
+  if(is_array($info))
+  {
+    foreach($info as $data ):
+?>
+  <li>
+    <span class="name single" style="height: auto;"><?php echo $data->user_name ?></span>
+    <span class="sex double" style="height: auto;"><?php echo $data->user_sex ?></span>
+    <span class="center single" style="height: auto;"><?php echo $data->hr_center ?></span>
+    <span class="department double" style="height: auto;"><?php echo $data->hr_department ?></span>
+    <span class="colleage single" style="height: auto;"><?php echo $data->user_college ?></span>
+    <span class="major double" style="height: auto;"><?php echo $data->user_major ?></span>
+    <span class="phone single" style="height: auto;"><?php echo $data->user_phone ?></span>
+    <span class="qq double" style="height: auto;"><?php echo $data->user_qq ?></span>
+    <span class="mark single last" style="white-space: nowrap; overflow: hidden; height: auto;"><?php echo $data->user_remarks ?></span>
+    <?php if($access==3) echo anchor('bg/del/'.$data->user_id,'删除');?>
+  </li>
+<?php endforeach;
+  }
+  else echo "哈哈，还木有人报名你们部门，快去宣传吧~~！";
+?>
+<ol>
+<?php 
+      $config['base_url'] = base_url().'index.php/bg/chenck/';
+      $config['total_rows'] = $rows;
+      $config['per_page'] = '20';
+      $config['full_tag_open'] = '<p>';     
+      $config['full_tag_close'] = '</p>';
+
+$this->pagination->initialize($config); 
+echo $this->pagination->create_links();
+?>
+<p><?php echo anchor('bg/out', '退出','class="quit"'); ?></p>
+
+</body>
+</html>

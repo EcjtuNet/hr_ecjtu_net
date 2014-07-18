@@ -1,0 +1,114 @@
+<?php
+/**
+ *
+ * 日新网2012招新专题
+ * 
+ * @package   hr_ecjtu_net
+ * @author    homker
+ * @datatime  2013-09-01
+ * @link    http://hr.ecjtu.net/index.php/bg
+ * @version   1.0.1
+ */
+
+ // ------------------------------------------------------------------------//
+
+/**
+ *
+ *  hr_ecjtu_net 后台控制器
+ *
+ *  主要用于将报名信息显示
+ *
+ */
+class Bg extends CI_Controller 
+{
+  public $access;
+  public function __construct()
+  {
+    parent::__construct();
+    $this->load->helper(array('form', 'url'));
+    $this->load->library('form_validation');
+    $this->load->library('session');
+    $this->load->library('table');
+    $this->load->library('pagination');
+    $this->access=5;
+  }
+  public function index()
+  {
+    $this->load->view('login');
+  }
+  public function chenck($int=0)
+  {
+    if($this->loginchenck())
+    {
+      $name     =$this->input->post('loginName');
+      $password =$this->input->post('passWord');
+      $this->load->model('admin_mdl');
+      if($result=$this->admin_mdl->password_chenck($name,$password))
+      {
+          $name         =$result['0']->username;
+          $center       =$result['0']->center;
+          $department   =$result['0']->department;
+          $this->access =$result['0']->access;
+          $session=array('name'=>$name,'center'=>$center,'department'=>$department,'access'=>$this->access,'page'=>"ok");
+          $this->session->set_userdata($session);
+          $this->display($int);
+      }
+      else
+      {
+        echo "密码错误~！";
+        $this->load->view('login');
+      }
+    }
+  }
+  public function loginchenck()
+  {
+    if($this->session->userdata('page')==="ok") return true;
+    else
+    {
+      $this->form_validation->set_rules('loginName','用户名','trim|require|xss_clean|callback_namechenck');
+      $this->form_validation->set_rules('passWord','密码','require|md5');
+      if($this->form_validation->run()==false) $this->load->view('login');
+      else return true;
+    }
+  }
+  public function namechenck($str)
+  {
+    $this->load->model('admin_mdl');
+    if($this->admin_mdl->Name_chenck($str)) return true;
+    else return false;
+  }
+  public function display($int)
+  {
+    if($this->access<5)
+    {
+      
+      $this->load->model('admin_mdl');
+      $department=$this->session->userdata('department');
+      if($this->access==1) 
+      {
+        $result=$this->admin_mdl->get_info($department,$config['per_page']=15,$int);
+        $rows=$this->admin_mdl->get_some_rows($department);
+      }
+      else if($this->access==2||$this->access==3) 
+      {
+        $result=$this->admin_mdl->get_all_info($config['per_page']=15,$int);
+        $rows=$this->admin_mdl->get_rows();
+      }
+
+      
+       //echo $this->pagination->create_links();
+      $data['name']   =$this->session->userdata('name');
+      $data['access'] =$this->session->userdata('access');
+      $data['info']   =$result;
+      $data['rows']   =$rows;
+      $this->load->view('loginsuccess',$data);
+    }
+    else
+    {
+      echo "请先行登入";
+      $this->load->view('login');
+    }
+  }
+}
+//////////////////////////the end of php  ,the bground of hr_ecjtu_net; 
+//////////////////////////power by homker 20130901;
