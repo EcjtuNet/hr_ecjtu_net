@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台登录</title>
+<style type="text/css">
+@charset "utf-8";
+     h3{ line-hight:1.5; padding:20px 0 0 30px; font-size:24px;}
+ul{margin: 0 auto; line-height:1.5; font-family:"Microsoft Yahei"; padding-left:30px;position: relative;}
+     li{ clear: both; list-style: none; height: 24px;}
+          span{ float:left; padding: 0 10px 0 10px;  width: 100px; text-align: center;}
+          .single{ background: #c2c2c2;}
+          .double{ background: #ffffff;}
+
+</style>
+</head>
+<body>
+
+<h3>欢迎登录HR后台管理系统，<?php echo $name; ?></h3>
+<?php
+	$tmpl = array (
+                    'table_open'          => '<ul>',
+
+                    'heading_row_start'   => '<div>',
+                    'heading_row_end'     => '</div>',
+                    'heading_cell_start'  => '<span>',
+                    'heading_cell_end'    => '</span>',
+
+                    'row_start'           => '<li >',
+                    'row_end'             => '</li>',
+                    'cell_start'          => '<span class="single">',
+                    'cell_end'            => '</span>',
+
+                    'row_alt_start'       => '<li >',
+                    'row_alt_end'         => '</li>',
+                    'cell_alt_start'      => '<span class="double">',
+                    'cell_alt_end'        => '</span>',
+
+                    'table_close'         => '</ul>'
+              );
+	$this->table->set_template($tmpl);
+     $this->table->set_heading('用户姓名','用户性别','注册中心','注册部门','所在学院','所属专业','用户手机','用户QQ','用户备注');
+          echo $this->table->generate($info);
+?>
+<?php 
+      /*$config['base_url'] = base_url().'index.php/bg/chenck/'; //导入分页类URL
+      $config['total_rows'] = ;  //计算总记录数
+      $config['per_page'] = '15';         //每页显示的记录数
+      $config['full_tag_open'] = '<p>';     
+      $config['full_tag_close'] = '</p>';
+      $this->pagination->initialize($config);      //初始化分类页
+      echo $this->pagination->create_links(); */
+      
+
+$config['base_url'] = base_url().'index.php/bg/chenck/';
+$config['total_rows'] = $rows;
+$config['per_page'] = '20'; 
+
+$this->pagination->initialize($config); 
+echo $this->pagination->create_links();
+?>
+<p><?php echo anchor('bg', '退出'); ?></p>
+
+</body>
+</html>

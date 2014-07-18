@@ -1,0 +1,48 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/**
+ *
+ * 日新网2012招新专题
+ * 
+ * @package		hr_ecjtu_net
+ * @author		Polly
+ * @datatime	2012-08-16
+ * @link		http://hr.ecjtu.net/
+ * @version		1.0.0
+ */
+  
+ // ------------------------------------------------------------------------//
+
+/**
+ *
+ *  hr_ecjtu_net exceler控制器
+ *
+ *	主要用于将报名信息显示
+ *
+ */
+class Polly extends CI_Controller{
+	/** 加载模型类 **/
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('excel_mdl');
+	}
+	function index()
+	{/*
+		$this->load->library('table');
+		$query = $this->excel_mdl->get_user_info();
+		$this->table->set_heading('用户id','用户姓名','用户性别','所在学院','所属专业','用户手机','用户QQ','用户备注');
+		echo $this->table->generate($query);
+		echo "<br />";
+		*/
+		$this->load->library('table');
+		$tmpl = array(
+			'table_open' => '<table border="1" cellpadding="0" cellspacing="0" class="mytable">'
+		);
+		$this->table->set_template($tmpl);
+		$query = $this->excel_mdl->get_total_info();
+		$this->table->set_heading('用户姓名','用户性别','注册中心','注册部门','所在学院','所属专业','用户手机','用户QQ','用户备注');
+		echo $this->table->generate($query);
+	}
+}
+/* End of file exceler.php */
+/* Location: ./application/controllers/exceler.php */

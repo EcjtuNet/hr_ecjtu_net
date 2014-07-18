@@ -1,0 +1,103 @@
+<?php
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class Admin extends CI_Controller{
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->library('session');
+		$this->load->library('authcode');
+	}
+	public function is_session()
+	{
+		if ($this->session->userdata('session_name') == NULL)
+		{
+			header("Location: ./login");
+		}
+		//echo $this->session->userdata('session_name');
+	}
+	function show_captcha(){    //此方法用于显示验证码图片，归一个view中的img的src调用
+        $this->authcode->show();
+    }
+	public function login()
+	{
+		$this->load->helper(array('form','url'));
+		$this->load->library('form_validation');
+		$data = $this->input->post();
+		if ($data['sub'] && $this->authcode->check($this->input->post('code')))
+		{
+			$this->load->model('user');
+			$sel = array('*');
+			$whe = array('uname'=>$data['uname']);
+			$inf = $this->user->select_w($sel,$whe);
+			if (is_object($inf[0]))
+			{
+				if ($inf[0]->pass == $data['pass'])
+				{
+					$ses = array('session_name'=>$data['uname']);
+					$this->session->set_userdata($ses);
+					header('Location: ./module_deal');
+				}
+				else 
+				{
+					echo "密码错误";
+				}			
+			}
+			else 
+			{
+				echo "无此用户";
+			}
+		}
+		$this->load->view('login');
+	}
+    public function create_item_f()
+	{
+		$this->is_session();
+		$this->load->helper('global');
+		$this->load->model('moduledb');
+		$sel = array('mid','mname');
+		$data['modules'] = $this->moduledb->select($sel);
+		$this->load->helper(array('form','url'));
+		$this->load->library('form_validation');
+		$data['title'] = '创建报名项目';
+		$this->load->view('template/head',$data);
+		$this->load->view('create_form');
+		$this->load->view('template/foot');
+	}
+	public function module_deal()
+	{
+		$this->is_session();
+		$this->load->helper(array('form','url'));
+		$this->load->library('form_validation');		
+		$this->load->model('moduledb');
+		$data = array('mname','mid');
+		$data['mods'] = $this->moduledb->select($data);
+		$this->load->view('module_deal',$data);
+	}
+	
+	public function item_deal($mid)
+	{
+		$this->is_session();
+		$this->load->helper(array('form','url'));
+		$this->load->library('form_validation');
+		$this->load->model('item');
+		$sel = array('iname','iid');
+		$whe = array('mid'=>$mid);
+		$data['items'] = $this->item->select_w($sel,$whe);
+		$this->load->view('item_deal',$data);
+	}
+	public function item_inf($iid)
+	{
+		$this->is_session();
+		$this->load->model('item');
+		$sel = array('*');
+		$whe = array('iid'=>$iid);
+		$data = $this->item->select_w($sel,$whe);
+		if ($data[0])
+		{
+			$data[0]->fildes = explode(',', $data[0]->content);
+		}
+		$data['inf'] = $data[0];
+		$this->load->helper('global');
+		$this->load->view('item_inf',$data);
+	}
+}
