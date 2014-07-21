@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+	<title>日新 招新</title>
+	<link rel="shortcut icon" href="./images/icon.png" />
+	<link rel="stylesheet" href="./css/mobile-hr-style.css" />
+</head>
+<body>
+	<!-- 主体内容 -->
+	<div id="container">
+		<!-- 招新首页 -->
+		<div id="hr">
+			<p>
+				想知道你在日新的未来，<br />
+				选择下面你想了解的部门
+			</p>
+			<ul>
+				<li><a id="tech" href="javascript:;"></a></li>
+				<li><a id="news" href="javascript:;"></a></li>
+				<li><a id="prd" href="javascript:;"></a></li>
+				<li><a id="manage" href="javascript:;"></a></li>
+			</ul>
+			<h2><a id="register" href="javascript:;">立即报名</a></h2>
+		</div>
+		<!-- 报名表 -->
+		<div id="edit">
+			<h2>报名表</h2>
+			<div id="form">
+				<form action="http://hr.ecjtu.net/index.php/register/check" method="post" accept-charset="UTF-8">
+					<p><span>姓名-</span><input type="text"></p>
+					<p><span>性别-</span><input type="radio" name="sex" value="male" /> 男
+					<input type="radio" name="sex" value="female" /> 女</p>
+					<p><span>手机-</span><input type="text"></p>
+					<p><span>QQ&nbsp;-&nbsp;</span><input type="text"></p>
+					<p><span>学院-</span>
+						<select name="campus" id="campus">
+							<option value="" selected="selected">土木建筑学院</option>
+							<option value="">电气与电子工程学院</option>
+							<option value="">机电工程学院</option>
+							<option value="">经济管理学院</option>
+							<option value="">外国语学院</option>
+							<option value="">信息工程学院</option>
+							<option value="">基础科学学院</option>
+							<option value="">人文社会科学学院</option>
+							<option value="">国际学院</option>
+							<option value="">软件学院</option>
+							<option value="">体育学院</option>
+							<option value="">轨道交通学院</option>
+							<option value="">艺术学院</option>
+							<option value="">国防生学院</option>
+						</select>
+					</p>
+					<p><span>专业-</span>
+						<select name="major" id="major">
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+					</p>
+					<p><span class="select">选择中心-</span>
+						<select name="center" id="center">
+							<option value="tech" selected="selected">技术研发中心</option>
+							<option value="news">新闻出版中心</option>
+							<option value="prd">产品运营中心</option>
+							<option value="manage">行政管理中心</option>
+						</select>
+					</p>
+					<p><span class="select">部门方向-</span>
+						<select name="direction" id="direction">
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+					</p>
+					<p><span id="personal">个人简介-</span>
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</p>
+					<h3>
+						<input type="submit" onclick="this.form.submit();"></input>
+						<a id="back2index" href="javascript:;">返回首页</a>
+					</h3>
+				</form>
+			</div>
+		</div>
+		<!-- 中心介绍 -->
+		<div id="intro">
+			<div id="banner">
+				<!-- <p class="prd pic"></p> -->
+				<p class="prd main">
+					产品专员（不同方向）<br />
+					你想服务学校的官方论坛和微博吗？<br />
+					你想参与管理您辅导员的博客吗？<br />
+					你想知道日新的手机客户端如何运营吗？<br />
+					你还想利用软件技术为全校师生服务吗？<br />
+					你想成为《交大青年》杂志社的一员吗？<br />
+					当然了，你还想自己维护自己与同学们的权益，或是自己组织策划校园活动吗？<br />
+					别犹豫了，<br />
+					全国最优秀的校园门户网站之一：日新网产品运营中心，八大产品部门期待你的到来。<br />
+					有你的加入，日新会更精彩！
+				</p>
+				<p class="prd job">
+					职位要求：<br /><br />
+					1、有较强的学习能力与执行能力；<br />
+					2、有较强的沟通与业务处理能力；<br />
+					3、做事认真积极，有责任心；<br />
+					4、有较强的团队意识和合作能力；<br />
+					5、有思想，具备创新能力。
+				</p>
+				<p class="tech main">
+					技术研究员（不同方向）<br /><br />
+					日新网技术研究员是日新技术团队中极为重要的一支队伍，同时也是广大计算机爱好者的一个入门学习与晋阶探索的平台，日新技术部将不定期吸纳技术研究员中的技术进步迅速者及精英直接成为核心团队的成员及骨干。
+				</p>
+				<p class="tech job">
+					职位要求：<br /><br />
+					1、2013级在校学生，有充分的课余时间；<br />
+					2、对各类计算机、网络技术、网络产品有强烈兴趣者，有兴趣学习与研究网页前端开发、PHP、Linux、web视觉设计、交互设计、Flash开发、硬件组建、网络安全等其中之一；<br />
+					3、有足够的热情和责任心，有一定的抗压能力与学习能力；<br />
+					4、能虚心学习，认真对待所选方向。
+				</p>
+				<p class="news main">
+					新闻出版中心记者：<br /><br />
+					你希望能在大学里尽情地展现你的才华吗？<br />
+					你想认识更多的妹子或汉子吗？<br />
+					你想进全国100强新闻媒体企业实习吗？<br />
+					你想在大学提高你的知名度吗？<br />
+					当看到电视上的记者采访、摄影、拍照、写新闻稿，你是不是也蠢蠢欲动、跃跃欲试呢？<br />
+					现在机会来啦！
+				</p>
+				<p class="news job">
+					职位要求：<br /><br />
+					1、态度积极，追求卓越，对待工作认真负责；<br />
+					2、有较强的团队意识和合作能力；<br />
+					3、能独立思考，全方位多角度地看待问题；<br />
+					4、有一定的新闻写作功底或摄影基础；<br />
+					5、有一定人文
+				</p>
+				<p class="manage main">
+					业务员（不同方向）：<br />
+					日新网行政管理中心是日新工作室部门之一，其前身为日新行政部。行政管理中心下设办公室、财务部、企划部、人力资源部、市场部，共5个部门。行政管理中心对内负责网站内部的行政建设，运行日新部分网络产品及线下精品活动，做好网站的后勤服务、组织内部人员活动，并负责学校影院运营。方向有：办公室文员、财务部业务员、人力资源部业务员。企划部业务员、市场部业务员
+				</p>
+				<p class="manage job">
+					职位要求：<br /><br />
+					1、有较强的业务处理能力以及沟通交际能力；<br />
+					2、对计算机常规办公软件有一定了解（如Word、Excel等）；<br />
+					3、做事细致认真，有较强的责任感；<br />
+					4、对于所选方向有一定的认知，并有充足的热情去对待。
+				</p>
+				<button id="next"></button>
+			</div>
+		</div>
+	</div>
+	<!-- LOGO -->
+	<header>
+		<h1><a id="logo" href="javascript:;"></a></h1>
+		<div id="border"></div>
+	</header>
+	<!-- 版权及其他 -->
+	<footer>
+		<p>华东交通大学团委、学工处 [ 版权所有 交大日新 ] 赣ICP备05003322号 日新工作室 维护</p>
+		<p>Copyright 2001-2014 By [ecjtu.net].All Rights Reserved</p>
+	</footer>
+	<!-- 关于我们 -->
+	<nav>
+		<div id="tag"></div>
+		<a href="javascript:;" id="about"></a>
+	</nav>
+	<script type="text/javascript" src="./scripts/jquery.js"></script>
+	<script type="text/javascript" src="./scripts/mobile-hr-script.js"></script>
+</body>
+</html>

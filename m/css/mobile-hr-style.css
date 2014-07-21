@@ -1,0 +1,294 @@
+/*
+ * EcjtuNet Mobile HR
+ *
+ * @author    Lancelot at EcjtuNet
+ * @version   0.2
+ * @last-time 2014.7.15
+ *
+ */
+/* file loading
+ ------------------------------------ */
+/*           CSS Reset           */
+/*
+ * http://meyerweb.com/eric/tools/css/reset/    v2.0 | 20110126
+ * License: none (public domain)
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summarytime, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a:link, a:visited {
+  text-decoration: none; }
+
+a:hover, a:active {
+  text-decoration: underline; }
+
+/* color
+ ------------------------------------- */
+/* font
+ ------------------------------------ */
+/* layout
+ ------------------------------------ */
+/* path
+ ------------------------------------ */
+#container {
+  width: 100%;
+  padding-top: 58px;
+  /* ----- HR-index ----- */
+  /* ----- Edit ----- */
+  /* ----- Introduction ----- */ }
+  #container #hr {
+    display: none; }
+    #container #hr p {
+      width: 261px;
+      margin: 16px auto;
+      font: normal 16px/28px Microsoft Yahei, Arial, sans-serif;
+      color: #534d4d; }
+    #container #hr ul li {
+      text-align: center;
+      /* #tech:active {
+      	background: url() center center no-repeat;
+      } */
+      /* #news:active {
+      	background: url() center center no-repeat;
+      } */
+      /* #prd:active {
+      	background: url() center center no-repeat;
+      } */
+      /* #manage:active {
+      	background: url() center center no-repeat;
+      } */ }
+      #container #hr ul li a {
+        display: inline-block;
+        width: 261px;
+        height: 48px;
+        margin: 12px auto; }
+      #container #hr ul li a:active {
+        margin-right: -16px; }
+      #container #hr ul li #tech {
+        background: url("../images/sprit.png") 0 -127px no-repeat; }
+      #container #hr ul li #news {
+        background: url("../images/sprit.png") 0 -175px no-repeat; }
+      #container #hr ul li #prd {
+        background: url("../images/sprit.png") 0 -223px no-repeat; }
+      #container #hr ul li #manage {
+        background: url("../images/sprit.png") 0 -271px no-repeat; }
+    #container #hr h2 {
+      text-align: center;
+      margin: 0 auto;
+      padding: 24px 0 36px; }
+      #container #hr h2 a#register {
+        display: inline-block;
+        width: 110px;
+        height: 36px;
+        background: url("../images/sprit.png") 0 0 no-repeat;
+        text-align: center;
+        text-decoration: none;
+        font: normal 18px/36px Microsoft Yahei, Arial, sans-serif;
+        color: #fff; }
+      #container #hr h2 a#register:active {
+        background: url("../images/sprit.png") -110px 0px no-repeat;
+        color: #534d4d; }
+  #container #edit {
+    display: none;
+    text-align: center; }
+    #container #edit h2 {
+      text-align: center;
+      font: normal 36px/48px Microsoft Yahei, Arial, sans-serif;
+      color: #534d4d; }
+    #container #edit #form {
+      display: inline-block; }
+      #container #edit #form p {
+        position: relative;
+        text-align: left;
+        font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
+        #container #edit #form p span.select {
+          display: block; }
+        #container #edit #form p span#personal {
+          float: left; }
+      #container #edit #form input, #container #edit #form select, #container #edit #form textarea {
+        font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
+      #container #edit #form input, #container #edit #form select {
+        border: none;
+        background: url("../images/sprit.png") 0 -319px no-repeat;
+        clip: rect(0px 160px 0px 0); }
+      #container #edit #form input[type=text] {
+        position: relative;
+        left: 28px;
+        width: 170px;
+        height: 34px;
+        margin: 12px;
+        padding: 0 12px; }
+      #container #edit #form input[type=radio] {
+        margin-left: 42px; }
+      #container #edit #form select {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -webkit-padding-end: 20px;
+        -moz-padding-end: 20px;
+        -webkit-padding-start: 2px;
+        -moz-padding-start: 2px;
+        background: url("../images/sprit.png") 0 -319px no-repeat;
+        border: none;
+        color: #534d4d;
+        font-size: inherit;
+        margin: 0;
+        overflow: hidden;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        left: 28px;
+        width: 194px;
+        height: 34px;
+        margin: 12px;
+        padding: 0 12px; }
+      #container #edit #form #center, #container #edit #form #direction {
+        position: relative;
+        left: 75px; }
+      #container #edit #form textarea {
+        width: 194px;
+        height: 97px;
+        margin: 12px;
+        border: 2px solid #313131; }
+      #container #edit #form h3 {
+        text-align: center; }
+        #container #edit #form h3 input[type=submit], #container #edit #form h3 a#back2index {
+          width: 110px;
+          height: 36px;
+          margin: 12px;
+          font: normal 16px/28px Microsoft Yahei, Arial, sans-serif;
+          background: url("../images/sprit.png") 0 0 no-repeat;
+          line-height: 36px;
+          text-decoration: none;
+          color: #fff;
+          text-align: center;
+          cursor: pointer; }
+        #container #edit #form h3 input[type=submit]:active, #container #edit #form h3 a:active, #container #edit #form h3 a#back2index:active {
+          background: url("../images/sprit.png") -110px 0 no-repeat;
+          color: #534d4d; }
+        #container #edit #form h3 input[type=submit] {
+          border: none; }
+        #container #edit #form h3 a#back2index {
+          display: inline-block; }
+  #container #intro {
+    display: none; }
+    #container #intro #banner {
+      position: relative;
+      width: 360px;
+      height: 342px;
+      margin: 36px auto;
+      line-height: 342px;
+      background: url(../images/banner.png) no-repeat; }
+      #container #intro #banner .pic {
+        display: none;
+        width: 320px;
+        height: 200px;
+        margin: 0 auto;
+        padding: 0 48px;
+        background: url(../images/prd-intro-1.png) no-repeat; }
+      #container #intro #banner .prd, #container #intro #banner .tech, #container #intro #banner .news, #container #intro #banner .manage, #container #intro #banner .main, #container #intro #banner .job {
+        display: none;
+        padding: 0 6px;
+        color: #534d4d;
+        font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
+      #container #intro #banner #next {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 54px;
+        height: 49px;
+        border: none;
+        border-radius: 10px;
+        background: transparent;
+        cursor: pointer; }
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-bottom: 8px; }
+  header h1 {
+    background: #f26c46;
+    height: 50px; }
+    header h1 a#logo {
+      display: inline-block;
+      width: 187px;
+      height: 27px;
+      margin: 11.5px;
+      background: url("../images/sprit.png") 0 -100px no-repeat; }
+  header #border {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8px;
+    background: url("../images/header-border.png") -220px 0 repeat-x; }
+
+footer {
+  width: 100%;
+  padding: 24px 0;
+  background: #282828; }
+  footer p {
+    margin: 0 0 14px 0;
+    text-align: center;
+    letter-spacing: .05em;
+    font: normal 14px/24px Helvetica, Arial, sans-serif;
+    color: #fff; }
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 48px; }
+  nav #tag {
+    width: 36px;
+    height: 50px;
+    margin: 0 auto;
+    background: url("../images/sprit.png") -84px -36px no-repeat; }
+  nav a#about {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin-top: 36px;
+    background: url("../images/sprit.png") -120px -36px no-repeat; }
+  nav a#about:before {
+    content: "";
+    position: absolute;
+    left: 31px;
+    top: 42px;
+    display: inline-block;
+    width: 2px;
+    height: 44px;
+    background: #a0835f; }
+  nav a#about:active {
+    margin-top: 48px; }
+  nav a#about:active:before {
+    height: 56px; }
