@@ -9,108 +9,57 @@ $(document).ready(function() {
 		manage   = $("#manage"),
 		register = $("#register");
 
-	var techIntro = $(".tech"),
-		newsIntro = $(".news"),
-		prdIntro = $(".prd"),
-		manageIntro = $(".manage"),
-		main = $(".main"),
-		job = $(".job"),
-		pic = $(".pic");
-
 	var next = $("#next");
 
 	var logo = $("#logo"),
 		about = $("#about"),
 		back2index = $("#back2index");
 
-	(function initializer () {
-		hr.css('display', 'block');
-		edit.css('display', 'none');
-		intro.css('display', 'none');
-	})();
 
-	tech.click(function() {
+	hr.css('display', 'block');
+	edit.css('display', 'none');
+	intro.css('display', 'none');
+
+	hr.find('a').click(function() {
 		hr.css('display', 'none');
-		edit.css('display', 'none');
 		intro.css('display', 'block');
-		$(".tech:eq(0)").css('display', 'block');
-		next.click(function() {
-			$(this).toggle(function() {
-				$(this).parent().children('.tech:eq(0)').css('display', 'none').next().css('display', 'block');
-				return false;
-			}/*, function() {
-				$(this).parent().children('.tech:eq(1)').css('display', 'none').next().css('display', 'block');
-				return false;
-			}*/);
-		});
+		var id = $(this).attr("id");
+		var elem = "." + id + ":eq(0)";
+		$(elem).css('display', 'block');
 	});
+	function tab () {
+		var p = $('#intro p');
+		var className =  null;
+		for (var i = 0; i < p.length; ++i) {
+			if (p.eq(i).css('display') !== 'none') {
+				className = p.eq(i).attr('class');
+				return className;
+			}
+		};
+	};
 
-	news.click(function() {
-		hr.css('display', 'none');
-		edit.css('display', 'none');
-		intro.css('display', 'block');
-		$(".news:eq(0)").css('display', 'block');
-		next.click(function() {
-			$(this).toggle(function() {
-				$(this).parent().children('.news:eq(0)').css('display', 'none').next().css('display', 'block');
-				return false;
-			}/*, function() {
-				$(this).parent().children('.news:eq(1)').css('display', 'none').next().css('display', 'block');
-				return false;
-			}*/);
-		});
-	});
-
-	prd.click(function() {
-		hr.css('display', 'none');
-		edit.css('display', 'none');
-		intro.css('display', 'block');
-		$(".prd:eq(0)").css('display', 'block');
-		next.click(function() {
-			$(this).toggle(function() {
-				$(this).parent().children('.prd:eq(0)').css('display', 'none').next().css('display', 'block');
-				return false;
-			}/*, function() {
-				$(this).parent().children('.prd:eq(1)').css('display', 'none').next().css('display', 'block');
-				return false;
-			}*/);
-		});
+	var count = 0;
+	next.click(function() {
+		count ++;
+		var className = tab();
+		console.log(count);
+		if (count !==0 && count%2 === 0) {
+			hr.css('display', 'block');
+			intro.css('display', 'none');
+			intro.find('p').css('display', 'none');
+			count = 0;
+		} else {
+			var elem = '.'+ className;
+			console.log(elem)
+			$(this).parent().find(elem).css('display', 'none')
+				.next().css('display', 'block');
+		}
 	});
 
-	manage.click(function() {
-		hr.css('display', 'none');
-		edit.css('display', 'none');
-		intro.css('display', 'block');
-		$(".manage:eq(0)").css('display', 'block');
-		next.click(function() {
-			$(this).toggle(function() {
-				$(this).parent().children('.manage:eq(0)').css('display', 'none').next().css('display', 'block');
-				return false;
-			}/*, function() {
-				$(this).parent().children('.manage:eq(1)').css('display', 'none').next().css('display', 'block');
-				return false;
-			}*/);
-		});
-	});
 
-	news.click(function() {
-		hr.css('display', 'none');
-		edit.css('display', 'none');
-		intro.css('display', 'block');
-		return false;
-	});
-	prd.click(function() {
-		hr.css('display', 'none');
-		edit.css('display', 'none');
-		intro.css('display', 'block');
-		return false;
-	});
-	manage.click(function() {
-		hr.css('display', 'none');
-		edit.css('display', 'none');
-		intro.css('display', 'block');
-		return false;
-	});
+
+
+
 
 	logo.click(function() {
 		hr.css('display', 'block');

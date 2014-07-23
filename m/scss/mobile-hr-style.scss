@@ -35,35 +35,42 @@
 			text-align: center;
 			a {
 				display: inline-block;
-				width: 261px;
-				height: 48px;
+				width: 270px - 43px - 25px;
+				height: 45px;
 				margin: 12px auto;
+				padding: 0 43px 0  25px;
+				text-align: left;
+				background: url(../images/arrow-right.png) center right no-repeat;
+				border: 3px dashed $container-p-color;
+				border-radius: 6px;
+				font: $container-p-font;
+				color: $container-p-color;
 			}
 			a:active {
 				margin-right: -16px;
 			}
-			#tech {
+			/* #tech {
 				background: url($imagepath) 0 -127px no-repeat;
 			}
-			/* #tech:active {
+			#tech:active {
 				background: url() center center no-repeat;
-			} */
+			}
 			#news {
 				background: url($imagepath) 0 -175px no-repeat;
 			}
-			/* #news:active {
+			#news:active {
 				background: url() center center no-repeat;
-			} */
+			}
 			#prd {
 				background: url($imagepath) 0 -223px no-repeat;
 			}
-			/* #prd:active {
+			#prd:active {
 				background: url() center center no-repeat;
-			} */
+			}
 			#manage {
 				background: url($imagepath) 0 -271px no-repeat;
 			}
-			/* #manage:active {
+			#manage:active {
 				background: url() center center no-repeat;
 			} */
 		}
@@ -90,6 +97,7 @@
 	/* ----- Edit ----- */
 	#edit {
 		display: none;
+		position: relative;
 		text-align: center;
 
 		h2 {
@@ -98,12 +106,17 @@
 			color: $container-color;
 		}
 		#form {
+			position: relative;
 			display: inline-block;
 
 			p {
 				position: relative;
+				left: 0;
 				text-align: left;
 				font: $container-font;
+				span {
+					float: left;
+				}
 				span.select {
 					display: block;
 				}
@@ -114,36 +127,49 @@
 			input, select, textarea {
 				font: $container-font;
 			}
-			input, select {
+			input[type=radio], select {
 				border: none;
-				background: url($imagepath) 0 -319px no-repeat;
-				clip: rect(0px 160px 0px 0);
+				/* background: url($imagepath) 0 -319px no-repeat; */
 			}
 			input[type=text] {
 				position: relative;
 				left: 28px;
 				width: 170px;
-				height: 34px;
+				height: 30px;
 				margin: 12px;
 				padding: 0 12px;
+				border: 2px solid $container-border-gray;
+				border-radius: 30px;
 			}
 			input[type=radio] {
 				margin-left: 42px;
 			}
 			select {
+				appearance: button;
 				-webkit-appearance: button;
-			    -moz-appearance: button;
-			    -webkit-user-select: none;
-			    -moz-user-select: none;
-			    -webkit-padding-end: 20px;
-			    -moz-padding-end: 20px;
-			    -webkit-padding-start: 2px;
-			    -moz-padding-start: 2px;
-			    background: url($imagepath) 0 -319px no-repeat;
-			    border: none;
+				-moz-appearance: button;
+				-ms-appearance: button;
+
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+
+				-webkit-padding-end: 20px;
+				-moz-padding-end: 20px;
+				-ms-padding-end: 20px;
+				padding-end: 20px;
+
+				-webkit-padding-start: 2px;
+				-moz-padding-start: 2px;
+				-ms-padding-start: 2px;
+				padding-start: 2px;
+
+			    /* background: url($imagepath) 0 -319px no-repeat; */
+			    border: 2px solid $container-border-gray;
+				border-radius: 30px;
 			    color: $container-color;
 			    font-size: inherit;
-			    margin: 0;
 			    overflow: hidden;
 			    padding-top: 2px;
 			    padding-bottom: 2px;
@@ -151,18 +177,29 @@
 			    white-space: nowrap;
 				position: relative;
 				left: 28px;
-				width: 194px;
+				width: 198px;
 				height: 34px;
 				margin: 12px;
 				padding: 0 12px;
+				background: transparent;
+			}
+			p.select:before {
+				content: "";
+				position: absolute;
+				right: 32px;
+				top: 26px;
+				border-top: 8px solid $container-color;
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+				border-bottom: none;
 			}
 			#center, #direction {
 				position: relative;
-				left: 75px;
+				left: 0;
 			}
 			textarea {
-				width: 194px;
-				height: 97px;
+				max-width: 198px;
+				max-height: 97px;
 				margin: 12px;
 				border: 2px solid $container-border-gray;
 			}
@@ -202,8 +239,9 @@
 			width: 360px;
 			height: 342px;
 			margin: 36px auto;
+			border: 3px dashed $container-color;
+			border-radius: 6px;
 			line-height: 342px;
-			background: url(../images/banner.png) no-repeat;
 			.pic {
 				display: none;
 				width: 320px;
@@ -222,11 +260,11 @@
 				position: absolute;
 				bottom: 0;
 				right: 0;
-				width: 54px;
-				height: 49px;
+				width: 43px;
+				height: 38px;
 				border: none;
 				border-radius: 10px;
-				background: transparent;
+				background: url(../images/page-edge.png) no-repeat;
 				cursor: pointer;
 			}
 		}

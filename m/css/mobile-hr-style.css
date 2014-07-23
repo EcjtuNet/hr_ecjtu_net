@@ -43,11 +43,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-a:link, a:visited {
+a:link, a:visited, a:hover, a:active {
   text-decoration: none; }
-
-a:hover, a:active {
-  text-decoration: underline; }
 
 /* color
  ------------------------------------- */
@@ -72,33 +69,44 @@ a:hover, a:active {
       color: #534d4d; }
     #container #hr ul li {
       text-align: center;
-      /* #tech:active {
+      /* #tech {
+      	background: url($imagepath) 0 -127px no-repeat;
+      }
+      #tech:active {
       	background: url() center center no-repeat;
-      } */
-      /* #news:active {
+      }
+      #news {
+      	background: url($imagepath) 0 -175px no-repeat;
+      }
+      #news:active {
       	background: url() center center no-repeat;
-      } */
-      /* #prd:active {
+      }
+      #prd {
+      	background: url($imagepath) 0 -223px no-repeat;
+      }
+      #prd:active {
       	background: url() center center no-repeat;
-      } */
-      /* #manage:active {
+      }
+      #manage {
+      	background: url($imagepath) 0 -271px no-repeat;
+      }
+      #manage:active {
       	background: url() center center no-repeat;
       } */ }
       #container #hr ul li a {
         display: inline-block;
-        width: 261px;
-        height: 48px;
-        margin: 12px auto; }
+        width: 202px;
+        height: 45px;
+        margin: 12px auto;
+        padding: 0 43px 0  25px;
+        text-align: left;
+        background: url(../images/arrow-right.png) center right no-repeat;
+        border: 3px dashed #918d8d;
+        border-radius: 6px;
+        font: bold 24px/45px Youyuan, Microsoft Yahei, Arial, sans-serif;
+        color: #918d8d; }
       #container #hr ul li a:active {
         margin-right: -16px; }
-      #container #hr ul li #tech {
-        background: url("../images/sprit.png") 0 -127px no-repeat; }
-      #container #hr ul li #news {
-        background: url("../images/sprit.png") 0 -175px no-repeat; }
-      #container #hr ul li #prd {
-        background: url("../images/sprit.png") 0 -223px no-repeat; }
-      #container #hr ul li #manage {
-        background: url("../images/sprit.png") 0 -271px no-repeat; }
     #container #hr h2 {
       text-align: center;
       margin: 0 auto;
@@ -117,50 +125,64 @@ a:hover, a:active {
         color: #534d4d; }
   #container #edit {
     display: none;
+    position: relative;
     text-align: center; }
     #container #edit h2 {
       text-align: center;
       font: normal 36px/48px Microsoft Yahei, Arial, sans-serif;
       color: #534d4d; }
     #container #edit #form {
+      position: relative;
       display: inline-block; }
       #container #edit #form p {
         position: relative;
+        left: 0;
         text-align: left;
         font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
+        #container #edit #form p span {
+          float: left; }
         #container #edit #form p span.select {
           display: block; }
         #container #edit #form p span#personal {
           float: left; }
       #container #edit #form input, #container #edit #form select, #container #edit #form textarea {
         font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
-      #container #edit #form input, #container #edit #form select {
+      #container #edit #form input[type=radio], #container #edit #form select {
         border: none;
-        background: url("../images/sprit.png") 0 -319px no-repeat;
-        clip: rect(0px 160px 0px 0); }
+        /* background: url($imagepath) 0 -319px no-repeat; */ }
       #container #edit #form input[type=text] {
         position: relative;
         left: 28px;
         width: 170px;
-        height: 34px;
+        height: 30px;
         margin: 12px;
-        padding: 0 12px; }
+        padding: 0 12px;
+        border: 2px solid #313131;
+        border-radius: 30px; }
       #container #edit #form input[type=radio] {
         margin-left: 42px; }
       #container #edit #form select {
+        appearance: button;
         -webkit-appearance: button;
         -moz-appearance: button;
+        -ms-appearance: button;
         -webkit-user-select: none;
         -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         -webkit-padding-end: 20px;
         -moz-padding-end: 20px;
+        -ms-padding-end: 20px;
+        padding-end: 20px;
         -webkit-padding-start: 2px;
         -moz-padding-start: 2px;
-        background: url("../images/sprit.png") 0 -319px no-repeat;
-        border: none;
+        -ms-padding-start: 2px;
+        padding-start: 2px;
+        /* background: url($imagepath) 0 -319px no-repeat; */
+        border: 2px solid #313131;
+        border-radius: 30px;
         color: #534d4d;
         font-size: inherit;
-        margin: 0;
         overflow: hidden;
         padding-top: 2px;
         padding-bottom: 2px;
@@ -168,16 +190,26 @@ a:hover, a:active {
         white-space: nowrap;
         position: relative;
         left: 28px;
-        width: 194px;
+        width: 198px;
         height: 34px;
         margin: 12px;
-        padding: 0 12px; }
+        padding: 0 12px;
+        background: transparent; }
+      #container #edit #form p.select:before {
+        content: "";
+        position: absolute;
+        right: 32px;
+        top: 26px;
+        border-top: 8px solid #534d4d;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: none; }
       #container #edit #form #center, #container #edit #form #direction {
         position: relative;
-        left: 75px; }
+        left: 0; }
       #container #edit #form textarea {
-        width: 194px;
-        height: 97px;
+        max-width: 198px;
+        max-height: 97px;
         margin: 12px;
         border: 2px solid #313131; }
       #container #edit #form h3 {
@@ -207,8 +239,9 @@ a:hover, a:active {
       width: 360px;
       height: 342px;
       margin: 36px auto;
-      line-height: 342px;
-      background: url(../images/banner.png) no-repeat; }
+      border: 3px dashed #534d4d;
+      border-radius: 6px;
+      line-height: 342px; }
       #container #intro #banner .pic {
         display: none;
         width: 320px;
@@ -225,11 +258,11 @@ a:hover, a:active {
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 54px;
-        height: 49px;
+        width: 43px;
+        height: 38px;
         border: none;
         border-radius: 10px;
-        background: transparent;
+        background: url(../images/page-edge.png) no-repeat;
         cursor: pointer; }
 
 header {
