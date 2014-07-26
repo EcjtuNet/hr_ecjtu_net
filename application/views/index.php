@@ -6,7 +6,7 @@
 <link href="/css/style.css" type="text/css" rel="stylesheet"  />
 
 <script src="/js/jquery-1.7.2.js"></script>
-<title>日新招新2013</title>
+<title>日新招新2014</title>
 </head>
 <script src="/js/show.js"></script>
 <body >

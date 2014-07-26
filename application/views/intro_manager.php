@@ -175,8 +175,13 @@
                 <ul>
                 	<li><a target="_blank" href="http://www.ecjtu.jx.cn/">华东交通大学首页</a></li>
                     <li><a target="_blank" href="http://www.ecjtu.net/">日新网首页</a></li>
+                    <li><a target="_blank" href="http://u30.ecjtu.net/">日新技术U30</a></li>
+                    <li><a target="_blank" href="http://pic.ecjtu.net/">日新图说</a></li>
+                    <li><a target="_blank" href="http://swzl.ecjtu.net/">失物招领</a></li>
+                    <li><a target="_blank" href="http://post.ecjtu.net/">日新邮包</a></li>
+                    <li><a target="_blank" href="http://wiki.ecjtu.net/">日新维基</a></li>
                     <li><a target="_blank" href="http://bbs.ecjtu.net/">论坛</a></li>
-                    <li>　　<a target="_blank" href="http://bbs.ecjtu.net/forum-144-1.html">新生问答</a></li>
+                    <li>　　<a target="_blank" href="http://bbs.ecjtu.net/forum-24-1.html">新生问答</a></li>
                     <li>　　<a target="_blank" href="http://bbs.ecjtu.net/forum-28-1.html">跳蚤市场</a></li>
                     <li><a target="_blank" href="http://www.ecjtu.net/about/">团队介绍</a></li>
                 </ul>
@@ -188,7 +193,7 @@
     <div id="tail">
     	<center><p><a target="_blank" href="http://www.ecjtu.net/about/">关于我们</a>|<a target="_blank" href="http://www.ecjtu.net/about/?id=22">人才招聘</a>|<a target="_blank" href="http://123.ecjtu.net">日新导航</a>|<a target="_blank" href="http://www.ecjtu.net/about/?id=20">广告服务</a>|<a target="_blank" href="http://bbs.ecjtu.net/forum-25-1.html">意见反馈</a>|<a target="_blank" href="mailto:roger@ecjtu.jx.cn">不良信息举报</a></p></center>
        	<center><p>华东交通大学团委、学工处 [ 版权所有 交大日新 ] 赣ICP备05003322号 日新工作室 维护</p></center>
-        <center><p>信箱:214@ecjtu.net CopyRight 2001-2011 By [ecjtu.net] .All Rights Reserved</p></center>
+        <center><p>信箱:214@ecjtu.net CopyRight 2001-2014 By [ecjtu.net] .All Rights Reserved</p></center>
     </div>
 </div>
 <iframe src="../../index.php/hr/register" id="info" width="902px" height="892px" scrolling="no" style="display:none;"></iframe>
