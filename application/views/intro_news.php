@@ -19,17 +19,11 @@
     	<span id="int_logo"><a target="_blank" href="http://www.ecjtu.net"><img src="../../images/intro_image/LOGO.gif" /></a></span>
         <div class="pub_nav">
         	<ul>
-                <li><a target="_blank" href="http://www.ecjtu.jx.cn/">华东交通大学首页</a></li>
-                <li><a target="_blank" href="http://www.ecjtu.net/">日新网首页</a></li>
-                <li><a target="_blank" href="http://u30.ecjtu.net/">日新技术U30</a></li>
-                <li><a target="_blank" href="http://pic.ecjtu.net/">日新图说</a></li>
-                <li><a target="_blank" href="http://swzl.ecjtu.net/">失物招领</a></li>
-                <li><a target="_blank" href="http://post.ecjtu.net/">日新邮包</a></li>
-                <li><a target="_blank" href="http://wiki.ecjtu.net/">日新维基</a></li>
-                <li><a target="_blank" href="http://bbs.ecjtu.net/">论坛</a></li>
-                <li>　　<a target="_blank" href="http://bbs.ecjtu.net/forum-24-1.html">新生问答</a></li>
-                <li>　　<a target="_blank" href="http://bbs.ecjtu.net/forum-28-1.html">跳蚤市场</a></li>
-                <li><a target="_blank" href="http://www.ecjtu.net/about/">团队介绍</a></li>
+            	<li id="nav_news" class="nofocus" style="margin:0;"><a href="intro_news">新闻出版中心</a></li>
+            	<li id="nav_tech" class="nofocus"><a href="intro_tech">技术研发中心</a></li>
+                <li id="nav_manag" class="nofocus"><a href="intro_manager">行政管理中心</a></li>
+                <li id="nav_pro" class="nofocus"><a href="intro_product">产品运营中心</a></li> 
+                <li id="nav_newC" class="nofocus" style="width:106px;"><a href="intro_newcomer">新生专题</a></li>                
             </ul>
         </div>
     </div>
@@ -113,10 +107,15 @@
         	<div id="right_nav">
             	<div id="sub_botton"><a class="wbox" href="#info"></a></div>
                 <ul>
-                	<li><a target="_blank" href="http://www.ecjtu.jx.cn/">华东交通大学首页</a></li>
+                    <li><a target="_blank" href="http://www.ecjtu.jx.cn/">华东交通大学首页</a></li>
                     <li><a target="_blank" href="http://www.ecjtu.net/">日新网首页</a></li>
+                    <li><a target="_blank" href="http://u30.ecjtu.net/">日新技术U30</a></li>
+                    <li><a target="_blank" href="http://pic.ecjtu.net/">日新图说</a></li>
+                    <li><a target="_blank" href="http://swzl.ecjtu.net/">失物招领</a></li>
+                    <li><a target="_blank" href="http://post.ecjtu.net/">日新邮包</a></li>
+                    <li><a target="_blank" href="http://wiki.ecjtu.net/">日新维基</a></li>
                     <li><a target="_blank" href="http://bbs.ecjtu.net/">论坛</a></li>
-                    <li>　　<a target="_blank" href="http://bbs.ecjtu.net/forum-144-1.html">新生问答</a></li>
+                    <li>　　<a target="_blank" href="http://bbs.ecjtu.net/forum-24-1.html">新生问答</a></li>
                     <li>　　<a target="_blank" href="http://bbs.ecjtu.net/forum-28-1.html">跳蚤市场</a></li>
                     <li><a target="_blank" href="http://www.ecjtu.net/about/">团队介绍</a></li>
                 </ul>
