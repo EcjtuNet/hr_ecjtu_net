@@ -240,38 +240,41 @@
 	/* ----- Introduction ----- */
 	#intro {
 		display: none;
-		#banner {
-			position: relative;
-			max-width: 360px;
-			min-height: 342px;
+		#wrapper {
 			margin: 36px auto;
-			border: 3px dashed $container-color;
-			border-radius: 6px;
-			line-height: 342px;
-			.pic {
-				display: none;
-				width: 320px;
-				height: 200px;
-				margin: 0 auto;
-				padding: 0 48px;
-				background: url(../images/prd-intro-1.png) no-repeat;
-			}
-			.prd, .tech, .news, .manage, .main, .job {
-				display: none;
-				padding: 0 6px;
-				color: $container-color;
-				font: $container-font;
-			}
-			#next {
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				width: 43px;
-				height: 38px;
-				border: none;
-				border-radius: 10px;
-				background: url(../images/page-edge.png) no-repeat;
-				cursor: pointer;
+			padding: 0 24px;
+			#banner {
+				position: relative;
+				max-width: 360px;
+				min-height: 342px;
+				border: 3px dashed $container-color;
+				border-radius: 6px;
+				line-height: 342px;
+				.pic {
+					display: none;
+					width: 320px;
+					height: 200px;
+					margin: 0 auto;
+					padding: 0 48px;
+					background: url(../images/prd-intro-1.png) no-repeat;
+				}
+				.prd, .tech, .news, .manage, .main, .job {
+					display: none;
+					padding: 0 6px;
+					color: $container-color;
+					font: $container-font;
+				}
+				#next {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					width: 43px;
+					height: 38px;
+					border: none;
+					border-radius: 10px;
+					background: url(../images/page-edge.png) no-repeat;
+					cursor: pointer;
+				}
 			}
 		}
 	}

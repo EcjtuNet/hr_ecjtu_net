@@ -240,36 +240,38 @@ a:link, a:visited, a:hover, a:active {
           display: inline-block; }
   #container #intro {
     display: none; }
-    #container #intro #banner {
-      position: relative;
-      max-width: 360px;
-      min-height: 342px;
+    #container #intro #wrapper {
       margin: 36px auto;
-      border: 3px dashed #534d4d;
-      border-radius: 6px;
-      line-height: 342px; }
-      #container #intro #banner .pic {
-        display: none;
-        width: 320px;
-        height: 200px;
-        margin: 0 auto;
-        padding: 0 48px;
-        background: url(../images/prd-intro-1.png) no-repeat; }
-      #container #intro #banner .prd, #container #intro #banner .tech, #container #intro #banner .news, #container #intro #banner .manage, #container #intro #banner .main, #container #intro #banner .job {
-        display: none;
-        padding: 0 6px;
-        color: #534d4d;
-        font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
-      #container #intro #banner #next {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 43px;
-        height: 38px;
-        border: none;
-        border-radius: 10px;
-        background: url(../images/page-edge.png) no-repeat;
-        cursor: pointer; }
+      padding: 0 24px; }
+      #container #intro #wrapper #banner {
+        position: relative;
+        max-width: 360px;
+        min-height: 342px;
+        border: 3px dashed #534d4d;
+        border-radius: 6px;
+        line-height: 342px; }
+        #container #intro #wrapper #banner .pic {
+          display: none;
+          width: 320px;
+          height: 200px;
+          margin: 0 auto;
+          padding: 0 48px;
+          background: url(../images/prd-intro-1.png) no-repeat; }
+        #container #intro #wrapper #banner .prd, #container #intro #wrapper #banner .tech, #container #intro #wrapper #banner .news, #container #intro #wrapper #banner .manage, #container #intro #wrapper #banner .main, #container #intro #wrapper #banner .job {
+          display: none;
+          padding: 0 6px;
+          color: #534d4d;
+          font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
+        #container #intro #wrapper #banner #next {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 43px;
+          height: 38px;
+          border: none;
+          border-radius: 10px;
+          background: url(../images/page-edge.png) no-repeat;
+          cursor: pointer; }
 
 header {
   position: absolute;
