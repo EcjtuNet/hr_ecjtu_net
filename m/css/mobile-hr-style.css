@@ -241,6 +241,7 @@ a:link, a:visited, a:hover, a:active {
   #container #intro {
     display: none; }
     #container #intro #wrapper {
+      width: 366px;
       margin: 36px auto;
       padding: 0 24px; }
       #container #intro #wrapper #banner {
