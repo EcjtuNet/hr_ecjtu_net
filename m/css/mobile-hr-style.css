@@ -101,7 +101,7 @@ a:link, a:visited, a:hover, a:active {
         min-width: 101px;
         height: 45px;
         margin: 12px auto;
-        padding: 0 43px 0  25px;
+        padding: 0 55px 0  25px;
         text-align: left;
         background: url(../images/arrow-right.png) center right no-repeat;
         border: 3px dashed #918d8d;
@@ -142,6 +142,7 @@ a:link, a:visited, a:hover, a:active {
         left: 0;
         min-width: 301px;
         text-align: left;
+        margin: 12px 0;
         font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
         #container #edit #form p span {
           float: left; }
@@ -159,7 +160,7 @@ a:link, a:visited, a:hover, a:active {
         left: 28px;
         max-width: 170px;
         height: 30px;
-        margin: 12px;
+        margin: 0 12px;
         padding: 0 12px;
         border: 2px solid #313131;
         border-radius: 30px; }
@@ -197,7 +198,7 @@ a:link, a:visited, a:hover, a:active {
         max-width: 198px;
         min-width: 198px;
         height: 34px;
-        margin: 12px;
+        margin: 0 12px;
         padding: 0 12px;
         background: transparent; }
       #container #edit #form p.select:before {

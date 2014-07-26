@@ -376,18 +376,18 @@
 	"buffers":
 	[
 		{
-			"file": "scss/mobile-hr-style.scss",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 7110,
+				"buffer_size": 5848,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scripts/index-script.js",
+			"file": "scss/mobile-hr-style.scss",
 			"settings":
 			{
-				"buffer_size": 36,
+				"buffer_size": 7227,
 				"line_ending": "Windows"
 			}
 		}
@@ -430,6 +430,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scripts/mobile-hr-script.js",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scripts/index-script.js",
 		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/index.html",
 		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scripts/jquery-1.11.0.js",
 		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/application/index.html",
@@ -463,7 +465,6 @@
 		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/css/sign-style.css",
 		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scss/mobile-hr-style.scss",
 		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/index.html",
-		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scripts/mobile-hr-script.js",
 		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scripts/script.js",
 		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scripts/jquery.js",
 		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/_reset.scss",
@@ -556,8 +557,7 @@
 		"/C/Users/Administrator/Desktop/Blog/post.html",
 		"/C/Users/Administrator/Desktop/Blog/css/friend-style.css",
 		"/C/Users/Administrator/Desktop/Blog/css/about-style.css",
-		"/C/Users/Administrator/Desktop/Blog/about.html",
-		"/C/Users/Administrator/Desktop/Blog/scripts/index-script.js"
+		"/C/Users/Administrator/Desktop/Blog/about.html"
 	],
 	"find":
 	{
@@ -768,19 +768,97 @@
 			[
 				{
 					"buffer": 0,
-					"file": "scss/mobile-hr-style.scss",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7110,
+						"buffer_size": 5848,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								275,
-								275
+								1853,
+								1853
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"encoding_helper_encoding": "UTF-8",
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scss/mobile-hr-style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								381,
+								381
 							]
 						],
 						"settings":
@@ -839,84 +917,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 286.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scripts/index-script.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 36,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								36,
-								36
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close"
-							],
-							"encoding_helper_encoding": "cp936",
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 165.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
