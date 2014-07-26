@@ -193,7 +193,7 @@
 				content: "";
 				position: absolute;
 				right: 32px;
-				top: 26px;
+				top: 15px;
 				border-top: 8px solid $container-color;
 				border-left: 8px solid transparent;
 				border-right: 8px solid transparent;
@@ -242,7 +242,7 @@
 	#intro {
 		display: none;
 		#wrapper {
-			width: 366px;
+			max-width: 366px;
 			margin: 36px auto;
 			padding: 0 24px;
 			#banner {

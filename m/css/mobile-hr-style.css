@@ -205,7 +205,7 @@ a:link, a:visited, a:hover, a:active {
         content: "";
         position: absolute;
         right: 32px;
-        top: 26px;
+        top: 15px;
         border-top: 8px solid #534d4d;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
@@ -242,7 +242,7 @@ a:link, a:visited, a:hover, a:active {
   #container #intro {
     display: none; }
     #container #intro #wrapper {
-      width: 366px;
+      max-width: 366px;
       margin: 36px auto;
       padding: 0 24px; }
       #container #intro #wrapper #banner {
