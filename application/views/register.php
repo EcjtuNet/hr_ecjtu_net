@@ -31,7 +31,8 @@ a:active{background-image:url(../../images/intro_image/sub_active.gif)}
 <!--            <form>-->
 			<?php
 				echo form_open('register/check');
-                $sex = set_value('user_sex')=='男' ? TRUE : FALSE;
+                $sex = TRUE;
+                $sex = set_value('user_sex')=='女' ? FALSE : TRUE;
 			?>
             	<span><label>　　<font color="#FF0000">*</font>姓名：</label><div style="display:inline; height:16px; width:215px; padding:9px 4px; background:url(../../images/intro_image/input_text.gif) no-repeat; float:left;"><input name="user_name" class="text_input" style="border:0;" type="text" value="<?php echo set_value('user_name')?>"/></div><font color="#FF0000" style="line-height:40px; display:inline;"><?php echo form_error('user_name'); ?></font></span>
                 <span><label>　　<font color="#FF0000">*</font>性别：</label><div class="radio_box">　<input name="user_sex" class="radio" type="radio" value="男"  <?php if($sex) echo 'checked'; ?> />男　　<input name="user_sex" class="radio" type="radio" value="女" <?php if(!$sex) echo 'checked'; ?> />女</div></span>
