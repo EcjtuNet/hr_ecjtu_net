@@ -1,0 +1,1008 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"asi",
+				"aside-width"
+			],
+			[
+				"cal",
+				"className"
+			],
+			[
+				"att",
+				"attr	.attr() - single"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"imag",
+				"images"
+			],
+			[
+				"font",
+				"input-font"
+			],
+			[
+				"cl",
+				"click	click"
+			],
+			[
+				"toggl",
+				"toggle	.toggle()"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"is",
+				"is	is"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"j",
+				"javascript"
+			],
+			[
+				"intro",
+				"introduce"
+			],
+			[
+				"tech",
+				"tech-intro"
+			],
+			[
+				"hea",
+				"header-height"
+			],
+			[
+				"nav-",
+				"nav-h1-a-font"
+			],
+			[
+				"nw",
+				"news"
+			],
+			[
+				"ini",
+				"initializer"
+			],
+			[
+				"init",
+				"initAll"
+			],
+			[
+				"hr",
+				"hr2intro"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"contain",
+				"container-color"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"hdae",
+				"header-border-imagepath"
+			],
+			[
+				"logo",
+				"logo-imagepath"
+			],
+			[
+				"cli",
+				"click-act-imagepath"
+			],
+			[
+				"clic",
+				"click-imagepath"
+			],
+			[
+				"tag",
+				"tag-imagepath"
+			],
+			[
+				"us",
+				"us-imagepaht"
+			],
+			[
+				"head",
+				"header-border-imagepath"
+			],
+			[
+				"log",
+				"logo-imagepath"
+			],
+			[
+				"click",
+				"click-imagepath"
+			],
+			[
+				"mana",
+				"manage-imagepath"
+			],
+			[
+				"prd",
+				"prd-imagepath"
+			],
+			[
+				"ne",
+				"news-imagepath"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"sec",
+				"selected"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"cona",
+				"container-font"
+			],
+			[
+				"conatin",
+				"container-color"
+			],
+			[
+				"container",
+				"container-font"
+			],
+			[
+				"cont",
+				"container-font"
+			],
+			[
+				"img",
+				"images"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"foot",
+				"footer-font"
+			],
+			[
+				"con",
+				"container-color"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"bor",
+				"border-height"
+			],
+			[
+				"bai",
+				"background-size"
+			],
+			[
+				"n",
+				"normal-font"
+			],
+			[
+				"nav",
+				"nav-link"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"fon",
+				"font"
+			],
+			[
+				"fons",
+				"font-size"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"fa",
+				"fbfaf5"
+			],
+			[
+				"nor",
+				"no-repeat"
+			],
+			[
+				"f",
+				"fbfaf5"
+			],
+			[
+				"borr",
+				"border-right"
+			],
+			[
+				"wo",
+				"wos	word-spacing"
+			],
+			[
+				"scri",
+				"scripts"
+			],
+			[
+				"listst",
+				"list-style"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"bodb",
+				"border-bottom"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"bot",
+				"border-top"
+			],
+			[
+				"boderb",
+				"border-bottom"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"slide",
+				"slideDown	.slideDown()"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"fade",
+				"fadeOut	.fadeOut()"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"re",
+				"ready	$(document).ready"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"sha",
+				"shadow_background"
+			],
+			[
+				"getEle",
+				"getElementByClassName"
+			],
+			[
+				"slideDo",
+				"slideDoor"
+			],
+			[
+				"image",
+				"imageBox"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scss/mobile-hr-style.scss",
+			"settings":
+			{
+				"buffer_size": 7110,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scripts/index-script.js",
+			"settings":
+			{
+				"buffer_size": 36,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"git",
+			"git help"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/index.html",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scripts/jquery-1.11.0.js",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/application/index.html",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/user_guide/index.html",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/system/index.html",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/index.php",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/more.html",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/_variable.scss",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/more-style.scss",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/footprint.html",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/footprint-style.scss",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/info.html",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/steps-style.scss",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/steps.html",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/info-style.scss",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/sign.html",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/message.html",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/index-style.scss",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/message-style.scss",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/sign-style.scss",
+		"/C/Users/Administrator/Desktop/browser.js",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/css/footprint-style.css",
+		"/D/Program Files/Sublime Text3/Data/Packages/CSScomb JS/Default.sublime-keymap",
+		"/D/Program Files/Sublime Text3/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Program Files/Sublime Text3/Data/Packages/CSScomb JS/CSScomb JS.sublime-settings",
+		"/C/Users/Administrator/Desktop/LibPRD.md",
+		"/C/Users/Administrator/Documents/GitHub/lib_ecjtu_net/README.md",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/sign-style.css",
+		"/C/Users/Administrator/Desktop/ccw/message.php",
+		"/C/Users/Administrator/Desktop/ccw/css/message-style.css",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/css/sign-style.css",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scss/mobile-hr-style.scss",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/index.html",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scripts/mobile-hr-script.js",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scripts/script.js",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scripts/jquery.js",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/_reset.scss",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scss/_reset.scss",
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scss/_variable.scss",
+		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scss/_mixin.scss",
+		"/C/Users/Administrator/Desktop/mobileHr/mobile-hr.html",
+		"/C/Users/Administrator/Desktop/mobileHr/scripts/mobile-hr-script.js",
+		"/C/Users/Administrator/Desktop/mobileHr/scss/mobile-hr-style.scss",
+		"/C/Users/Administrator/Desktop/mobileHr/scripts/jquery.js",
+		"/C/Users/Administrator/Desktop/mobileHr/scripts/script.js",
+		"/C/Users/Administrator/Desktop/mobileHr/scss/_variable.scss",
+		"/C/Users/Administrator/Desktop/mobileHr/css/mobile-hr-style.css",
+		"/C/Users/Administrator/Desktop/mobileHr/scss/_promp.scss",
+		"/C/Users/Administrator/Desktop/ccw/scripts/jquery-1.11.0.js",
+		"/C/Users/Administrator/Documents/GitHub/rcss/README.md",
+		"/C/Users/Administrator/Documents/GitHub/CreatorLanslot.github.io/README.md",
+		"/C/Users/Administrator/Documents/GitHub/CreatorLanslot.github.io/main.json",
+		"/C/Users/Administrator/Desktop/陈帅瑞.md",
+		"/E/GitHub/ChuanChengWang/ccw/index.html",
+		"/C/Users/Administrator/Desktop/mobileHr/scripts/test.js",
+		"/C/Users/Administrator/Desktop/WebsiteAnalyse.md",
+		"/E/GitHub/SummerNote/Note/2014.7.17.md",
+		"/E/GitHub/ChuanChengWang/README.md",
+		"/E/GitHub/SummerNote/Note/2014.7.16.md",
+		"/E/GitHub/SummerNote/README.md",
+		"/E/GitHub/SummerNote/Note/2014.7.15.md",
+		"/E/Book/JavaScript/JavaScript8eScripts/chap09/script01.js",
+		"/E/Book/JavaScript/JavaScript8eScripts/chap09/script01.html",
+		"/E/GitHub/SummerNote/Note/2014.7.7.md",
+		"/D/Program Files/shadowsocks-gui-0.4.1-win-ia32/gui-config.json",
+		"/C/Users/Administrator/Desktop/mobileHr/css/reset.css",
+		"/C/Users/Administrator/Desktop/mobileHr/scss/mobile-edit-style.scss",
+		"/C/Users/Administrator/Desktop/mobileHr/mobile-edit.html",
+		"/C/Users/Administrator/Desktop/mobileHr/scss/mobile-intro-style.scss",
+		"/C/Users/Administrator/Desktop/mobileHr/mobile-intro.html",
+		"/E/GitHub/SummerNote/Note/2014.7.10.md",
+		"/E/GitHub/SummerNote/Note/2014.7.8.md",
+		"/E/GitHub/SummerNote/Note/2014.7.9.md",
+		"/C/Users/Administrator/Desktop/mobileHr/scss/reset.scss",
+		"/C/Users/Administrator/Desktop/Note/2014.7.7.md",
+		"/C/Users/Administrator/Desktop/Note/2014.7.8.md",
+		"/C/Users/Administrator/Desktop/Note/2013.7.9.md",
+		"/C/Users/Administrator/Desktop/Note/2014.7.10.md",
+		"/E/GitHub/m-HR/README.md",
+		"/E/GitHub/buildbook/陈帅瑞.md",
+		"/E/GitHub/mybuildbook/陈帅瑞.md",
+		"/C/Users/Administrator/Desktop/陈帅瑞.markdown",
+		"/E/Github/buildbook/summerplan.md",
+		"/E/Github/buildbook/陈帅瑞.markdown",
+		"/C/Users/Administrator/Desktop/easy/scss/style.scss",
+		"/C/Users/Administrator/Desktop/easy/easy.html",
+		"/C/Users/Administrator/Desktop/easy/css/style.css",
+		"/C/Users/Administrator/Desktop/日新UED.md",
+		"/C/Users/Administrator/Desktop/rcss/layout.html",
+		"/C/Users/Administrator/Desktop/rcss/sass/_mixin.scss",
+		"/C/Users/Administrator/Desktop/rcss/sass/style.scss",
+		"/C/Users/Administrator/Desktop/rcss/README.md",
+		"/C/Users/Administrator/Desktop/easy/scss/css",
+		"/C/Users/Administrator/Desktop/easy/css/style.scss",
+		"/D/Program Files/Sublime Text3/Data/Packages/CSScomb JS/README.md",
+		"/C/Users/Administrator/Desktop/ccw/css/index-style.css",
+		"/C/Users/Administrator/Desktop/ccw/index.html",
+		"/E/SAE/index.html",
+		"/C/Users/Administrator/Desktop/Blog/index.html",
+		"/C/Users/Administrator/Desktop/Blog/tag.html",
+		"/C/Users/Administrator/Desktop/Blog/articles/when-i-am-old.html",
+		"/C/Users/Administrator/Desktop/Student/udg.dat",
+		"/C/Users/Administrator/Desktop/Blog/resources/css/post-style.css",
+		"/C/Users/Administrator/Desktop/Blog/resources/when-i-am-old.html",
+		"/C/Users/Administrator/Desktop/Blog/friend.html",
+		"/C/Users/Administrator/Desktop/Blog/css/index-style.css",
+		"/C/Users/Administrator/Desktop/Blog/css/tag-style.css",
+		"/E/SAE/Repository/CSS/flower-of-life.html",
+		"/E/SAE/Repository/Index/css/index-style.css",
+		"/E/SAE/Repository/CSS/css/flower-of-life-style.css",
+		"/E/SAE/Repository/index.html",
+		"/C/Users/Administrator/Desktop/Bullet/bullet.html",
+		"/C/Users/Administrator/Desktop/Bullet/ppt.html",
+		"/C/Users/Administrator/Desktop/Bullet/bullet-style.css",
+		"/C/Users/Administrator/Desktop/Bullet/bullet-script.js",
+		"/C/Users/Administrator/Desktop/gui-config.json",
+		"/C/Users/Administrator/Desktop/Circle/flower-of-life.html",
+		"/C/Users/Administrator/Desktop/index.html",
+		"/C/Users/Administrator/Documents/Tencent Files/214855863/FileRecv/gui-config.json",
+		"/C/Users/Administrator/Desktop/Bullet/html5player.html",
+		"/C/Users/Administrator/shadowsocks-gui/README.md",
+		"/C/Users/Administrator/shadowsocks-gui/package.json",
+		"/C/Users/Administrator/Desktop/Blog/css/post-style.css",
+		"/C/Users/Administrator/Desktop/Blog/post.html",
+		"/C/Users/Administrator/Desktop/Blog/css/friend-style.css",
+		"/C/Users/Administrator/Desktop/Blog/css/about-style.css",
+		"/C/Users/Administrator/Desktop/Blog/about.html",
+		"/C/Users/Administrator/Desktop/Blog/scripts/index-script.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"更改头像",
+			">\n",
+			"console.log",
+			"class",
+			"children",
+			"%;",
+			"background: url($imagepath) 0 -319px no-repeat;",
+			"#fed3b2",
+			"#c63f39",
+			"#fbfaf5",
+			"#7e7e8e",
+			"nav-h1-a-font",
+			"button",
+			"');\n",
+			"})();\n",
+			";\n",
+			"25px",
+			"//----- Navigation -----\n",
+			"现在机会来啦！",
+			"$container-h2-font: normal 36px/48px Microsoft Yahei, Arial, sans-serif;",
+			"repeat",
+			"box-shadow: 0 1px 2px rgba(0,0,0,.2);",
+			"#00438a",
+			"border-bottom: 1px solid $border-gray;",
+			"border-radius: 3px;",
+			"#00438a",
+			"#0069d6",
+			"#98acdf",
+			"#ddd",
+			"#444",
+			"#999",
+			"#000",
+			"dark-gray-hover",
+			"nav-link",
+			"#444",
+			"#d71900",
+			"15px",
+			";}",
+			"share",
+			"p",
+			"=",
+			"png",
+			"#ccc",
+			" target=\"blank\"",
+			"p",
+			"section",
+			"p",
+			"{\n",
+			">\n",
+			"2a2e2f",
+			"303b91",
+			"00f2ff",
+			"303b91",
+			"c1e4f3",
+			"80d0f3",
+			"79cef3",
+			"93ccf7",
+			"1d2a91",
+			"071791",
+			"ccf",
+			"3a3c3f",
+			"88f",
+			"222",
+			";\n",
+			"120px",
+			"rgb(255,255,136)",
+			"rgba(255,255,136,1)",
+			"ffa",
+			"255,255,128",
+			"255,255,160",
+			"rgba(255,255,160,.9)",
+			"255,255,160,1",
+			"(255,255,255,1)",
+			"rgba(0,0,0,.03)",
+			"#eee",
+			"f8f8ff",
+			"fadein",
+			"fadeIn",
+			"fade",
+			"ev",
+			"\n",
+			"100px",
+			"rgba(0,0,0,.05)",
+			"rgba(0,0,0,.1)",
+			"rgba(0,0,0,.5)",
+			"rgba(196,80,78,.5)",
+			"rgba(196,80,78,.5) ",
+			"rgba(196, 80, 78, .5)",
+			"rgb(196,80,78)",
+			"160",
+			"rgba(0,0,0,.1)",
+			"rgba(0,0,0,.1),",
+			"rgba(0,0,0,.1)",
+			"ctrl+shift+c",
+			"aEle",
+			"arr",
+			"re",
+			"arr",
+			"re",
+			"height: 270px;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"className",
+			"find",
+			"$cherry",
+			"$red",
+			"$white",
+			"$gray",
+			"a-font",
+			"input[type=submit]",
+			"@include box-shadow",
+			"$dark-blue",
+			"@include border-bottom",
+			"@include border-radius",
+			"$dark-blue",
+			"$light-blue",
+			"$smooth-blue",
+			"$border-gray",
+			"$dark-gray",
+			"$font-gray",
+			"$black",
+			"black",
+			"dark-gray",
+			"$nav-link",
+			"$ruby-red",
+			"sort",
+			"h2",
+			" = ",
+			"jpg",
+			"#02a8fe",
+			"",
+			"section",
+			"p",
+			"section",
+			"fafeff",
+			"007ffe",
+			"d1f5fc",
+			"00f2ff",
+			"2dbef3",
+			"89eafa",
+			"79cef3",
+			"303b91",
+			"1d2a91",
+			"93ccf7",
+			"88f",
+			"66f",
+			"88f",
+			"#aaf",
+			"ccf",
+			"255,255,136",
+			"255,255,128",
+			"rgba(255,255,128,.9)",
+			"255,255,160,.9",
+			"(255,255,160,1)",
+			"rgba(255,255,255,1)",
+			"rgba(0,0,0,.03)",
+			"ffc",
+			"event",
+			"48px",
+			"rgba(0,0,0,.03)",
+			"rgba(0,0,0,.05)",
+			"rgba(0,0,0,.5)",
+			"rgba(196,80,78,.5)",
+			"rgba(196, 80, 78, .5)",
+			"100",
+			"rgba(0,0,0,.05)",
+			"rgba(255,255,255,.1)",
+			"#fff",
+			"element",
+			"array",
+			"resource",
+			"array",
+			"resource"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scss/mobile-hr-style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								275,
+								275
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"encoding_helper_encoding": "cp936",
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 286.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scripts/index-script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"encoding_helper_encoding": "cp936",
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 124.0
+	},
+	"project": "hr-m.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Array"
+			]
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 121.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
