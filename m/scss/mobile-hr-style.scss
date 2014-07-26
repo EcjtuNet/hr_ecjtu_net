@@ -286,7 +286,7 @@ header {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	padding-bottom: $border-height;
+	padding-bottom: $border-height - 1px;
 
 	h1 {
 		background: $rixin-red;
