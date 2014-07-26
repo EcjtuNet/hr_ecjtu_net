@@ -63,8 +63,10 @@ a:link, a:visited, a:hover, a:active {
   #container #hr {
     display: none; }
     #container #hr p {
-      width: 261px;
-      margin: 16px auto;
+      max-width: 224px;
+      min-width: 112px;
+      margin: 0 auto;
+      padding: 16px 0;
       font: normal 16px/28px Microsoft Yahei, Arial, sans-serif;
       color: #534d4d; }
     #container #hr ul li {
@@ -95,7 +97,8 @@ a:link, a:visited, a:hover, a:active {
       } */ }
       #container #hr ul li a {
         display: inline-block;
-        width: 202px;
+        max-width: 202px;
+        min-width: 101px;
         height: 45px;
         margin: 12px auto;
         padding: 0 43px 0  25px;
@@ -137,6 +140,7 @@ a:link, a:visited, a:hover, a:active {
       #container #edit #form p {
         position: relative;
         left: 0;
+        min-width: 301px;
         text-align: left;
         font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
         #container #edit #form p span {
@@ -153,7 +157,7 @@ a:link, a:visited, a:hover, a:active {
       #container #edit #form input[type=text] {
         position: relative;
         left: 28px;
-        width: 170px;
+        max-width: 170px;
         height: 30px;
         margin: 12px;
         padding: 0 12px;
@@ -190,7 +194,8 @@ a:link, a:visited, a:hover, a:active {
         white-space: nowrap;
         position: relative;
         left: 28px;
-        width: 198px;
+        max-width: 198px;
+        min-width: 198px;
         height: 34px;
         margin: 12px;
         padding: 0 12px;
@@ -216,6 +221,7 @@ a:link, a:visited, a:hover, a:active {
         text-align: center; }
         #container #edit #form h3 input[type=submit], #container #edit #form h3 a#back2index {
           width: 110px;
+          min-width: 55px;
           height: 36px;
           margin: 12px;
           font: normal 16px/28px Microsoft Yahei, Arial, sans-serif;
@@ -236,8 +242,8 @@ a:link, a:visited, a:hover, a:active {
     display: none; }
     #container #intro #banner {
       position: relative;
-      width: 360px;
-      height: 342px;
+      max-width: 360px;
+      min-height: 342px;
       margin: 36px auto;
       border: 3px dashed #534d4d;
       border-radius: 6px;

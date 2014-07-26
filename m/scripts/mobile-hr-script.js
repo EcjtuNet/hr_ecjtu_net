@@ -20,14 +20,16 @@ $(document).ready(function() {
 	edit.css('display', 'none');
 	intro.css('display', 'none');
 
-	hr.find('a').click(function() {
+	hr.find('a').click(function() { // 由hr页切换至intro页，并将第一个p中的内容展示;
 		hr.css('display', 'none');
 		intro.css('display', 'block');
 		var id = $(this).attr("id");
 		var elem = "." + id + ":eq(0)";
 		$(elem).css('display', 'block');
 	});
-	function tab () {
+
+
+	function tab () { // 查找是否存在display属性值不为none的p标签，并返回其class值;
 		var p = $('#intro p');
 		var className =  null;
 		for (var i = 0; i < p.length; ++i) {
@@ -39,7 +41,7 @@ $(document).ready(function() {
 	};
 
 	var count = 0;
-	next.click(function() {
+	next.click(function() { // 点击button触发翻页或返回;
 		count ++;
 		var className = tab();
 		console.log(count);
@@ -60,7 +62,7 @@ $(document).ready(function() {
 
 
 
-
+	// 返回首页
 	logo.click(function() {
 		hr.css('display', 'block');
 		edit.css('display', 'none');
