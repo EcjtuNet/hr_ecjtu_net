@@ -136,7 +136,7 @@
 				border: none;
 				/* background: url($imagepath) 0 -319px no-repeat; */
 			}
-			input[type=text] {
+			input[type=text], input[type=number], input[type=tel] {
 				position: relative;
 				left: 28px;
 				max-width: 170px;

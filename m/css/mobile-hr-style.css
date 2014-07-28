@@ -155,7 +155,7 @@ a:link, a:visited, a:hover, a:active {
       #container #edit #form input[type=radio], #container #edit #form select {
         border: none;
         /* background: url($imagepath) 0 -319px no-repeat; */ }
-      #container #edit #form input[type=text] {
+      #container #edit #form input[type=text], #container #edit #form input[type=number], #container #edit #form input[type=tel] {
         position: relative;
         left: 28px;
         max-width: 170px;

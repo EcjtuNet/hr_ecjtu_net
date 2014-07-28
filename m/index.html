@@ -50,13 +50,13 @@
 			<h2>报名表</h2>
 			<div id="form">
 				<form action="http://hr.ecjtu.net/index.php/register/check" method="post" accept-charset="UTF-8">
-					<p><span>姓名-</span><input type="text"></p>
-					<p><span>性别-</span><input type="radio" name="sex" value="male" /> 男
-					<input type="radio" name="sex" value="female" /> 女</p>
-					<p><span>手机-</span><input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="11"/></p>
-					<p><span>QQ&nbsp;-&nbsp;</span><input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')" /></p>
+					<p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
+					<p><span>性别-</span><input type="radio" name="user_sex" class="radio" value="male" /> 男
+					<input type="radio" name="user_sex" class="radio" value="female" /> 女</p>
+					<p><span>手机-</span><input type="tel" name="user_phone" maxlength="11" /></p>
+					<p><span>QQ&nbsp;-&nbsp;</span><input type="number" name="user_qq" /></p>
 					<p class="select"><span>学院-</span>
-						<select name="campus" id="campus">
+						<select name="user_college" class="text_input">
 							<option value="" selected="selected">土木建筑学院</option>
 							<option value="">电气与电子工程学院</option>
 							<option value="">机电工程学院</option>
@@ -74,7 +74,7 @@
 						</select>
 					</p>
 					<p class="select"><span>专业-</span>
-						<select name="major" id="major">
+						<select name="major" class="text_input">
 							<option value=""></option>
 							<option value=""></option>
 							<option value=""></option>
@@ -82,15 +82,15 @@
 						</select>
 					</p>
 					<p class="select"><span class="select">选择中心-</span>
-						<select name="center" id="center">
+						<select name="user_center" id="selCentre">
 							<option value="tech" selected="selected">技术研发中心</option>
 							<option value="news">新闻出版中心</option>
 							<option value="prd">产品运营中心</option>
 							<option value="manage">行政管理中心</option>
 						</select>
 					</p>
-					<p class="select"><span class="select">部门方向-</span>
-						<select name="direction" id="direction">
+					<p class="select"><span id="selApart">部门方向-</span>
+						<select name="user_department" id="direction">
 							<option value=""></option>
 							<option value=""></option>
 							<option value=""></option>
@@ -98,7 +98,7 @@
 						</select>
 					</p>
 					<p><span id="personal">个人简介-</span>
-						<textarea name="" id="" cols="30" rows="10"></textarea>
+						<textarea name="user_remarks" cols="30" rows="10"></textarea>
 					</p>
 					<h3>
 						<input type="submit" onclick="this.form.submit();" value="提交"></input>
@@ -193,5 +193,6 @@
 	</nav>
 	<script type="text/javascript" src="./scripts/jquery.js"></script>
 	<script type="text/javascript" src="./scripts/mobile-hr-script.js"></script>
+	<script type="text/javascript" src="./scripts/liandong.js"></script>
 </body>
 </html>
