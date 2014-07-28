@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"sel",
+				"selCentre"
+			],
+			[
 				"le",
 				"letter-spacing"
 			],
@@ -379,7 +383,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 5848,
+				"buffer_size": 5917,
 				"line_ending": "Windows"
 			}
 		},
@@ -387,7 +391,26 @@
 			"file": "scss/mobile-hr-style.scss",
 			"settings":
 			{
-				"buffer_size": 7231,
+				"buffer_size": 7270,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scripts/mobile-hr-script.js",
+			"settings":
+			{
+				"buffer_size": 1906,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "$(document).ready(function() {\n	var apartmentList = new Array();\n		apartmentList['新闻出版中心'] = ['记者团'];\n		apartmentList['技术研发中心'] = ['网站建设部','体验设计部','安全运维部'];\n		apartmentList['行政管理中心'] = ['办公室','财务部','企划部','人力资源部','市场部'];\n		apartmentList['产品运营中心'] = ['《交大青年》杂志社', '日新手机客户端', '日新微博', 'WEB应用产品项目部', '日新微信'];\n		function setCentre(){\n			var sc = document.getElementById(\"selCentre\");\n			for(var i in apartmentList){\n				sc.add(new Option(i,i));\n			}\n		}\n		function setApart(centre){\n			//var centre=document.getElementById(\"selCentre\").value;\n			var apart = document.getElementById(\"selApart\");\n			apart.options.length = 0;\n			for(var i in apartmentList){\n				if(i == centre){\n					for(var j in apartmentList[i]){\n						apart.add(new Option(apartmentList[i][j], apartmentList[i][j]));\n					}\n				}\n			}\n		}\n		addEventListener('load',setCentre());\n});\n",
+			"file": "scripts/form.js",
+			"file_size": 1053,
+			"file_write_time": 130510306676568870,
+			"settings":
+			{
+				"buffer_size": 845,
 				"line_ending": "Windows"
 			}
 		}
@@ -430,6 +453,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scripts/liandong.js",
 		"/C/Users/Administrator/Documents/GitHub/hr_ecjtu_net/m/scripts/mobile-hr-script.js",
 		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/scripts/index-script.js",
 		"/C/Users/Administrator/Documents/GitHub/ChuanChengWang/ccw/index.html",
@@ -556,8 +580,7 @@
 		"/C/Users/Administrator/Desktop/Blog/css/post-style.css",
 		"/C/Users/Administrator/Desktop/Blog/post.html",
 		"/C/Users/Administrator/Desktop/Blog/css/friend-style.css",
-		"/C/Users/Administrator/Desktop/Blog/css/about-style.css",
-		"/C/Users/Administrator/Desktop/Blog/about.html"
+		"/C/Users/Administrator/Desktop/Blog/css/about-style.css"
 	],
 	"find":
 	{
@@ -575,6 +598,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			">\n",
 			"更改头像",
 			">\n",
 			"console.log",
@@ -763,7 +787,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -772,15 +796,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5848,
+						"buffer_size": 5917,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								311,
-								311
+								2632,
+								2632
 							]
 						],
 						"settings":
@@ -788,50 +812,50 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
-								"bh_regex_close"
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
 							"encoding_helper_encoding": "UTF-8",
 							"origin_encoding": "UTF-8",
@@ -839,7 +863,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1650.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -850,15 +874,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7231,
+						"buffer_size": 7270,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								207,
-								207
+								5015,
+								5015
 							]
 						],
 						"settings":
@@ -866,58 +890,213 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
-								"bh_regex_close"
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
 							],
-							"encoding_helper_encoding": "cp936",
+							"encoding_helper_encoding": "UTF-8",
 							"origin_encoding": "ASCII",
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+						"translation.y": 4356.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scripts/mobile-hr-script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1906,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1892,
+								1892
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"encoding_helper_encoding": "UTF-8",
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scripts/form.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								474,
+								474
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"encoding_helper_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -927,7 +1106,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 60.0
 	},
 	"input":
 	{
@@ -976,11 +1155,15 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\Users\\Administrator\\Documents\\GitHub\\U30_ecjtu_net\\U30.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
