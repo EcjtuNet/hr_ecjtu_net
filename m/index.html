@@ -51,7 +51,7 @@
 			<div id="form">
 				<form action="http://hr.ecjtu.net/index.php/register/check" method="post" accept-charset="UTF-8">
 					<p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
-					<p><span>性别-</span><input type="radio" name="user_sex" class="radio" value="male" /> 男
+					<p><span>性别-</span><input type="radio" name="user_sex" class="radio" value="male" checked/> 男
 					<input type="radio" name="user_sex" class="radio" value="female" /> 女</p>
 					<p><span>手机-</span><input type="tel" name="user_phone" maxlength="11" /></p>
 					<p><span>QQ&nbsp;-&nbsp;</span><input type="number" name="user_qq" /></p>
@@ -78,7 +78,7 @@
 						<input type="text" name="user_major" class="text_input">
 					</p>
 					<p class="select"><span class="select">选择中心-</span>
-						<select id="selCentre" name="user_center" onchange="setApart(this.value)">
+						<select id="selCentre" name="user_center">
 							<option value=""></option>
 						</select>
 					</p>

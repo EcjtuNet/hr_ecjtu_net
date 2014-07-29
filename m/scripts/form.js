@@ -7,20 +7,26 @@ $(document).ready(function() {
 		function setCentre(){
 			var sc = document.getElementById("selCentre");
 			for(var i in apartmentList){
+				console.log(apartmentList);
 				sc.add(new Option(i,i));
 			}
 		}
 		function setApart(centre){
-			//var centre=document.getElementById("selCentre").value;
 			var apart = document.getElementById("selApart");
-			//apart.options.length = 0;
+			apart.options.length = 0;
+			console.log(apart.options.length);
 			for(var i in apartmentList){
 				if(i == centre){
 					for(var j in apartmentList[i]){
+						console.log(apartmentList[i]);
 						apart.add(new Option(apartmentList[i][j], apartmentList[i][j]));
 					}
 				}
 			}
 		}
+		$("#selCentre").bind('change', function() {
+			var centre=document.getElementById("selCentre").value;
+			setApart(centre);
+		});
 		addEventListener('load',setCentre());
 });

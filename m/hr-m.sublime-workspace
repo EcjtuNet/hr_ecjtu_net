@@ -787,7 +787,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -803,8 +803,8 @@
 						"selection":
 						[
 							[
-								2632,
-								2632
+								5483,
+								5483
 							]
 						],
 						"settings":
@@ -863,7 +863,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1650.0,
+						"translation.y": 3916.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1092,6 +1092,7 @@
 								"bh_tag_close"
 							],
 							"encoding_helper_encoding": "UTF-8",
+							"origin_encoding": "UTF-8",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
