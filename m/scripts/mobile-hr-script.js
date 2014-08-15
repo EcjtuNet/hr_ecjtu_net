@@ -84,9 +84,6 @@ $(document).ready(function() {
 		intro.css('display', 'none');
 	});
 
-	$("#submit").click(function() {
-		$(this).form.submit();
-	});
 });
 
 

@@ -49,7 +49,7 @@
 		<div id="edit">
 			<h2>报名表</h2>
 			<div id="form">
-				<form action="http://hr.ecjtu.net/index.php/register/check" method="post" accept-charset="UTF-8">
+				<form method="post" accept-charset="UTF-8">
 					<p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
 					<p><span>性别-</span><input type="radio" name="user_sex" class="radio" value="male" checked/> 男
 					<input type="radio" name="user_sex" class="radio" value="female" /> 女</p>
@@ -84,14 +84,13 @@
 					</p>
 					<p class="select"><span class="select">部门方向-</span>
 						<select id="selApart" name="user_department">
-							<option value=""></option>
 						</select>
 					</p>
 					<p><span id="personal">个人简介-</span>
 						<textarea name="user_remarks" cols="30" rows="10"></textarea>
 					</p>
 					<h3>
-						<input type="submit" onclick="this.form.submit();" value="提交"></input>
+						<input type="submit" value="提交"></input>
 						<a id="back2index" href="javascript:;">返回首页</a>
 					</h3>
 				</form>
@@ -183,6 +182,7 @@
 	</nav>
 	<script type="text/javascript" src="./scripts/jquery.js"></script>
 	<script type="text/javascript" src="./scripts/mobile-hr-script.js"></script>
+	<script type="text/javascript" src="./scripts/linkage.js"></script>
 	<script type="text/javascript" src="./scripts/form.js"></script>
 </body>
 </html>
