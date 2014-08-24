@@ -23,13 +23,13 @@
                     </span>
                 </div>
             	<div id="link_block">
-                    <div id="news" class="b_link"><a href="/index.php/hr/intro_newcomer#0"><img src="images/index_image/news.gif"  style='display:block;width:108px;height:108px;margin:auto;margin-top:8px;position:relative;' onmouseDown='startMove(event)' onmouseUp='stopMove(event)'onmouseOver='moveTop(event)' onmouseOut='moveBot(event)'/></a></div>
+                    <div id="news" class="b_link"><a href="/index.php/hr/intro_newcomer#0"><img src="/images/index_image/news.gif"  style='display:block;width:108px;height:108px;margin:auto;margin-top:8px;position:relative;' onmouseDown='startMove(event)' onmouseUp='stopMove(event)'onmouseOver='moveTop(event)' onmouseOut='moveBot(event)'/></a></div>
 
-                    <div id="tech" class="b_link"><a href="/index.php/hr/intro_newcomer#1"><img src="images/index_image/tech.gif"   style='display:block;width:108px;height:108px;margin:auto;margin-top:8px;position:relative;' onmouseDown='startMove(event)' onmouseUp='stopMove(event)'onmouseOver='moveTop(event)' onmouseOut='moveBot(event)'/></a></div>
+                    <div id="tech" class="b_link"><a href="/index.php/hr/intro_newcomer#1"><img src="/images/index_image/tech.gif"   style='display:block;width:108px;height:108px;margin:auto;margin-top:8px;position:relative;' onmouseDown='startMove(event)' onmouseUp='stopMove(event)'onmouseOver='moveTop(event)' onmouseOut='moveBot(event)'/></a></div>
 
-                	<div id="manag" class="b_link" style="margin-left:86px;"><a href="/index.php/hr/intro_newcomer#2"><img src="images/index_image/manag.gif"   style='display:block;width:108px;height:108px;margin:auto;margin-top:8px;position:relative;' onmouseDown='startMove(event)' onmouseUp='stopMove(event)'onmouseOver='moveTop(event)' onmouseOut='moveBot(event)'/></a></div>
+                	<div id="manag" class="b_link" style="margin-left:86px;"><a href="/index.php/hr/intro_newcomer#2"><img src="/images/index_image/manag.gif"   style='display:block;width:108px;height:108px;margin:auto;margin-top:8px;position:relative;' onmouseDown='startMove(event)' onmouseUp='stopMove(event)'onmouseOver='moveTop(event)' onmouseOut='moveBot(event)'/></a></div>
 
-                    <div id="market" class="b_link"><a href="/index.php/hr/intro_newcomer#3"><img src="images/index_image/market.gif" style='display:block;width:108px;height:108px;margin:auto;margin-top:8px;position:relative;' onmouseDown='startMove(event)' onmouseUp='stopMove(event)'onmouseOver='moveTop(event)' onmouseOut='moveBot(event)'/></a></div>
+                    <div id="market" class="b_link"><a href="/index.php/hr/intro_newcomer#3"><img src="/images/index_image/market.gif" style='display:block;width:108px;height:108px;margin:auto;margin-top:8px;position:relative;' onmouseDown='startMove(event)' onmouseUp='stopMove(event)'onmouseOver='moveTop(event)' onmouseOut='moveBot(event)'/></a></div>
                 </div>
             </div>
             <div id="content_tail">
