@@ -44,17 +44,18 @@ $(document).ready(function() {
 	next.click(function() { // 点击button触发翻页或返回;
 		count ++;
 		var className = tab();
-		console.log(count);
-		if (count !==0 && count%2 === 0) {
+		// console.log(count);
+		if (count !== 0 && count%2 == 0) {
 			hr.css('display', 'block');
 			intro.css('display', 'none');
 			intro.find('p').css('display', 'none');
 			count = 0;
 		} else {
 			var elem = '.'+ className;
-			console.log(elem)
+			var r = $(this).parent().find(elem).next();
+			console.log(r);
 			$(this).parent().find(elem).css('display', 'none')
-				.next().css('display', 'block');
+							.next().eq(0).css('display', 'block');
 		}
 	});
 
