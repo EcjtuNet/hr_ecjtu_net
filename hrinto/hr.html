@@ -1,28 +1,46 @@
-<!DOCTYPE html PUBLIC "-//W3C//DHD HTML 4.01 Transitional//zn-CN" "http://www.w3.org/TR/html4/loose.dtd" >
-<html lang="zh-cn">
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//zn_CH" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN">
 <head>
- <link rel="stylesheet" type="text/css" href="hr.css" />
- <meta http-equiv="Content-Type" Content="text/html;charset=utf-8">
-    <title>日新招新啦</title>
+  <title>日新招新啦</title>
+  <link rel="stylesheet" type="text/css" href="hr.css" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="Page-Exit" Content="RevalTrans(duration=5,Transitionv=5)" />
+  <mate name="viewport" content="width=device-width,initial-scale=1" />
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script>
   $(document).ready(function(){
-    $("#font").fadeIn(1000, function() {
-        $("#logo").fadeIn(2000);
-    
+    $("#logo").ready(function() {
+      $("#logo").fadeIn(3000);
+      $("#font").fadeIn(3000);
     });
-});
+  });
+  function click_a()
+  {
+    document.getElementById('center').style.display="block";
+    $('html, body, .content').animate({scrollTop: 0}, 11);
+    $('html, body, .content').animate({scrollTop: $(document).height()}, 1500);
+    return false;
+  }
   </script>
 </head>
 <body>
-<div id="body">
-  <h1 id="font">日新招新啦</h1>
-  <div id="logo"></div>
-  <a href="hr2.html">
-  <span id="dot"></span>
-  <span id="dropdown"></span>
-  </a>  
-</div>
+  <div id="body">
+    <h1 id="font">日新招新啦</h1>
+    <div id="logo"></div>
+      <a onclick="return click_a()" style="cursor:pointer;" id="hr2">
+        <span id="dot"></span>
+        <span id="dropdown"></span>
+      </a>  
+  </div>
+
+  <div id="center">
+    <div id="content" >
+      <div><a href="http://hr.ecjtu.net/index.php/hr/intro_news" id="news"><img src="pic/sencond/newspic2_03.png" id="newspic"/></a></div>
+      <div><a href="http://hr.ecjtu.net/index.php/hr/intro_tech" id="tectnology"><img src="pic/sencond/tectpic2_03.png" id="tectnologypic"/></a></div>
+      <div><a href="http://hr.ecjtu.net/index.php/hr/intro_manager" id="ADM"><img src="pic/sencond/ADMpic2_03.png" id="ADMpic"/></a></div>
+      <div><a href="http://hr.ecjtu.net/index.php/hr/intro_product" id="product"><img src="pic/sencond/productpic2_03.png" id="productpic"/></a></div>
+    </div>
+    <p id="secret">更多秘密，进<a href="http://www.ecjtu.net/about/">关于我们</a>吧，也可以去<a href="http://www.ecjtu.net">主页</a>逛逛</p>
+  </div>
 </body>
 </html>

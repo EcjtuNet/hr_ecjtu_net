@@ -12,9 +12,10 @@ bottom:auto;
 }
 
 #body{
-     width:1366px; 
+     width:auto; 
      height:720px;
-     background-image:url(pic/background.jpg);      
+     background-image:url(pic/background.jpg); 
+
 }     
 #logo{
 	width:113px;
@@ -47,4 +48,111 @@ bottom:auto;
 	background-image:url(pic/first/dropdown.png);
 	margin:551px 0 0 624px;
 	position:absolute;
+}
+#center{
+     width:auto; 
+     height:720px;
+     background-image:url(pic/background.jpg); 
+     display:none;
+}     
+#content{
+	width:948px;
+	height:525px;
+	margin:30px 0 0 210px;
+    float:left;
+	background-image:url(pic/sencond/backbg.png);
+}
+#news{
+	position:relative;
+	width:198px;
+	height:198px;
+	background-color:#de5529;
+	transform:rotate(45deg);
+	margin:233px 0 0 94px;
+	float:left;
+	* -ms-transform:rotate(45deg);
+}
+#newspic{
+	width:134px;
+	height:86px;
+	background-image:url(pic/newspic.png);
+	margin:50px 0 0 30px;
+	transform:rotate(-45deg);
+	* -ms-transform:rotate(-45deg);
+}
+
+#tectnology{
+	width:198px;
+	height:198px;
+	background-color:#40b96c;
+	transform:rotate(45deg);
+	* -ms-transform:rotate(45deg);
+	margin:91px 0 0 -56px;
+	float:left;
+
+}
+#tectnologypic{
+	width:134px;
+	height:85px;
+	background-image:url(pic/tectpic.gif);
+	transform:rotate(-45deg);
+	* -ms-transform:rotate(-45deg);
+	margin:50px 0 0 30px;
+}
+#ADM{
+	width:198px;
+	height:198px;
+	background-color:#396eb0;
+	transform:rotate(45deg);
+	* -ms-transform:rotate(45deg);
+	float:left;
+	margin:-339px 0 0 519px;
+}
+#ADMpic{
+	width:135px;
+	height:84px;
+	background-image:url(pic/ADMpic.gif);
+	transform:rotate(-45deg);
+	* -ms-transform:rotate(-45deg);
+	margin:50px 0 0 30px;
+}
+#product{
+	width:198px;
+	height:198px;
+	background-color:#7c479f;
+	transform:rotate(45deg);
+	* -ms-transform:rotate(45deg);
+	margin:-197px 0 0 660px ;
+	float:left;
+}
+#productpic{
+	width:132px;
+	height:81px;
+	background-image:url(pic/productpic.gif);
+	transform:rotate(-45deg);
+	* -ms-transform:rotate(-45deg);
+	margin:50px 0 0 30px;
+}
+
+#content a:hover{
+		 opacity:0.7;/*for firefox、IE9/10*/
+		 *filter:alpha(opacity=50); /* for IE6~8 */  
+}
+#content a:focus {outline:none; *blr:expression(this.onFocus=this.blur());/*for IE*/
+}
+
+#secret{   
+	font-size:16px;
+	font-family:黑体;
+	text-align:center;
+    color:#ebefed;
+    margin:67px 0 0 510px;
+    float:left;
+}
+#secret a{
+	color:#40b96c;
+    text-decoration:none;
+}
+#secret a:focus{
+	outline:none; *blr:expression(this.onFocus=this.blur());/*for IE*/
 }
