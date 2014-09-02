@@ -61,11 +61,15 @@ class Register extends CI_Controller{
 		if($this->_check()==FALSE){
 			$this->load->view('register');
 		}
-		else{
-			if($this->insert_info()==true){
+		else
+		{
+			if($this->insert_info()==true)
+			{
 				echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>恭喜您,报名提交成功！</b></span>";
 				//echo '恭喜你，注册成功~！';
-			}else{
+			}
+			else
+			{
 				echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>对不起，您已经申请过该部门~！</b></span>";
 			}
 		}
@@ -83,7 +87,7 @@ class Register extends CI_Controller{
 		}
 		else
 		{
-			echo json_encode(array('status'=>'error','error_code'=>'2','msg'=>'Have already registered.'))
+			echo json_encode(array('status'=>'error','error_code'=>'2','msg'=>'Have already registered.'));
 		}
 	}
 	/** 用户信息写入数据库 **/
