@@ -10,7 +10,7 @@ $(document).ready(function() {
 				location.reload();
 			} else {
 				var errorCode = data["error_code"];
-				if (error === "1") {
+				if (errorCode === "1") {
 					alert("你的资料填写错啦，好好检查检查唷");
 				} else {
 					alert("你已经提交过了喔");
