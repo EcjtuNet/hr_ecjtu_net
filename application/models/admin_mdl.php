@@ -71,8 +71,18 @@ class Admin_mdl extends CI_Model
 	}
 	public function get_rows()
 	{		
-		$rows = $this->db->count_all('user_info')->where('term','2014.1');
-		return $rows;
+		$this->db->select('user_info.user_name,user_info.user_sex,hr_info.hr_center,hr_info.hr_department,user_info.user_college,user_info.user_major,user_info.user_phone,user_info.user_qq,user_info.user_remarks');
+		$this->db->from('hr_user');
+		$this->db->join('user_info','user_info.user_id = hr_user.user_id');
+		$this->db->join('hr_info','hr_info.hr_id = hr_user.hr_id');
+		$this->db->where('term','2014.1');
+		$query=$this->db->get();
+		$result = $query->num_rows();
+		if($query)
+		{
+			return $result;
+		}
+		else return false;
 	}
 	public function get_some_rows($department)
 	{
