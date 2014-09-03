@@ -13,6 +13,7 @@ $this->db->select('user_info.user_id,user_info.user_name,user_info.user_sex,hr_i
 		$this->db->from('hr_user');
 		$this->db->join('hr_info','hr_info.hr_id = hr_user.hr_id');
 		$this->db->join('user_info','user_info.user_id = hr_user.user_id');
+		$this->db->where('term','2014.1');
 		$query=$this->db->get();
 //$query = mb_convert_encoding("gb2312", "UTF-8", $query);
 if(!$query)
