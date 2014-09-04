@@ -12,7 +12,7 @@ bottom:auto;
 }
 
 #body{
-     width:1366px; 
+     width:auto; 
      height:720px;
      background-image:url(pic/background.jpg);      
 }     
