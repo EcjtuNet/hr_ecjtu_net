@@ -16,7 +16,7 @@ bottom:auto;
 
 }
 body{
-	width:1366px;
+	width:auto;
 	height:720px;
     background-image:url(pic/background.jpg);
 }
@@ -156,7 +156,7 @@ body{
 	font-family:黑体;
 	text-align:center;
     color:#ebefed;
-    margin:27px 0 0 510px;
+    margin:127px 0 0 510px;
     float:left;
   
 }
