@@ -252,7 +252,7 @@
     3、爱分享<br />
     4、善学习
                     </p>
-                </div><br />
+                </div>
                 <div class="bottom_border" style="width:100%; height:27px; border-bottom:dashed 1px #7e7e7e;"></div>
                 <br />
                 <!--日新微博--><!--
@@ -312,7 +312,7 @@
     6、善于全面思考，注重细节；<br />
     7、有网建、体验、运维基础者优先。
                     </p>
-                </div><br />
+                </div>
                 <div class="bottom_border" style="width:100%; height:27px; border-bottom:dashed 1px #7e7e7e;"></div>
                 <br />
                 <!--日新视频部-->
@@ -330,7 +330,7 @@
     3.热爱和关注生活，能从生活中提取素材，勇于创新；<br />
     4.有一定的文学功底，和交流沟通能力以及组织能力。
                     </p>
-                </div><br />
+                </div>
                 <div class="bottom_border" style="width:100%; height:27px; border-bottom:dashed 1px #7e7e7e;"></div>
                 <br />
                 <!--维权小组--><!-- 
