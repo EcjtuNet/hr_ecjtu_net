@@ -60,7 +60,7 @@
                 </div>
                 <div class="bottom_border" style="width:100%; height:27px; border-bottom:dashed 1px #7e7e7e;"></div>
                 <br />
-                <!--财政部-->
+                <!--财政部--><!--
                  <p class="title_b">财务部</p>
                 <p class="daoyu">
                 　　财务部是行政管理中心所属部门之一。主要负责日新网的固定资产和资金收支的管理，负责整理各项费用并进
@@ -83,7 +83,7 @@
                     </p>
                 </div>
                 <div class="bottom_border" style="width:100%; height:27px; border-bottom:dashed 1px #7e7e7e;"></div>
-                <br />
+                <br />-->
                 <!--企划部-->
                 <p class="title_b">驻外办</p>
                 <p class="daoyu">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="bottom_border" style="width:100%; height:27px; border-bottom:dashed 1px #7e7e7e;"></div>
                 <br />
-                <!--人力资源部-->
+                <!--人力资源部--><!--
                 <p class="title_b">人力资源部</p>
                 <p class="daoyu">
                 　　人力资源部隶属行政管理中心，主要责任有：在各部门的协助下提出岗位设置调整意见；明确部门、岗位职责
@@ -139,7 +139,7 @@
                     </p>
                 </div>
                 <div class="bottom_border" style="width:100%; height:27px; border-bottom:dashed 1px #7e7e7e;"></div>
-                <br />
+                <br />-->
                 <!--市场部-->
                 <p class="title_b">市场部</p>
                 <p class="daoyu">
