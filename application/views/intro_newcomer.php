@@ -68,7 +68,7 @@
 <p class="newC_con">1、2014级在校学生，有充分的课余时间；<br />
 2、对各类计算机、网络技术、网络产品有强烈的兴趣者，有兴趣学习与研究网页前端开发、PHP、Linux、web视觉设计、交互设计、FLASH开发、硬件组建、网络安全等其中之一；<br />
 3、有足够的热情和责任心，有一定的抗压能力与学习能力；<br />
-4、能虚心学习，认真对待所选方向。
+4、能和团队其他成员良好交流，熟悉Github、Teambition等工具优先<br />
  </p><br />
                  <p class="newC_link"><a class="wbox" href="#info">立即报名</a>　|　<a target="_blank" href="intro_tech#1">查看技术中心各部门技术员职责与职位要求</a></p>   
                 <div class="bottom_border" style="width:100%; height:27px; border-bottom:dashed 1px #7e7e7e;"></div>
