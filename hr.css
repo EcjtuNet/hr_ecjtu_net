@@ -12,10 +12,23 @@ bottom:auto;
 }
 
 #body{
-     width:1366px; 
-     height:720px;
-     background-image:url(pic/background.jpg);      
-}     
+     width:100%; 
+         
+}  
+
+#first,#second{
+	width:100%; 
+    height:700px;
+    background-image:url(pic/background.jpg); 
+}
+#first a{
+	display: block;
+	width:200px;
+	height: 200px;
+	margin:498px 0 0 570px;
+	text-align: center;
+	position: absolute;
+}   
 #logo{
 	width:113px;
 	height:79px;
@@ -38,13 +51,159 @@ bottom:auto;
 	width:10px;
 	height:55px;
 	background-image:url(pic/first/dot.png);
-	margin:498px 0 0 669px;
+	margin-top:10px;
 	position:absolute;
 }
 #dropdown{
 	width:98px;
 	height:51px;
 	background-image:url(pic/first/dropdown.png);
-	margin:551px 0 0 624px;
+	margin: 70px 0 0 -43px;
 	position:absolute;
+}
+
+
+/**hr2**/
+#content{
+	width:948px;
+	height:525px;
+	margin:30px 0 0 210px;
+    float:left;
+	background-image:url(pic/sencond/backbg.png);
+	display:block;
+}
+#news{
+	width:198px;
+	height:198px;
+	background-color:#de5529;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /*IE9*/
+	 moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */ 
+	margin:233px 0 0 94px;
+    position:absolute;
+	* -ms-transform:rotate(45deg);
+	
+}
+#newspic{
+	width:128px;
+	height:82px;
+	margin:50px 0 0 30px;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /*IE9*/
+	 moz-transform:rotate(-45deg); 	/* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-45deg); 	/* Opera */ 
+    padding:0; 
+
+}
+
+#news_h a:hover{
+	margin:249px 0 0 109px;
+}
+
+#tectnology{
+	width:198px;
+	height:198px;
+	background-color:#40b96c;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /*IE9*/
+	 moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */ 
+	margin:91px 0 0 235px;
+	position:absolute;
+
+}
+#tectnologypic{
+	width:129px;
+	height:83px;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /*IE9*/
+	 moz-transform:rotate(-45deg); 	/* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-45deg); 	/* Opera */ 
+	margin:50px 0 0 30px;
+    
+}
+#tect_h a:hover{
+	margin:106px 0 0 250px;
+}
+#ADM{
+	width:198px;
+	height:198px;
+	background-color:#396eb0;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /*IE9*/
+	 moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */ 
+	position:absolute;
+	margin:91px 0 0 519px;
+}
+#ADMpic{
+	width:132px;
+	height:89px;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /*IE9*/
+	 moz-transform:rotate(-45deg); 	/* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-45deg); 	/* Opera */ 
+	margin:50px 0 0 30px;
+}
+#ADM_h a:hover{
+	margin:106px 0 0 534px;
+}
+#product{
+	width:198px;
+	height:198px;
+	background-color:#7c479f;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /*IE9*/
+	 moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */ 
+	margin:233px 0 0 660px ;
+	position:absolute;
+}
+#productpic{
+	width:129px;
+	height:81px;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /*IE9*/
+	 moz-transform:rotate(-45deg); 	/* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-45deg); 	/* Opera */ 
+	margin:50px 0 0 30px;
+	border:none;
+}
+#product_h a:hover{
+	margin:248px 0 0 675px;;
+}
+#content  a {
+
+	-webkit-transition:all .2s ease-in; 
+	 -moz-transition:all .2s ease-in;
+	  -o-transition:all .2s ease-in;
+	   -ms-transition:all .2s ease-in;
+	    transition:all .2s ease-in;
+	} /*背景缩小速度*/
+#content a:hover{
+		width:170px;
+	    height:170px;
+       
+	}/*鼠标悬停背景缩小后大小*/
+#secret{   
+	font-size:16px;
+	font-family:黑体;
+	text-align:center;
+    color:#ebefed;
+    margin:27px 0 0 510px;
+    float:left;
+  
+}
+#secret a{
+	color:#40b96c;
+    text-decoration:none;
 }
