@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/* HR
+ * @author            GeeKavalon
+ * @version           0.0.1
+ * @last-time         2015.6.6
+ */
+
+
+/* 文件载入
+ ----------------------------------------------------------*/
+ @import  "./style/data";                    /* 变量文件  */
+ @import  "./style/font";					 /* Web 字体  */
+ @import  "./style/mixin";                   /* 混入文件  */
+ @import  "./style/animation";				 /* CSS3动画  */
+ @import  "./reset";                  		 /* CSS Reset */
+ @import  "./csshake";                 		 /* css hake  */
+
+
+/* 页面
+ ---------------------------------------------------------- */
+
+body {
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	font: 17px/1.5 'Microsoft JhengHei Light','Microsoft JhengHei','Microsoft YaHei Light','Microsoft YaHei',sans-serif;
+}
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../pic/background.jpg) no-repeat;
+	z-index: -999;
+}
+
+.ch {
+	width: 100vw;
+	height: 100vh;
+	// overflow: hidden;
+}
+
+.head {
+	position: relative;
+}
+
+.head .logo {
+	padding-top: 124px;
+	width: 100%;
+	height: 79px;
+	background: url(../pic/first/logo.png) bottom center no-repeat;
+}
+
+.head .hr {
+	margin-top: 39px;
+	width: 100%;
+	height: 87px;
+	background: url(../pic/first/font.png) top center no-repeat;
+	text-indent: -999px;
+}
+
+.head .arrow {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	display: inline-block;
+	width: 98px;
+	height: 51px;
+	margin-left: -49px;
+	background: url(../pic/first/dropdown.png) top center no-repeat;
+	@include animation(arrowDown, 1.2s, ease-in-out, infinite, alternate);
+	&:after {
+		content: "";
+		position: absolute;
+		top: -44px;
+		left: 44px;
+		width: 10px;
+		height: 55px;
+		background: url(../pic/first/dot.png) top center no-repeat;
+	}
+}
+
+#content{
+	width:948px;
+	height:525px;
+	margin: 0 auto;
+	background:url(../pic/sencond/backbg.png) no-repeat;
+	display:block;
+}
+#news{
+	width:198px;
+	height:198px;
+	background-color:#de5529;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /*IE9*/
+	 moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */ 
+	margin:233px 0 0 94px;
+    position:absolute;
+	* -ms-transform:rotate(45deg);
+	
+}
+#newspic{
+	width:128px;
+	height:82px;
+	margin:50px 0 0 30px;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /*IE9*/
+	 moz-transform:rotate(-45deg); 	/* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-45deg); 	/* Opera */ 
+    padding:0; 
+
+}
+
+#news_h a:hover{
+	margin:249px 0 0 109px;
+}
+
+#tectnology{
+	width:198px;
+	height:198px;
+	background-color:#40b96c;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /*IE9*/
+	 moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */ 
+	margin:91px 0 0 235px;
+	position:absolute;
+
+}
+#tectnologypic{
+	width:129px;
+	height:83px;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /*IE9*/
+	 moz-transform:rotate(-45deg); 	/* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-45deg); 	/* Opera */ 
+	margin:50px 0 0 30px;
+    
+}
+#tect_h a:hover{
+	margin:106px 0 0 250px;
+}
+#ADM{
+	width:198px;
+	height:198px;
+	background-color:#396eb0;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /*IE9*/
+	 moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */ 
+	position:absolute;
+	margin:91px 0 0 519px;
+}
+#ADMpic{
+	width:132px;
+	height:89px;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /*IE9*/
+	 moz-transform:rotate(-45deg); 	/* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-45deg); 	/* Opera */ 
+	margin:50px 0 0 30px;
+}
+#ADM_h a:hover{
+	margin:106px 0 0 534px;
+}
+#product{
+	width:198px;
+	height:198px;
+	background-color:#7c479f;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /*IE9*/
+	 moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */ 
+	margin:233px 0 0 660px ;
+	position:absolute;
+}
+#productpic{
+	width:129px;
+	height:81px;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /*IE9*/
+	 moz-transform:rotate(-45deg); 	/* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-45deg); 	/* Opera */ 
+	margin:50px 0 0 30px;
+	border:none;
+}
+#product_h a:hover{
+	margin:248px 0 0 675px;;
+}
+#content  a {
+
+	-webkit-transition:all .2s ease-in; 
+	 -moz-transition:all .2s ease-in;
+	  -o-transition:all .2s ease-in;
+	   -ms-transition:all .2s ease-in;
+	    transition:all .2s ease-in;
+	} /*背景缩小速度*/
+#content a:hover{
+		width:170px;
+	    height:170px;
+       
+	}/*鼠标悬停背景缩小后大小*/
+#secret{
+	text-align:center;
+    color:#ebefed;
+    margin-top: 100px;
+}
+#secret a{
+	color:#40b96c;
+    text-decoration:none;
+}
+
+
+

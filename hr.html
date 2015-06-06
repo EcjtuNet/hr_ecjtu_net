@@ -1,46 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DHD HTML 4.01 Transitional//zn-CN" "http://www.w3.org/TR/html4/loose.dtd" >
-<html lang="zh-cn">
-
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
- <link rel="stylesheet" type="text/css" href="hr.css" />
- <meta http-equiv="Content-Type" Content="text/html;charset=utf-8">
-    <title>日新招新啦</title>
-  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    $("#font").fadeIn(1000, function(){
-        $("#logo").fadeIn(2000);
-    
+  <meta charset="UTF-8">
+  <title>日新招新啦</title>
+  <link rel="stylesheet" type="text/css" href="css/hr.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var arrow = $('.arrow');
+      arrow.bind('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: document.body.clientHeight}, 1000);
+      });
     });
-});
   </script>
 </head>
 <body>
-<div id="body">
-  <!--  hr1   -->
-  <div id="first">
-    <h1 id="font">日新招新啦</h1>
-    <div id="logo"></div>
-    <a href="#second">
-    <span id="dot"></span>
-    <span id="dropdown"></span>
-    </a>  
+  <div class="wrapper"></div>
+  <div class="ch head">
+    <div class="logo"></div>
+    <h1 class="hr">日新招新啦</h1>
+    <a href="#" class="arrow"></a>
   </div>
-  
-
-  <!--  hr2  -->
-  <div id="second">
+  <div class="ch apart">
     <div id="content" >
-    <div id="news_h"><a href="/index.php/hr/intro_newcomer#0" id="news"><img src="pic/sencond/newspic2_03.png" id="newspic"/></a></div>
-    <div id="tect_h"><a href="/index.php/hr/intro_newcomer#1" id="tectnology"><img src="pic/sencond/tectpic2_03.png" id="tectnologypic"/></a></div>
-    <div id="ADM_h"><a href="http://hr.ecjtu.net/index.php/hr/intro_newcomer#2" id="ADM"><img src="pic/sencond/ADMpic2_03.png" id="ADMpic"/></a></div>
-    <div id="product_h"><a href="http://hr.ecjtu.net/index.php/hr/intro_newcomer#3" id="product"><img src="pic/sencond/productpic2_03.png"id="productpic"/></a></div>
+      <div id="news_h"><a href="/index.php/hr/intro_newcomer#0" id="news"><img src="pic/sencond/newspic2_03.png" id="newspic"/></a></div>
+      <div id="tect_h"><a href="/index.php/hr/intro_newcomer#1" id="tectnology"><img src="pic/sencond/tectpic2_03.png" id="tectnologypic"/></a></div>
+      <div id="ADM_h"><a href="http://hr.ecjtu.net/index.php/hr/intro_newcomer#2" id="ADM"><img src="pic/sencond/ADMpic2_03.png" id="ADMpic"/></a></div>
+      <div id="product_h"><a href="http://hr.ecjtu.net/index.php/hr/intro_newcomer#3" id="product"><img src="pic/sencond/productpic2_03.png"id="productpic"/></a></div>
+    </div>
+    <p id="secret">更多秘密，进<a href="http://www.ecjtu.net/about/">关于我们</a>吧，也可以去<a href="http://www.ecjtu.net">主页</a>逛逛</p>
   </div>
-  <p id="secret">更多秘密，进<a href="http://www.ecjtu.net/about/">关于我们</a>吧，也可以去<a href="http://www.ecjtu.net">主页</a>逛逛</p>
-  </div>
-  
-  
-
-</div>
 </body>
 </html>
