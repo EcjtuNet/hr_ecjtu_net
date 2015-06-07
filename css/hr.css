@@ -3006,14 +3006,13 @@ body {
   width: 100%;
   height: 100%;
   background: url(../pic/background.jpg) no-repeat;
-  z-index: -999; }
+  z-index: -999;
+  overflow: none; }
 
 .ch {
-  width: 100vw;
-  height: 100vh; }
-
-.head {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: 768px; }
 
 .head .logo {
   padding-top: 124px;
