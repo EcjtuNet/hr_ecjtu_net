@@ -3034,21 +3034,27 @@ body {
   left: 50%;
   display: inline-block;
   width: 98px;
-  height: 51px;
+  height: 100px;
   margin-left: -49px;
-  background: url(../pic/first/dropdown.png) top center no-repeat;
   -webkit-animation: arrowDown 1.2s ease-in-out infinite alternate;
   -moz-animation: arrowDown 1.2s ease-in-out infinite alternate;
   -o-animation: arrowDown 1.2s ease-in-out infinite alternate;
   animation: arrowDown 1.2s ease-in-out infinite alternate; }
-  .head .arrow:after {
-    content: "";
+  .head .arrow .dropDown {
     position: absolute;
-    top: -44px;
-    left: 44px;
-    width: 10px;
-    height: 55px;
-    background: url(../pic/first/dot.png) top center no-repeat; }
+    bottom: 0;
+    display: inline-block;
+    width: 98px;
+    height: 51px;
+    background: url(../pic/first/dropdown.png) top center no-repeat; }
+    .head .arrow .dropDown:after {
+      content: "";
+      position: absolute;
+      top: -44px;
+      left: 44px;
+      width: 10px;
+      height: 55px;
+      background: url(../pic/first/dot.png) top center no-repeat; }
 
 #content {
   width: 948px;
