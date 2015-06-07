@@ -38,10 +38,10 @@ class Register extends CI_Controller{
 	{
 		$this->load->view('register');
 	}
-	/** 用户注册信息验证 **/
-	public function check()
+	/** 表单验证函数 **/
+	public function _check()
 	{
-  		$this->load->library('form_validation');//加载验证辅助函数
+		$this->load->library('form_validation');//加载验证辅助函数
 		$this->form_validation->set_rules('user_name','用户名','trim|required|min_length[2]|max_length[6]|xss_clean|xianzhi');
 		$this->form_validation->set_rules('user_sex','性别','required');
 		$this->form_validation->set_rules('user_center','中心','required');
@@ -51,18 +51,39 @@ class Register extends CI_Controller{
 		$this->form_validation->set_rules('user_phone','手机','trim|required|numeric|exact_length[11]');
 		$this->form_validation->set_rules('user_qq','QQ','trim|required|numeric|min_length[5]|max_length[10]');
 		$this->form_validation->set_rules('user_remarks','备注','trim|required|xss_clean');
-		
+		return $this->form_validation->run();
 		//trim是去除两端空白符号，可以忽略，required是必填，min_length、max、exact_length是最短、最长、敲好的长度，限制是由郭斌添加的，不允许用户添加非法字符串。
 		//xss_clean是（我也忘了这个具体意思了……对了，记得是用户名的一个验证，算了，等下在查吧，我做的时候参考网上的一个表单认证，用户民名里有加这个）    ，numeric是数字
-		
-		if($this->form_validation->run()==FALSE){
+	}
+	/** 电脑端表单提交 **/
+	public function check()
+	{
+		if($this->_check()==FALSE){
 			$this->load->view('register');
 		}
 		else{
-			if($this->insert_info()==1){
+			if($this->insert_info()==true){
 				echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>恭喜您,报名提交成功！</b></span>";
 				//echo '恭喜你，注册成功~！';
+			}else{
+				echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>对不起，您已经申请过该部门~！</b></span>";
 			}
+		}
+	}
+	/** 手机端表单提交 **/
+	public function ajax_check()
+	{
+		if($this->_check()==FALSE)
+		{
+			echo json_encode(array('status'=>'error','error_code'=>'1','msg'=>'Check form failed.'));
+		}
+		elseif($this->insert_info()==true)
+		{
+			echo json_encode(array('status'=>'success','error_code'=>'','msg'=>'Success!'));
+		}
+		else
+		{
+			echo json_encode(array('status'=>'error','error_code'=>'2','msg'=>'Have already registered.'))
 		}
 	}
 	/** 用户信息写入数据库 **/
@@ -101,7 +122,7 @@ class Register extends CI_Controller{
 		 if($this->register_mdl->get_inserted($user_id, $hr_id)==NULL){
 		 	$this->register_mdl->insert_register_info($data_register);
 			$this->mail_mdl->send_mail($user_mail);
-			return 1;
+			return true;
 		 }
 		 else{
 			 /*
@@ -109,7 +130,7 @@ class Register extends CI_Controller{
 				<span style=" display:block; width:150px; height:40px; margin:200px auto;">不好意思，你已经注册过咯~！</span>
 			EOT;
 			*/
-			echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>对不起，您已经申请过该部门~！</b></span>";
+			//echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>对不起，您已经申请过该部门~！</b></span>";
 			//echo '不好意思，你已经注册过咯~！';
 			return false;
 		 }
