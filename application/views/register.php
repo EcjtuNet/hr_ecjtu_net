@@ -44,11 +44,10 @@ a:active{background-image:url(../../images/intro_image/sub_active.gif)}
                 <option>经济管理学院</option>
                 <option>外国语学院</option>
                 <option>信息工程学院</option>
-                <option>基础科学学院</option>
+                <option>理学院</option>
                 <option>人文社会科学学院</option>
                 <option>国际学院</option>
-                <option>软件学院</option>
-                
+                <option>软件学院</option>                
                 <option>体育学院</option>
                 <option>轨道交通学院</option>
                 <option>艺术学院</option>

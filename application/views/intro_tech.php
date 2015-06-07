@@ -46,8 +46,8 @@
                 <div class="txt_box">
                 	<p class="daoyu">
                     职位要求：<br />
-    1、熟悉并能熟练掌握PHP、JSP、ASP其中一种或多种语言；<br />
-    2、熟悉DeDeCMS、Discuz其中之一的常规操作；<br />
+    1、熟悉并能熟练掌握PHP等主流Web语言；<br />
+    2、熟悉DeDeCMS、Discuz其中之一的常规维护操作以及二次开发；<br />
     3、了解并能够自主学习基于MVC等框架的网站开发；<br />
     4、具有一定的数据库、Linux相关知识，能设计并优化数据库、服务器的数据、操作；<br />
     职位职责：<br />
@@ -61,7 +61,7 @@
                 <div class="txt_box">
                 	<p class="daoyu">
                     职位要求：<br />
-    1、熟悉并能熟练掌握Html、CSS、JavaScript相关语言；<br />
+    1、熟悉并能熟练掌握HTML、CSS、JavaScript相关语言；<br />
     2、熟悉并能合理运用CSS Sprites、JQuery、JQuery UI等技巧对页面效果优化；<br />
     3、了解HTML 5、CSS 3等前沿技术。<br />
     职位职责：<br />
@@ -75,8 +75,8 @@
                 <div class="txt_box">
                 	<p class="daoyu">
                     职位要求：<br />
-    1、熟悉并能熟练掌握java/J2ME、object-C一种或多种语言；<br />
-    2、熟悉IOS或Android平台及体系结构，熟悉IOS或Android应用开发技术；<br />
+    1、熟悉并能熟练掌握java/J2ME、Object-C、Swift一种或多种语言；<br />
+    2、熟悉iOS或Android平台及体系结构，熟悉iOS或Android应用开发技术；<br />
     3、熟悉并能熟练掌握Titanium、PhoneGap、jQueryMobile、Sencha一种或多种移动web开发框架，且具有一定的后端程序开发知识。<br />
 
     职位职责：<br />
@@ -102,7 +102,7 @@
      2、负责网站产品（WEB/WAP）以及移动端APP的视觉界面优化和内容整理，负责各种产品日常的各项设计；<br />
      3、定期的头脑风暴，有空余时间。<br /><br />
 
-    注：手绘能力强大或懂得网页规则的我们更欢迎哦！<br />
+    注：手绘能力强大或懂得网页设计的我们更欢迎哦！<br />
                     </p>
                 </div><br />
                 <p class="title_s">　交互设计师</p>
@@ -123,21 +123,8 @@
     职位应聘建议学院：无限制
                     </p>
                 </div>
-                <br />
-                 <p class="title_s">　Flash开发员</p>
-                <div style="height:10px;"></div>
-                <div class="txt_box">
-                	<p class="daoyu">
-                     职位要求：<br />
-    1、熟悉FLASH制作，能够进行视觉动态设计，并产生良好的互动模式；<br />
-    2、熟悉PS或AI，了解AS3或AS2，能够基本使用；<br />
-    3、能够配合视觉设计师一同工作。<br />        
-    职位职责：<br />
-    1、负责网页动画制作，并负责开发一系列FLASH项目；<br />
-    2、能够良好的与其他同学交流，并能够虚心学习。
-                    </p>
-                </div>
                 <div class="bottom_border" style="width:100%; height:27px; border-bottom:dashed 1px #7e7e7e;"></div>
+                <br />
                 <!--运维组-->
                 <p class="title_b">安全运维部</p><br />
                 <p class="title_s">　网络安全员</p>
@@ -145,43 +132,46 @@
                 <div class="txt_box">
                 	<p class="daoyu">
                      职位要求：<br />
-    1、熟悉HTML/ASP/PHP/.Net等任意两门或以上网站编程语言；<br />
+    1、熟悉HTML/PHP/JavaScript等任一门或以上网站编程语言；<br />
     2、了解基础的网站入侵渗透，服务器安全配置，入侵检测取证方法；<br />
-    3、熟悉Windows Sever和Linux下的服务器系统基本操作；<br />
+    3、熟悉Linux下的服务器系统基本操作；<br />
     4、关注前沿的网络安全技术。<br />
     职位职责：<br />
     1、负责网站各个站点服务器的安全防护与网站代码的安全性检测；<br />
     2、能对网站的网络安全方面给出建设性意见；<br />
     3、定期技术分享，有空余时间。
                     </p>
-                </div><br />
-                <p class="title_s">　硬件维护员</p>
-                <div style="height:10px;"></div>
-                <div class="txt_box">
-                	<p class="daoyu">
-                    职位要求：<br />
-    1、熟悉计算机软硬件的日常维护；<br />
-    2、熟悉Windows系统，能在不重装系统的情况下解决大部份电脑问题；<br />
-    3、善于沟通，动手能力强，对团队建设有个人的看法。<br />        
-    职位职责：<br />
-    1、为校内办公场所提供上门维修电脑服务；<br />
-    2、负责全站的部分电脑维修。
-                    </p>
                 </div>
                 <br />
                  <p class="title_s">　服务器运维员</p>
                 <div style="height:10px;"></div>
                 <div class="txt_box">
-                	<p class="daoyu">
+                    <p class="daoyu">
                      职位要求：<br />
-    1、熟悉配置服务器，负责服务器平台的搭建，安全体系建设，维护和优化；<br />
-    2、熟悉Linux系统，并能在该系统下工作维护，定期备份；<br />
+    1、熟悉配置Linux服务器，安全体系建设，维护和优化；<br />
+    2、熟悉常见的容灾操作、定期备份；<br />
     3、工作责任心强，工作态度好，有良好的团队合作精神和沟通能力。<br />
+    4、有足够的时间，能够快速响应经常的突发性服务器维护<br />
      职位职责：<br />   
     1、负责日新网服务器的管理以及维护；<br />  
     2、负责对已有的服务器提相关优化建议。<br />
+    3、定期技术分享，有空余时间。<br />
     注：已有经验的同学我们更加欢迎哦！<br /><br />  
     职位应聘建议学院：无限制
+                    </p>
+                </div>
+                <br />
+                <p class="title_s">　硬件维护员</p>
+                <div style="height:10px;"></div>
+                <div class="txt_box">
+                	<p class="daoyu">
+                    职位要求：<br />
+    1、熟悉计算机常用软硬件的日常维护；<br />
+    2、熟悉Windows系统，能在不重装系统的情况下解决大部份电脑问题；<br />
+    3、善于沟通，动手能力强，对团队建设有个人的看法。<br />        
+    职位职责：<br />
+    1、为校内办公场所提供上门维修电脑服务；<br />
+    2、负责全站的部分电脑维修。
                     </p>
                 </div>
                 <div class="bottom_border" style="width:100%; height:27px; border-bottom:dashed 1px #7e7e7e;"></div>
