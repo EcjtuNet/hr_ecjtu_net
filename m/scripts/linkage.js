@@ -3,11 +3,7 @@ $(document).ready(function() {
 		apartmentList['新闻出版中心'] = ['记者团'];
 		apartmentList['技术研发中心'] = ['网站建设部','体验设计部','安全运维部'];
 		apartmentList['行政管理中心'] = ['办公室','驻外办','市场部'];
-<<<<<<< HEAD
 		apartmentList['产品运营中心'] = ['《交大青年》杂志社', '日新手机客户端', '日新微博', '日新网络应用', '日新微信','日新微博','日新视频'];
-=======
-		apartmentList['产品运营中心'] = ['《交大青年》杂志社', '日新手机客户端', '日新论坛', '日新网络应用', '日新微信','日新微博','日新视频'];
->>>>>>> da7076442d08f6346d62df9ea2a4fe216c280e16
 		function setCentre(){
 			var sc = document.getElementById("selCentre");
 			for(var i in apartmentList){
