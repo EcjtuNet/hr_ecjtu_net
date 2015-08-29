@@ -33,6 +33,22 @@ class Hr extends CI_Controller{
 		$this->load->view('index');
 	}
 	/** �����������Ľ���ҳ **/
+	public function jishu()
+	{
+		$this->load->view('jishu');
+	}
+	public function chanpin()
+	{
+		$this->load->view('chanpin');
+	}
+	public function xinwen()
+	{
+		$this->load->view('xinwen');
+	}
+	public function xingzheng()
+	{
+		$this->load->view('xingzheng');
+	}
 	public function intro_manager()
 	{
 		$this->load->view('intro_manager');
