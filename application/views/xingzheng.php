@@ -7,10 +7,10 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 	<title>日新行政管理中心</title>
-	<link type="text/css" rel="stylesheet" href="css/same.css" >
-	<link type="text/css" rel="stylesheet" href="css/xinwen.css" >
-	<link type="text/css" rel="stylesheet" href="css/xinzheng.css" >
-	<link type="text/css" rel="stylesheet" href="css/register.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/same.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/xinwen.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/xinzheng.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/register.css" >
 <style type="text/css">
 /************点击办公室出现的效果*************/
 #effect2 .jizhe_t{
@@ -37,7 +37,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	<div class="box"></div>
 	<div id="main">
 		<div id="info">
-			<p><img class="title" src="images/xingzheng3.png">
+			<p><img class="title" src="../../images/xingzheng3.png">
 			是日新工作室部门之一，其前身为日新行政部。下设办公室、财务部、外联部三个部门。对内主要负责网站内部的行政建设，运行日新部分网络产品及线下精品活动，做好网站的后勤服务、组织内部人员活动。</p>			
 		</div>
 		<input id="btn" type="button" onclick="showXinwen()" />
@@ -95,23 +95,23 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 		<div class="nav">
 			<div class="line">
 				<div class="l1"></div>
-				<a class="circle" href="index.html"></a>
+				<a class="circle" href="http://hr.ecjtu.net"></a>
 				<div class="l3 l3_c"></div>
-				<a class="circle" href="xinwen.html"></a>
+				<a class="circle" href="/index.php/hr/xinwen"></a>
 				<div class="l3 l3_c"></div>
-				<a class="circle" href="jishu.html"></a>
+				<a class="circle" href="/index.php/hr/jishu"></a>
 				<div class="l2"></div>
-				<a class="logo" href="xingzheng.html"></a>
+				<a class="logo" href="/index.php/hr/xingzheng"></a>
 				<div class="l3_e"></div>
-				<a class="circle" href="chanpin.html"></a>
+				<a class="circle" href="/index.php/hr/chanpin"></a>
 				<div class="l4"></div>
 			</div>
 			<div class="tips">
-				<a href="" class="t1" style="width:35px;height:20px;background-image:url(images/shouye.png)"></a>
-				<a href="" class="t3" style="width:93px;height:20px;background-image:url(images/xinwen1.png);margin-left:43px;"></a>
-				<a href="" class="t3" style="width:94px;height:20px;background-image:url(images/jishu1.png)"></a>
-				<a href="" class="t4" style="width:95px;height:20px;background-image:url(images/xingzheng1.png)"></a>
-				<a href="" class="t5" style="width:96px;height:20px;background-image:url(images/chanpin1.png)"></a>
+				<a href="" class="t1" style="width:35px;height:20px;background-image:url(../../images/shouye.png)"></a>
+				<a href="" class="t3" style="width:93px;height:20px;background-image:url(../../images/xinwen1.png);margin-left:43px;"></a>
+				<a href="" class="t3" style="width:94px;height:20px;background-image:url(../../images/jishu1.png)"></a>
+				<a href="" class="t4" style="width:95px;height:20px;background-image:url(../../images/xingzheng1.png)"></a>
+				<a href="" class="t5" style="width:96px;height:20px;background-image:url(../../images/chanpin1.png)"></a>
 			</div>
 		</div>
 		<a id="register" onclick="register()"></a>
@@ -169,10 +169,10 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 		</div>
 </div>
-<script type="text/javascript" src="js/same.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/linkage.js"></script>
-<script type="text/javascript" src="js/form.js"></script>
-<script type="text/javascript" src="js/xingzheng.js"></script>
+<script type="text/javascript" src="../../js/same.js"></script>
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/linkage.js"></script>
+<script type="text/javascript" src="../../js/form.js"></script>
+<script type="text/javascript" src="../../js/xingzheng.js"></script>
 </body>
 </html>

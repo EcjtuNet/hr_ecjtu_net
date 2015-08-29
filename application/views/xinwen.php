@@ -7,9 +7,9 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 	<title>日新新闻出版中心</title>
-	<link type="text/css" rel="stylesheet" href="css/same.css" >
-	<link type="text/css" rel="stylesheet" href="css/xinwen.css" >
-	<link type="text/css" rel="stylesheet" href="css/register.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/same.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/xinwen.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/register.css" >
 <style type="text/css">
 /************点击记者团出现的效果*************/
 #effect2 .jizhe_t{
@@ -36,7 +36,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	<div class="box"></div>
 	<div id="main">
 		<div id="info">
-			<p><img class="title" src="images/xinwen3.png">
+			<p><img class="title" src="../../images/xinwen3.png">
 			隶属于华东交通大学新闻中心日新网，下设编辑部和记者团两个部门。现有成员30余人，设有总编辑一名，中文编辑两名，记者团团长一名，助理编辑若干，记者若干。曾多次获得教育部中国大学生在线高校百佳网站，江西省十大科教文网站等荣誉。目前主要负责日新网网站内容的更新，在做好这些工作的同时，我们积极进取，进行网页专题制作，同时积极迎接新媒体变革，开始制作信息图表，微信H5专题等内容，紧随发展。在未来的工作中，新闻出版中心全体成员将牢记“责任，合作，进取，创新”八字站训，不断的提升自身的多方面建设，为日新网的发展做出更大的贡献。</p>
 		</div>			
 		<input id="btn" type="button" onclick="showXinwen()" />
@@ -97,23 +97,23 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 		<div class="nav">
 			<div class="line">
 				<div class="l1"></div>
-				<a class="circle" href="index.html"></a>
+				<a class="circle" href="http://hr.ecjtu.net"></a>
 				<div class="l2"></div>
-				<a class="logo" href="xinwen.html"></a>
+				<a class="logo" href="/index.php/hr/xinwen"></a>
 				<div class="l3_e"></div>
-				<a class="circle" href="jishu.html"></a>
+				<a class="circle" href="/index.php/hr/jishu"></a>
 				<div class="l3"></div>
-				<a class="circle" href="xingzheng.html"></a>
+				<a class="circle" href="/index.php/hr/xingzheng"></a>
 				<div class="l3"></div>
-				<a class="circle" href="chanpin.html"></a>
+				<a class="circle" href="/index.php/hr/chanpin"></a>
 				<div class="l4"></div>
 			</div>
 			<div class="tips">
-				<a href="" class="t1" style="width:35px;height:20px;background-image:url(images/shouye.png)"></a>
-				<a href="" class="t3" style="width:93px;height:20px;background-image:url(images/xinwen1.png);margin-left:43px;"></a>
-				<a href="" class="t3" style="width:94px;height:20px;background-image:url(images/jishu1.png)"></a>
-				<a href="" class="t4" style="width:95px;height:20px;background-image:url(images/xingzheng1.png)"></a>
-				<a href="" class="t5" style="width:96px;height:20px;background-image:url(images/chanpin1.png)"></a>
+				<a href="" class="t1" style="width:35px;height:20px;background-image:url(../../images/shouye.png)"></a>
+				<a href="" class="t3" style="width:93px;height:20px;background-image:url(../../images/xinwen1.png);margin-left:43px;"></a>
+				<a href="" class="t3" style="width:94px;height:20px;background-image:url(../../images/jishu1.png)"></a>
+				<a href="" class="t4" style="width:95px;height:20px;background-image:url(../../images/xingzheng1.png)"></a>
+				<a href="" class="t5" style="width:96px;height:20px;background-image:url(../../images/chanpin1.png)"></a>
 			</div>
 		</div>
 		<a id="register" onclick="register()"></a>
@@ -171,9 +171,9 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 		</div>
 </div>
-<script type="text/javascript" src="js/same.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/linkage.js"></script>
-<script type="text/javascript" src="js/form.js"></script>
+<script type="text/javascript" src="../../js/same.js"></script>
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/linkage.js"></script>
+<script type="text/javascript" src="../../js/form.js"></script>
 </body>
 </html>

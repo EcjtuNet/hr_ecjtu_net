@@ -7,10 +7,10 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 	<title>日新技术研发中心</title>
-	<link type="text/css" rel="stylesheet" href="css/same.css" >
-	<link type="text/css" rel="stylesheet" href="css/xinwen.css" >
-	<link type="text/css" rel="stylesheet" href="css/jishu.css" >
-	<link type="text/css" rel="stylesheet" href="css/register.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/same.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/xinwen.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/jishu.css" >
+	<link type="text/css" rel="stylesheet" href="../../css/register.css" >
 <style type="text/css">
 #main #btn{
 	margin: 12% auto auto;
@@ -90,7 +90,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	<div class="box"></div>
 	<div id="main">
 		<div id="info">
-			<p><img class="title" src="images/jishu3.png">
+			<p><img class="title" src="../../images/jishu3.png">
 		日新网技术研发中心是日新工作室所属中心之一，现有面向用户的设计开发（UED）部门和面向数据的设计开发（DOD）部门。中心主要负责校内外网站建设、软件开发及全校师生的电脑维护等工作。</p>
 			<p>下属部门及职务：</p>
 			<p>-UED-面向用户的设计开发部门</p>
@@ -197,23 +197,23 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 		<div class="nav">
 			<div class="line">
 				<div class="l1"></div>
-				<a class="circle" href="index.html"></a>
+				<a class="circle" href="http://hr.ecjtu.net"></a>
 				<div class="l3 l3_c"></div>
-				<a class="circle" href="xinwen.html"></a>
+				<a class="circle" href="/index.php/hr/xinwen"></a>
 				<div class="l2"></div>
-				<a class="logo" href="jishu.html"></a>
+				<a class="logo" href="/index.php/hr/jishu"></a>
 				<div class="l3_e"></div>
-				<a class="circle" href="xingzheng.html"></a>
+				<a class="circle" href="/index.php/hr/xingzheng"></a>
 				<div class="l3"></div>
-				<a class="circle" href="chanpin.html"></a>
+				<a class="circle" href="/index.php/hr/chanpin"></a>
 				<div class="l4"></div>
 			</div>
 			<div class="tips">
-				<a href="" class="t1" style="width:35px;height:20px;background-image:url(images/shouye.png)"></a>
-				<a href="" class="t3" style="width:93px;height:20px;background-image:url(images/xinwen1.png);margin-left:43px;"></a>
-				<a href="" class="t3" style="width:94px;height:20px;background-image:url(images/jishu1.png)"></a>
-				<a href="" class="t4" style="width:95px;height:20px;background-image:url(images/xingzheng1.png)"></a>
-				<a href="" class="t5" style="width:96px;height:20px;background-image:url(images/chanpin1.png)"></a>
+				<a href="" class="t1" style="width:35px;height:20px;background-image:url(../../images/shouye.png)"></a>
+				<a href="" class="t3" style="width:93px;height:20px;background-image:url(../../images/xinwen1.png);margin-left:43px;"></a>
+				<a href="" class="t3" style="width:94px;height:20px;background-image:url(../../images/jishu1.png)"></a>
+				<a href="" class="t4" style="width:95px;height:20px;background-image:url(../../images/xingzheng1.png)"></a>
+				<a href="" class="t5" style="width:96px;height:20px;background-image:url(../../images/chanpin1.png)"></a>
 			</div>
 		</div>
 		<a id="register" onclick="register()"></a>
@@ -271,10 +271,10 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 		</div>
 </div>
-<script type="text/javascript" src="js/same.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/linkage.js"></script>
-<script type="text/javascript" src="js/form.js"></script>
-<script type="text/javascript" src="js/xingzheng.js"></script>
+<script type="text/javascript" src="../../js/same.js"></script>
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/linkage.js"></script>
+<script type="text/javascript" src="../../js/form.js"></script>
+<script type="text/javascript" src="../../js/xingzheng.js"></script>
 </body>
 </html>
