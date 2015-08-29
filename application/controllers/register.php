@@ -65,12 +65,12 @@ class Register extends CI_Controller{
 		{
 			if($this->insert_info()==true)
 			{
-				echo '1';
+				echo '恭喜你，注册成功~！';
 				//echo '恭喜你，注册成功~！';
 			}
 			else
 			{
-				echo '2';
+				echo '恭喜你，注册成功~！';
 			}
 		}
 	}
