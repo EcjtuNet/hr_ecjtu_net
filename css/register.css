@@ -1,0 +1,126 @@
+  #edit {
+    display: none;
+    /*position: relative;*/
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center; 
+    z-index: 4000;
+    /*margin-top: 10px;*/}
+    #edit h2 {
+      text-align: center;
+      font: normal 36px/48px Microsoft Yahei, Arial, sans-serif;
+      color: #534d4d; }
+     #edit #form {
+      position: relative;
+      display: inline-block; }
+       #edit #form p {
+        position: relative;
+        left: 0;
+        min-width: 301px;
+        text-align: left;
+        margin: 12px 0 0;
+        font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
+         #edit #form p span {
+          float: left; }
+         #edit #form p span.select {
+          display: block; }
+         #edit #form p span#personal {
+          float: left; }
+       #edit #form input,  #edit #form select,  #edit #form textarea {
+        font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
+       #edit #form input[type=radio],  #edit #form select {
+        border: none;
+        /* background: url($imagepath) 0 -319px no-repeat; */ }
+       #edit #form input[type=text],  #edit #form input[type=number],  #edit #form input[type=tel] {
+        position: relative;
+        left: 28px;
+        max-width: 170px;
+        height: 30px;
+        margin: 0 12px;
+        padding: 0 12px;
+        border: 2px solid #313131;
+        border-radius: 30px; }
+       #edit #form input[type=radio] {
+        margin-left: 42px; }
+       #edit #form select {
+        appearance: button;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        -ms-appearance: button;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-padding-end: 20px;
+        -moz-padding-end: 20px;
+        -ms-padding-end: 20px;
+        padding-end: 20px;
+        -webkit-padding-start: 2px;
+        -moz-padding-start: 2px;
+        -ms-padding-start: 2px;
+        padding-start: 2px;
+        /* background: url($imagepath) 0 -319px no-repeat; */
+        border: 2px solid #313131;
+        border-radius: 30px;
+        color: #534d4d;
+        font-size: inherit;
+        overflow: hidden;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        left: 28px;
+        max-width: 198px;
+        min-width: 198px;
+        height: 34px;
+        margin: 0 12px;
+        padding: 0 12px;
+        background: #fff; }
+       #edit #form p.select:before {
+        content: "";
+        position: absolute;
+        right: 32px;
+        top: 15px;
+        z-index: 3000;
+        border-top: 8px solid #534d4d;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: none; }
+       #edit #form #selCentre,  #edit #form #selApart {
+        position: relative;
+        left: 0; }
+       #edit #form textarea {
+        max-width: 194px;
+        max-height: 97px;
+        margin: 12px;
+        border-radius: 15px;
+        border: 2px solid #313131; }
+       #edit #form h3 {
+        text-align: center; }
+         #edit #form h3 input[type=submit],  #edit #form h3 a#back2index {
+          width: 110px;
+          min-width: 55px;
+          height: 36px;
+          margin: 12px;
+          font: normal 16px/28px Microsoft Yahei, Arial, sans-serif;
+          background-color: #FFCC99;
+          line-height: 36px;
+          text-decoration: none;
+          color: #666;
+          text-align: center;
+          cursor: pointer;
+          border: 2px solid #313131;
+          border-radius: 10px; }
+         #edit #form h3 input[type=submit]:active,  #edit #form h3 a:active,  #edit #form h3 a#back2index:active {
+          background-color: #FFCC99;
+          color: #534d4d; }
+         #edit #form h3 input[type=submit] {
+          /*border: none;*/
+          width: 114px;
+          min-width: 55px;
+          height: 40px;}
+         #edit #form h3 a#back2index {
+          display: inline-block; }

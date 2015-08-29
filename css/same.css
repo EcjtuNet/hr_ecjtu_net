@@ -1,0 +1,249 @@
+/*********开始的全局*************/
+*{
+	margin: 0 ;
+	padding: 0 ;
+	font-family: "微软雅黑";
+	outline: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color:#F1F0EE; 
+}
+ul li{
+	list-style: none;
+
+}
+/* 混入文件  */
+@keyframes circleMove {
+  0% {
+    margin-bottom: -0.6em; }
+  100% {
+    margin-bottom: 0; } }
+@-webkit-keyframes circleMove {
+  0% {
+    margin-bottom: -0.6em; }
+  100% {
+    margin-bottom: 0; } }
+@-moz-keyframes circleMove {
+  0% {
+    margin-bottom: -0.6em; }
+  100% {
+    margin-bottom: 0; } }
+@-o-keyframes circleMove {
+  0% {
+    margin-bottom: -0.6em; }
+  100% {
+    margin-bottom: 0; } }
+/************min-width: 1050px******************/
+/********头部的文字和按钮******/
+.wrapper{
+	width: 100%;
+	height: 100%;	
+}
+.box{
+	width: 100%;
+	height: 5%;
+}
+#main{
+	width: 72%;
+	height: 66%;
+	margin: 0 auto;
+	position: relative;
+}
+#main #info{
+	width: 100%;
+}
+#info .title{
+	width: 115px;
+	height: 24px;
+	float: left;
+	margin: 4px auto auto 34px;
+	text-indent: 34px;
+}
+#main #info p{
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 30px;
+}
+#main #btn{
+	display: block;
+	margin: 2.5% auto auto;
+	width: 142px;
+	height: 142px;
+	background: url(../images/start.png) no-repeat center center;
+	background-color: #FFCC99;
+ 	border-radius: 50%;
+ 	border: 5px solid #666666;
+}
+#main #btn:hover,#effect .btn3:hover,#effect .btn4:hover,#effect .btn5:hover,#effect .btn0:hover{
+	transform:scale(0.95);
+	-moz-transform:scale(0.95);
+	-o-transform:scale(0.95);
+	-webkit-transform:scale(0.95);
+	transition:all 0.2s ease-in-out 0s;
+	-moz-transition:all 0.2s ease-in-out 0s;
+	-o-transition:all 0.2s ease-in-out 0s;
+	-webkit-transition:all 0.2s ease-in-out 0s;
+}
+/******底部的云朵导航*****/
+#footer{
+	width: 100%;
+	height: 29%;
+	color: #383838;
+}
+.wind{
+	width: 100%;
+	height: 100%;
+	z-index: -9999;
+}
+#footer .nav{
+	width: 558px;
+	height: 84px;
+	position: absolute;
+	left: 50%;
+	margin-left: -279px;
+	bottom: 10px;
+}
+#footer .line{
+	width: 530px;
+	height: 8px;
+	border: 1px dotted #A0A0A0;
+	margin-top: 23px;
+	float: left;
+}
+.line a{
+	display: block;
+	opacity: 1;
+}
+.line .l1{
+	width: 21px;
+	height: 8px;
+	float: left;
+	background-color: #545454;
+}
+.line .circle{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-top: -11px;
+	border-radius: 50%;
+	border: 4px solid #545454;
+	background-color:#FFCC99; 
+}
+.line .circle:active{
+	border: 14px solid #545454;
+	width: 0px;
+	height: 0px;
+	transition:all 0.1s ease-in-out 0s;
+	-moz-transition:all 0.1s ease-in-out 0s;
+	-o-transition:all 0.1s ease-in-out 0s;
+	-webkit-transition:all 0.1s ease-in-out 0s;
+}
+.line .l2{
+	width: 103px;
+	height: 8px;
+	float: left;
+	background-color: #545454;
+}
+.line .logo{
+  	float: left;
+	width: 55px;
+	height: 49px;
+	margin-left: -28px;
+	margin-top: -27px;
+	background: url(../images/logo.png) no-repeat 0px -2px;
+} 
+.line .l3_e{
+	width: 78px;
+	height: 8px;
+	float: left;
+}
+.line .l3{
+	width: 89px;
+	height: 8px;
+	float: left;
+}
+.line .l4{
+	width: 21px;
+	height: 8px;
+	float: left;
+}
+.nav .tips{
+	width: 100%;
+	height: 20px;
+}
+.nav .tips a{
+	display: block;
+	float: left;
+}
+.nav .tips .t1{
+	margin: 30px 10px auto 20px;
+}
+.nav .tips .t3{
+	margin: 31px -13px auto 40px;
+}
+.nav .tips .t4{
+	margin: 31px 0 auto 36px;
+}
+.nav .tips .t5{
+	margin: 31px 0 auto 20px;
+}
+#footer #register{
+	width: 73px;
+	height: 24px;
+	position: absolute;
+	right: 0;
+	bottom: 7px;
+	margin-right: 34px;
+	display: block;
+	background: url(../images/join.png) no-repeat;
+}
+#footer #register:hover,#effect #return:hover,#return2:hover{
+	transform:scale(1.15);
+	-moz-transform:scale(1.15);
+	-o-transform:scale(1.15);
+	-webkit-transform:scale(1.15);
+	transition:all 0.1s ease-in 0s;
+	-moz-transition:all 0.1s ease-in 0s;
+	-o-transition:all 0.1s ease-in 0s;
+	-webkit-transition:all 0.1s ease-in 0s;
+}
+/**********特效方面相同的部分***********/
+#return2{
+	position: fixed;
+	right: 10px;
+	bottom: 8px;
+	width: 39px;
+	height: 34px;
+	display: block;
+	background: url(../images/return.png) no-repeat;
+	display: none;
+	z-index: 9000;
+}
+#effect #return{
+	position: fixed;
+	right: 20px;
+	bottom: 18px;
+	width: 78px;
+	height: 72px;
+	display: block;
+	background: url(../images/return.png) no-repeat;
+	background-size: cover;
+	display: none;
+	z-index: 9000;
+}
+#effect2,#effect3,#effect4,#effect5,#effect6{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	position: absolute;
+	display: none;
+	z-index: 3000;
+}
+

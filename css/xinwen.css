@@ -1,0 +1,143 @@
+/************点击start出现的效果*************/
+#effect{
+	width: 617px;
+	height: 170px;
+	margin: 0px auto auto auto;
+	display: none;
+	z-index: 2000;
+}
+#effect .content{
+	width: 100%;
+	height: auto;
+}
+#effect .btn0,#effect .btn3{
+	position: relative;
+	width: 108px;
+	height: 108px;
+	background-color: #666666;
+	font-size: 14px;
+	color: #DFDFDF;
+	float: left;
+	margin-top: 27px;
+	border-radius: 50%;
+	line-height: 108px;
+	text-align: center;
+	outline: none;
+	border: 0;
+	z-index: 2000;
+	border:solid 4px #D5D5D3;
+}
+#effect .btn3{
+	float: right;
+}
+#effect .btn1{
+	margin:0 auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 10px solid rgba(227, 226, 224, 0.84);
+	z-index: 2000;
+	position: relative;
+}
+#effect .btn2{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	width: 127px;
+	height: 127px;
+	border-radius: 50%;
+	border: 5px solid #666666;
+	box-shadow: 0 0 0 8px #D5D5D3;
+	color: #666666;
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 127px;
+	z-index: 2000;
+}
+#mask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	background: rgba(241, 240, 238, 0.14);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.blur{
+	-webkit-filter: blur(10px); /* Chrome, Opera */
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);    
+    	filter: blur(10px);
+}
+/************点击记者团出现的效果*************/
+#effect2 .jizhe_r{
+	width: 25.99%;
+	position: absolute;
+	padding: 15px;
+	display: block;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+}
+}
+#effect2  h2,#effect3 h2,#effect4 h2{
+	font-size: 17px;
+}
+#effect2 ul,#effect3 ul,#effect4 ul,#effect6 ul{
+	margin: 9px auto auto 8px;
+}
+#effect2 ul li,#effect3 ul li,#effect4 ul li{
+	line-height: 25px;
+}
+#effect2 .jizhe_t{
+	width: 390px;
+	height: 390px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #696968;
+	background-color: rgba(102, 102, 102, 0.86);
+	color: #DDDDDD;
+	font-size: 14px;
+}
+.jizhe_t .info{
+	margin:90px 40px auto 40px;;
+	border-radius: 50%; 
+	line-height: 22px;
+	font-size: 14px;
+	text-indent: 43px;
+}
+/*********点击编辑部出现的效果**************/
+#effect4 .jizhe_t{
+	width: 240px;
+	height: 240px;
+	position: absolute;
+	padding: 15px;
+	border-radius: 50%;
+	background-color: #696968;
+	background-color: rgba(102, 102, 102, 0.86);
+	color: #DDDDDD;
+	font-size: 14px;
+}
+#effect4 .jizhe_t .info{
+	margin: 15px auto auto 30px;
+  text-indent: 70px;
+  line-height: 26px;
+}
+#effect4 .jizhe_l{
+	width: 23.5%;
+	padding: 15px;
+	position: absolute;
+	line-height: 25px;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+}

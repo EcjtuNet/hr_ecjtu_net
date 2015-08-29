@@ -1,36 +1,202 @@
 <!DOCTYPE html>
+<!--
+华东交通大学团委、学工处 [ 版权所有 交大日新 ] 赣ICP备05003322号 日新工作室 维护 联系：214@ecjtu.net
+CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>日新招新啦</title>
-  <link rel="stylesheet" type="text/css" href="css/hr.css" />
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      var arrow = $('.arrow');
-      arrow.bind('click', function(event) {
-        event.preventDefault();
-        $('html, body').animate({scrollTop: document.body.clientHeight}, 1000);
-      });
-      $('.ch').css('height', document.documentElement.clientHeight||document.body.clientHeight);
-    });
-  </script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>日新招新啦</title>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0; 
+	outline: none;
+}
+img{
+	border: 0;
+}
+#wrapper_index{
+	width: 100%;
+	height: 100%;
+}
+#img1{
+	width: 58.1%;
+	height: 88.8%;
+	position: absolute;
+	left: 50%;
+	margin-left: -31.6%;
+}
+#img2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #FFCC99;
+}
+#btn_btm{
+	display: block;
+	width: 51px;
+	height: 50px;
+	background: url(images/on1.png) no-repeat top center;
+	position: absolute;
+	bottom: 4.1%;
+	right: 3.1%
+}
+#btn_btm:hover{
+	background: url(images/on2.png) no-repeat top center;
+}
+.none{
+	display: none;
+}
+/******复用*******/
+.nav{
+	width: 558px;
+	height: 84px;
+	position: absolute;
+	bottom: 1%;
+	left: 50%;
+	margin-left: -279px;
+}
+.line{
+	width: 530px;
+	height: 8px;
+	border: 1px dotted #A0A0A0;
+	margin-top: 23px;
+	float: left;
+}
+.line a{
+	display: block;
+	opacity: 1;
+}
+.line .l1{
+	width: 21px;
+	height: 8px;
+	float: left;
+	background-color: #545454;
+}
+.line .circle{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-top: -11px;
+	border-radius: 50%;
+	border: 4px solid #545454;
+	background-color:#FFCC99; 
+}
+.line .circle:active{
+	border: 14px solid #545454;
+	width: 0px;
+	height: 0px;
+	transition:all 0.1s ease-in-out 0s;
+	-moz-transition:all 0.1s ease-in-out 0s;
+	-o-transition:all 0.1s ease-in-out 0s;
+	-webkit-transition:all 0.1s ease-in-out 0s;
+}
+.line .l2{
+	width: 103px;
+	height: 8px;
+	float: left;
+	background-color: #545454;
+}
+.line .logo{
+  	float: left;
+	width: 55px;
+	height: 49px;
+	margin-left: -28px;
+	margin-top: -27px;
+	background: url(images/logo.png) no-repeat 0px -2px;
+} 
+.line .l3_e{
+	width: 78px;
+	height: 8px;
+	float: left;
+}
+.line .l3{
+	width: 89px;
+	height: 8px;
+	float: left;
+}
+.line .l4{
+	width: 21px;
+	height: 8px;
+	float: left;
+}
+.nav .tips{
+	width: 100%;
+	height: 20px;
+}
+.nav .tips a{
+	display: block;
+	float: left;
+}
+.nav .tips .t1{
+	margin: 30px 10px auto 7px;
+}
+.nav .tips .t3{
+	margin: 31px -13px auto 39px;
+}
+.nav .tips .t4{
+	margin: 31px 0 auto 36px;
+}
+.nav .tips .t5{
+	margin: 31px 0 auto 20px;
+}
+#footer #register{
+	width: 73px;
+	height: 24px;
+	float: right;
+	margin-top: -23px;
+  	margin-right: 34px;
+  	display: block;
+	background: url(../images/join.png) no-repeat;
+}
+#footer #register:hover,#effect #return:hover,#effect #return2:hover{
+	transform:scale(1.15);
+	-moz-transform:scale(1.15);
+	-o-transform:scale(1.15);
+	-webkit-transform:scale(1.15);
+	transition:all 0.1s ease-in 0s;
+	-moz-transition:all 0.1s ease-in 0s;
+	-o-transition:all 0.1s ease-in 0s;
+	-webkit-transition:all 0.1s ease-in 0s;
+}
+</style>
 </head>
 <body>
-  <div class="wrapper"></div>
-  <div class="ch head">
-    <div class="logo"></div>
-    <h1 class="hr">日新招新啦</h1>
-    <a href="#" class="arrow"><span class="dropDown"></span></a>
-  </div>
-  <div class="ch apart">
-    <div id="content" >
-      <div id="news_h"><a href="/index.php/hr/intro_newcomer#0" id="news"><img src="pic/sencond/newspic2_03.png" id="newspic"/></a></div>
-      <div id="tect_h"><a href="/index.php/hr/intro_newcomer#1" id="tectnology"><img src="pic/sencond/tectpic2_03.png" id="tectnologypic"/></a></div>
-      <div id="ADM_h"><a href="http://hr.ecjtu.net/index.php/hr/intro_newcomer#2" id="ADM"><img src="pic/sencond/ADMpic2_03.png" id="ADMpic"/></a></div>
-      <div id="product_h"><a href="http://hr.ecjtu.net/index.php/hr/intro_newcomer#3" id="product"><img src="pic/sencond/productpic2_03.png"id="productpic"/></a></div>
-    </div>
-    <p id="secret">更多秘密，进<a href="http://www.ecjtu.net/about/">关于我们</a>吧，也可以去<a href="http://www.ecjtu.net">主页</a>逛逛</p>
-  </div>
+<div id="wrapper_index">
+	<img id="img1" src="images/index1.png">
+	<img id="img2" class="none" src="images/index2.png">
+		<div class="nav none" id="nav">
+			<div class="line">
+				<div class="l1"></div>
+				<a class="logo" href="#"></a>
+				<div class="l3_e"></div>
+				<a class="circle" href="/index.php/hr/xinwen.html"></a>
+				<div class="l3"></div>
+				<a class="circle" href="/index.php/hr/jishu.html"></a>
+				<div class="l3"></div>
+				<a class="circle" href="/index.php/hr/xingzheng.html"></a>
+				<div class="l3"></div>
+				<a class="circle" href="/index.php/hr/chanpin.html"></a>
+				<div class="l4"></div>
+			</div>
+			<div class="tips">
+				<a href="" class="t1" style="width:35px;height:20px;background-image:url(images/shouye.png)"></a>
+				<a href="" class="t3" style="width:93px;height:20px;background-image:url(images/xinwen1.png);margin-left:43px;"></a>
+				<a href="" class="t3" style="width:94px;height:20px;background-image:url(images/jishu1.png)"></a>
+				<a href="" class="t4" style="width:95px;height:20px;background-image:url(images/xingzheng1.png)"></a>
+				<a href="" class="t5" style="width:96px;height:20px;background-image:url(images/chanpin1.png)"></a>
+			</div>
+		</div>
+	<div id="btn_btm" onclick="changeBg()"></div>
+</div>
+<script type="text/javascript" src="js/same.js"></script>
+<script type="text/javascript">
+function changeBg(){
+    toggleClass(gId('img1'),"none"); 
+    toggleClass(gId('img2'),"none"); 
+    toggleClass(gId('nav'),"none");
+}
+</script>
 </body>
 </html>
