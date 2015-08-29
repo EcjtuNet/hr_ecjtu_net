@@ -65,7 +65,7 @@ class Register extends CI_Controller{
 		{
 			if($this->insert_info()==true)
 			{
-				echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>恭喜您,报名提交成功！</b></span>";
+				echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>Congratulations</b></span>";
 				//echo '恭喜你，注册成功~！';
 			}
 			else
