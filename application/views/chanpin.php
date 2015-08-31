@@ -135,7 +135,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 					<a  class="btn3" onclick="changeReturn();hideEffectTemplate4('effect4','effect2','effect3','effect5')" >微博</a>
 				</div>
 				<div class="btns_mid">
-					<a class="btn0" onclick="changeReturn();hideEffectTemplate5('effect5','effect2','effect3','effect4','effect6')" >影视觉摄影产品</a>
+					<a class="btn0" onclick="changeReturn();hideEffectTemplate5('effect5','effect2','effect3','effect4','effect6')" >影视工作室</a>
 					<div class="btn1">
 						<div class="btn2" style="background: url(../../images/chanpin2.png) no-repeat center;background-color: #FACC9E;"></div>
 					</div>
@@ -143,7 +143,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 					</a>
 				</div>
 				<div class="btns_btm">
-					<a class="btn0" onclick="changeReturn();hideEffectTemplate5('effect2','effect3','effect4','effect5','effect6')" >日新视频部</a>
+					<a class="btn0" onclick="changeReturn();hideEffectTemplate5('effect2','effect3','effect4','effect5','effect6')" >视觉摄影产品</a>
 				</div>
 				<!-- 此时return为返回到首页 -->
 				<a id="return" onclick="hideXinwen()"></a>
