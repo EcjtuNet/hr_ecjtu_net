@@ -137,7 +137,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 				<div class="btns_mid">
 					<a class="btn0" onclick="changeReturn();hideEffectTemplate5('effect5','effect2','effect3','effect4','effect6')" >影视觉摄影产品</a>
 					<div class="btn1">
-						<div class="btn2" style="background: url(images/chanpin2.png) no-repeat center;background-color: #FACC9E;"></div>
+						<div class="btn2" style="background: url(../../images/chanpin2.png) no-repeat center;background-color: #FACC9E;"></div>
 					</div>
 					<a class="btn3" onclick="changeReturn();hideEffectTemplate5('effect3','effect2','effect4','effect5','effect6')" ><span>《交大青年》</span><span>杂志社</span>
 					</a>
@@ -323,7 +323,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 		</div>
 		<a id="register" onclick="register()"></a>
-		<img class="wind" src="images/wind.png">
+		<img class="wind" src="../../images/wind.png">
 	</div>
 	<!-- 报名表 -->
 		<div id="edit">

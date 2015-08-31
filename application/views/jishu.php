@@ -109,7 +109,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 				</div>
 				<a class="btn3" onclick="changeReturn();hideEffectTemplate1('effect4')" >DOD</a>
 				<div class="btn1">
-					<div class="btn2" style="background: url(images/jishu2.png) no-repeat center;background-color: #FACC9E;"></div>
+					<div class="btn2" style="background: url(../../images/jishu2.png) no-repeat center;background-color: #FACC9E;"></div>
 				</div>
 				<!-- 此时return为返回到首页 -->
 				<a id="return" onclick="hideXinwen_jishu()"></a>
@@ -217,7 +217,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 		</div>
 		<a id="register" onclick="register()"></a>
-		<img class="wind" src="images/wind.png">
+		<img class="wind" src="../../images/wind.png">
 	</div>
 	<!-- 报名表 -->
 		<div id="edit">
