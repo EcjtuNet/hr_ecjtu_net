@@ -6,80 +6,56 @@
 	width: 45.97%;
 	height: auto;
 	position: absolute;
-	top: 5.2%;
-	left:26.72%;
+	top: 0;
+	left:41.72%;
 }
 #effect2 .li_ex,#effect4 .li_ex{
 	margin-top: 16px;
 }
 #effect2 .jizhe_l{
-	width: 24.09%;
+	width: 36.09%;
 	height: auto;
 	position: absolute;
-	top: 30.88%;
-	left:0.2%;
+	top: 71.88%;
+	left:0%;
 	padding: 15px;
 	background-color: #FCFCFC;
 	background-color: rgba(255, 255, 255, 0.8);
 	font-size: 14px;
 	color: #4C4C4C;
 }
-/************点击网建出现的效果*************/
-#effect3 .jizhe_r{
-	width: 44.73%;
-	height: auto;
-	padding: 15px;
-	position: absolute;
-	bottom: 1%;
-	right: 14.23%;
-	background-color: #FCFCFC;
-	background-color: rgba(255, 255, 255, 0.8);
-	font-size: 14px;
-	color: #4C4C4C;
-}
-#effect3 .jizhe_t{
-	width: 26.53%;
+#effect2 .jizhe_t{
+	width: 38%;
 	height: auto;
 	padding: 15px;
 	position: absolute;
 	top: 0;
-	left: 14%;
+	left: 0;
+	border-radius: 0;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+}
+#effect2 .jizhe_r2{
+	width: 44.73%;
+	height: auto;
+	padding: 15px;
+	position: absolute;
+	top:51.88%;
+	left: 39.7%;
 	background-color: #FCFCFC;
 	background-color: rgba(255, 255, 255, 0.8);
 	font-size: 14px;
 	color: #4C4C4C;
 }
 /*********点击DOD出现的效果**************/
-#effect4 .jizhe_r{
-	position: absolute;
-	width: 22%;
-	height: auto;
-	padding: 15px;
-	background-color: #FCFCFC;
-	background-color: rgba(255, 255, 255, 0.8);
-	font-size: 14px;
-	color: #4C4C4C;
-}
-#effect4 .jizhe_t{
-	position: absolute;
-	width: 32.53%;
-	height: auto;
-	border-radius: 0;
-	padding: 15px;
-	background-color: #FCFCFC;
-	background-color: rgba(255, 255, 255, 0.8);
-	position: absolute;
-	font-size: 14px;
-	color: #4C4C4C;
-	margin-right: 8px;
-}
 #effect4 .jizhe_l{
 	position: absolute;
-	width: 33.89%;
+	width: 30.89%;
 	height: auto;
 	padding: 15px;
 	float: left;
-	margin-top: 8px;
 	background-color: #FCFCFC;
 	background-color: rgba(255, 255, 255, 0.8);
 	font-size: 14px;
