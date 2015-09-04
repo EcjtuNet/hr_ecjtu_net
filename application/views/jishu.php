@@ -9,7 +9,6 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	<title>日新技术研发中心</title>
 	<link type="text/css" rel="stylesheet" href="../../css/same.css" >
 	<link type="text/css" rel="stylesheet" href="../../css/xinwen.css" >
-	<link type="text/css" rel="stylesheet" href="../../css/jishu.css" >
 	<link type="text/css" rel="stylesheet" href="../../css/register.css" >
 <style type="text/css">
 #main #btn{
@@ -17,8 +16,17 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 }
 /*********点击DOD出现的效果**************/
 #effect4 .jizhe_l{
+	position: absolute;
+	width: 30.89%;
+	height: auto;
 	right: 0;
 	top: 10%;
+	padding: 15px;
+	float: left;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
 }
 /************点击UED出现的效果*************/
 #effect{
@@ -40,6 +48,22 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 #effect .btn3{
 	float: right;
 	margin: 54px 82px auto auto;
+}
+#effect2 .jizhe_t{
+	width: 30.89%;
+	height: auto;
+	padding: 15px;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	border-radius: 0;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+}
+.line .l3_c{
+	background-color: #545454;
 }
 </style>
 </head>
