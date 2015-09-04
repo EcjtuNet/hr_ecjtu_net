@@ -381,6 +381,5 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 <script type="text/javascript" src="../../js/jquery.js"></script>
 <script type="text/javascript" src="../../js/linkage.js"></script>
 <script type="text/javascript" src="../../js/form.js"></script>
-<script type="text/javascript" src="../../js/xingzheng.js"></script>
 </body>
 </html>
