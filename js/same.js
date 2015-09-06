@@ -85,6 +85,14 @@ function hideEffectTemplate5(block,none1,none2,none3,none4){
     gId(none3).style.display = "none"; 
     gId(none4).style.display = "none";  
 }
+function hideEffectTemplate6(block,none1,none2,none3,none4,none5){
+    gId(block).style.display = "block";
+    gId(none1).style.display = "none";
+    gId(none2).style.display = "none";
+    gId(none3).style.display = "none"; 
+    gId(none4).style.display = "none";  
+    gId(none5).style.display = "none"; 
+}
 function hideEffectTemplate7(block,none1,none2,none3,none4,none5,none6){
     gId(block).style.display = "block";
     gId(none1).style.display = "none";

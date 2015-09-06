@@ -182,6 +182,11 @@ $("#btn").on("click",function(){
 		  	$('.btn4').addClass('magictime swashIn');
 		  	$('.btn5').addClass('magictime swashIn');
 	    },900)
+	    setTimeout(function(){
+			$(".btn3").css("opacity",1);
+			$(".btn4").css("opacity",1);
+			$(".btn5").css("opacity",1);
+		},900)
 	$('#effect3').addClass('magictime slideDownRetourn');
 	$('#effect2').addClass('magictime slideDownRetourn'); 
 })

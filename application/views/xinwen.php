@@ -183,6 +183,10 @@ $("#btn").on("click",function(){
 		  	$('.btn0').addClass('magictime spaceInRight');
 		  	$('.btn3').addClass('magictime spaceInLeft');
 	    },800)
+	    setTimeout(function(){
+			$(".btn0").css("opacity",1);
+			$(".btn3").css("opacity",1);
+		},800)
 	$('#effect4').addClass('magictime slideLeftRetourn');
 	$('#effect2').addClass('magictime slideRightRetourn'); 
 })
