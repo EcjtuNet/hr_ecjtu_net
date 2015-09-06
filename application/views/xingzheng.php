@@ -174,21 +174,17 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 <script type="text/javascript" src="../../js/linkage.js"></script>
 <script type="text/javascript" src="../../js/form.js"></script>
 <script type="text/javascript" src="../../js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../js/same2.js"></script>
 <script type="text/javascript">
 $("#btn").on("click",function(){
 	$('.btn1').addClass('magictime swashIn');
 		setTimeout(function(){
-		  	$('.btn3').addClass('magictime swashIn');
-		  	$('.btn4').addClass('magictime swashIn');
-		  	$('.btn5').addClass('magictime swashIn');
+		  	$('.btn3,.btn4,.btn5').addClass('magictime swashIn');
 	    },900)
 	    setTimeout(function(){
-			$(".btn3").css("opacity",1);
-			$(".btn4").css("opacity",1);
-			$(".btn5").css("opacity",1);
+			$(".btn3,.btn4,.btn5").css("opacity",1);
 		},900)
-	$('#effect3').addClass('magictime slideDownRetourn');
-	$('#effect2').addClass('magictime slideDownRetourn'); 
+	$('#effect2,#effect3').addClass('magictime slideDownRetourn'); 
 })
 </script>
 </body>

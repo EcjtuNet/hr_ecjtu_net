@@ -190,6 +190,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 <script type="text/javascript" src="../../js/linkage.js"></script>
 <script type="text/javascript" src="../../js/form.js"></script>
 <script type="text/javascript" src="../../js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../js/same2.js"></script>
 <script type="text/javascript">
 $("#btn").on("click",function(){
 	$('.btn1').addClass('magictime swashIn');
@@ -198,11 +199,9 @@ $("#btn").on("click",function(){
 		  	$('.btn3').addClass('magictime spaceInLeft');
 	    },800)
 	    setTimeout(function(){
-			$(".btn0").css("opacity",1);
-			$(".btn3").css("opacity",1);
+			$(".btn0,.btn3").css("opacity",1);
 		},800)
-	$('#effect4').addClass('magictime slideUpRetourn');
-	$('#effect2').addClass('magictime slideUpRetourn'); 
+	$('#effect2,#effect4').addClass('magictime slideUpRetourn');
 })
 </script>
 </body>
