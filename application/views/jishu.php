@@ -29,26 +29,6 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	color: #4C4C4C;
 }
 /************点击UED出现的效果*************/
-#effect{
-	width: 870px;
-	height: 400px;
-	margin-top: -109px;
-	margin: 0 auto;
-}
-#effect .btn0{
-	float: left;
-	position: absolute;
-	margin:53px auto auto 76px;
-}
-#effect .btn1{
-	position: absolute;
-	margin-top: 27px;
-    margin-left: 348px;
-}
-#effect .btn3{
-	float: right;
-	margin: 54px 82px auto auto;
-}
 #effect2 .jizhe_t{
 	width: 30.89%;
 	height: auto;
@@ -209,5 +189,17 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 <script type="text/javascript" src="../../js/jquery.js"></script>
 <script type="text/javascript" src="../../js/linkage.js"></script>
 <script type="text/javascript" src="../../js/form.js"></script>
+<script type="text/javascript" src="../../js/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+$("#btn").on("click",function(){
+	$('.btn1').addClass('magictime swashIn');
+		setTimeout(function(){
+		  	$('.btn0').addClass('magictime spaceInRight');
+		  	$('.btn3').addClass('magictime spaceInLeft');
+	    },800)
+	$('#effect4').addClass('magictime slideUpRetourn');
+	$('#effect2').addClass('magictime slideUpRetourn'); 
+})
+</script>
 </body>
 </html>
