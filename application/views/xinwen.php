@@ -72,7 +72,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 			<div class="jizhe_t">
 				<div class="info">
-				编辑</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;部由原先日新网新闻</br>&nbsp;&nbsp;出版中心新闻部改编而来，</br>现有编辑十名，主要负责编辑</br>日新网记者团的各类新闻稿件</br>&nbsp;，按时进行值班，参加封闭</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;训练和外出考察活动等</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;待。
+				编辑<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;部由原先日新网新闻<br/>&nbsp;&nbsp;出版中心新闻部改编而来，<br/>现有编辑十名，主要负责编辑<br/>日新网记者团的各类新闻稿件<br/>&nbsp;，按时进行值班，参加封闭<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;训练和外出考察活动等<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;待。
 				</div>				
 			</div>			
 		</div>
@@ -88,7 +88,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 				</ul>
 			</div>
 			<div class="jizhe_t">
-				<div class="info">记者团由原南北区记者站合并而成，</br><span style="margin-left:47px">主要负责校内外各类新闻的采写。</br></span>&nbsp;&nbsp;&nbsp;目前，记者团已经发展成为拥有20余名文字记</br>者、体育记者的优秀记者团队，除完成日常校园新</br>闻的报道外，在一些日新网组织、参与的校内外重</br><span style="margin-left:64px">大活动中发挥着巨大的作用。</br></span>&nbsp;记者团先后涌现出了"世博会注册大学生记者"、"</br>&nbsp;&nbsp;世博会香港传播大使"、" 亚运会注册大学生记</br><span style="margin-left:28px">者"、"大运会注册大学生记者"、"城运会</br></span><span style="margin-left:38px">注册记者"等多名优秀校园新闻人</br></span><span style="margin-left:143px">。</span>
+				<div class="info">记者团由原南北区记者站合并而成，<br/><span style="margin-left:47px">主要负责校内外各类新闻的采写。<br/></span>&nbsp;&nbsp;&nbsp;目前，记者团已经发展成为拥有20余名文字记<br/>者、体育记者的优秀记者团队，除完成日常校园新<br/>闻的报道外，在一些日新网组织、参与的校内外重<br/><span style="margin-left:64px">大活动中发挥着巨大的作用。<br/></span>&nbsp;记者团先后涌现出了"世博会注册大学生记者"、"<br/>&nbsp;&nbsp;世博会香港传播大使"、" 亚运会注册大学生记<br/><span style="margin-left:28px">者"、"大运会注册大学生记者"、"城运会<br/></span><span style="margin-left:38px">注册记者"等多名优秀校园新闻人<br/></span><span style="margin-left:143px">。</span>
 				</div>
 			</div>
 		</div>
@@ -124,11 +124,11 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			<h2>报名表</h2>
 			<div id="form">
 				<form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
-					<p><span>姓名-</span>&nbsp;<input type="text" name="user_name" class="text_input"></p>
-					<p><span>性别-</span><input type="radio"style="margin-left:46px;" name="user_sex" class="radio" value="男" checked/> 男
-					<input type="radio" name="user_sex" class="radio" value="女" /> 女</p>
+					<p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
+					<p><span>性别-</span><input type="radio"style="margin-left:46px;" name="user_sex" class="radio" value="男" checked/> <label for="male">男</label>
+					<input type="radio" name="user_sex" class="radio" value="女" /> <label for="female">女</label></p>
 					<p><span>手机-</span><input type="tel" name="user_phone" maxlength="11" /></p>
-					<p><span>QQ&nbsp;-&nbsp;</span><input type="number" name="user_qq" /></p>
+					<p><span>QQ&nbsp;-</span><input type="number" name="user_qq" /></p>
 					<p class="select"><span>学院-</span>
 						<select name="user_college" class="text_input">
 							<option value=""></option>
@@ -148,20 +148,20 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 							<option value="国防生学院">国防生学院</option>
 						</select>
 					</p>
-					<p><span>专业-&nbsp;</span>
+					<p><span>专业-</span>
 						<input type="text" name="user_major" class="text_input">
 					</p>
 					<p class="select"><span class="select">选择中心-</span>
-						<select id="selCentre" name="user_center">
+						<select id="selCentre" name="user_center" style="margin:0 8px;">
 							<option value=""></option>
 						</select>
 					</p>
 					<p class="select"><span class="select">部门方向-</span>
-						<select id="selApart" name="user_department">
+						<select id="selApart" name="user_department" style="margin:0 8px;">
 						</select>
 					</p>
 					<p><span id="personal" style="margin-top:10px;">个人简介-</span>
-						<textarea name="user_remarks" cols="30" rows="10"></textarea>
+						<textarea name="user_remarks" cols="30" rows="10" style="margin:0 8px;text-indent:10px;"></textarea>
 					</p>
 					<h3>
 						<input type="submit" value="提交"></input>
@@ -171,25 +171,25 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 		</div>
 </div>
-<script type="text/javascript" src="../../js/same.js"></script>
-<script type="text/javascript" src="../../js/jquery.js"></script>
-<script type="text/javascript" src="../../js/linkage.js"></script>
-<script type="text/javascript" src="../../js/form.js"></script>
 <script type="text/javascript" src="../../js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../js/same.js"></script>
+<script type="text/javascript" src="../../js/linkage.js"></script>
 <script type="text/javascript" src="../../js/same2.js"></script>
 <script type="text/javascript">
-$("#btn").on("click",function(){
-	$('.btn1').addClass('magictime swashIn');
-		setTimeout(function(){
-		  	$('.btn0').addClass('magictime spaceInRight');
-		  	$('.btn3').addClass('magictime spaceInLeft');
-	    },800)
-	    setTimeout(function(){
-			$(".btn0,.btn3").css("opacity",1);
-		},800)
-	$('#effect4').addClass('magictime slideLeftRetourn');
-	$('#effect2').addClass('magictime slideRightRetourn'); 
-})
+$(document).ready(function(){
+	$("#btn").on("click",function(){
+		$('.btn1').addClass('magictime swashIn');
+			setTimeout(function(){
+			  	$('.btn0').addClass('magictime spaceInRight');
+			  	$('.btn3').addClass('magictime spaceInLeft');
+		    },800)
+		    setTimeout(function(){
+				$(".btn0,.btn3").css("opacity",1);
+			},800)
+		$('#effect4').addClass('magictime slideLeftRetourn');
+		$('#effect2').addClass('magictime slideRightRetourn'); 
+	})
+});
 </script>
 </body>
 </html>

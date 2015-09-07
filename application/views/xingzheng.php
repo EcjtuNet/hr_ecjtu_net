@@ -69,7 +69,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 				</ul>
 			</div>
 			<div class="jizhe_t">
-				<div class="info">办公</br><span style="margin-left:54px">室是日新网行政管理中</br></span><span style="margin-left:25px">心部门之一，办公室主要负责协</br></span>&nbsp;&nbsp;&nbsp;助全站进行网站的行政建设与校内外</br>&nbsp;单位的走访交流合作，以及日新网的线</br>&nbsp;下精品活动栏目，同时负责学校南区礼</br>&nbsp;堂周末影院的日常管理工作，此外，办</br>&nbsp;&nbsp;&nbsp;公室负责对办公场所的使用情况进行</br><span style="margin-left:25px">登记归档，负责对来访人员的</br></span><span style="margin-left:80px">欢迎接待工作。</span>
+				<div class="info">办公<br/><span style="margin-left:54px">室是日新网行政管理中<br/></span><span style="margin-left:25px">心部门之一，办公室主要负责协<br/></span>&nbsp;&nbsp;&nbsp;助全站进行网站的行政建设与校内外<br/>&nbsp;单位的走访交流合作，以及日新网的线<br/>&nbsp;下精品活动栏目，同时负责学校南区礼<br/>&nbsp;堂周末影院的日常管理工作，此外，办<br/>&nbsp;&nbsp;&nbsp;公室负责对办公场所的使用情况进行<br/><span style="margin-left:25px">登记归档，负责对来访人员的<br/></span><span style="margin-left:80px">欢迎接待工作。</span>
 				</div>
 			</div>
 		</div>
@@ -86,7 +86,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 				</ul>
 			</div>
 			<div class="jizhe_t">
-				<div class="info">驻外办隶属于行政管理中心，</br><span style="margin-left:27px">主要负责日新网的对外联络工作。重</br></span>&nbsp;&nbsp;&nbsp;点对接中国江西高校传媒联盟以及江西高校</br>网络联盟（负责承接江西高校网盟和江西高校</br>传媒联盟的活动，从策划到组织到执行）。能</br>够与学校各大社团社长对接，与全省各大高校</br>媒体交流，与全国各大校园媒体联系。到省级</br>&nbsp;&nbsp;活动上积极宣传推广日新网，并能参加全国</br>&nbsp;&nbsp;&nbsp;活动去对外交流经验，学习先进的理念。
+				<div class="info">驻外办隶属于行政管理中心，<br/><span style="margin-left:27px">主要负责日新网的对外联络工作。重<br/></span>&nbsp;&nbsp;&nbsp;点对接中国江西高校传媒联盟以及江西高校<br/>网络联盟（负责承接江西高校网盟和江西高校<br/>传媒联盟的活动，从策划到组织到执行）。能<br/>够与学校各大社团社长对接，与全省各大高校<br/>媒体交流，与全国各大校园媒体联系。到省级<br/>&nbsp;&nbsp;活动上积极宣传推广日新网，并能参加全国<br/>&nbsp;&nbsp;&nbsp;活动去对外交流经验，学习先进的理念。
 				</div>
 			</div>
 		</div>
@@ -122,11 +122,11 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			<h2>报名表</h2>
 			<div id="form">
 				<form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
-					<p><span>姓名-</span>&nbsp;<input type="text" name="user_name" class="text_input"></p>
-					<p><span>性别-</span><input type="radio"style="margin-left:46px;" name="user_sex" class="radio" value="男" checked/> 男
-					<input type="radio" name="user_sex" class="radio" value="女" /> 女</p>
+					<p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
+					<p><span>性别-</span><input type="radio"style="margin-left:46px;" name="user_sex" class="radio" value="男" checked/> <label for="male">男</label>
+					<input type="radio" name="user_sex" class="radio" value="女" /> <label for="female">女</label></p>
 					<p><span>手机-</span><input type="tel" name="user_phone" maxlength="11" /></p>
-					<p><span>QQ&nbsp;-&nbsp;</span><input type="number" name="user_qq" /></p>
+					<p><span>QQ&nbsp;-</span><input type="number" name="user_qq" /></p>
 					<p class="select"><span>学院-</span>
 						<select name="user_college" class="text_input">
 							<option value=""></option>
@@ -146,20 +146,20 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 							<option value="国防生学院">国防生学院</option>
 						</select>
 					</p>
-					<p><span>专业-&nbsp;</span>
+					<p><span>专业-</span>
 						<input type="text" name="user_major" class="text_input">
 					</p>
 					<p class="select"><span class="select">选择中心-</span>
-						<select id="selCentre" name="user_center">
+						<select id="selCentre" name="user_center" style="margin:0 8px;">
 							<option value=""></option>
 						</select>
 					</p>
 					<p class="select"><span class="select">部门方向-</span>
-						<select id="selApart" name="user_department">
+						<select id="selApart" name="user_department" style="margin:0 8px;">
 						</select>
 					</p>
-					<p><span id="personal"  style="margin-top:10px;">个人简介-</span>
-						<textarea name="user_remarks" cols="30" rows="10"></textarea>
+					<p><span id="personal" style="margin-top:10px;">个人简介-</span>
+						<textarea name="user_remarks" cols="30" rows="10" style="margin:0 8px;text-indent:10px;"></textarea>
 					</p>
 					<h3>
 						<input type="submit" value="提交"></input>
@@ -169,23 +169,23 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 		</div>
 </div>
-<script type="text/javascript" src="../../js/same.js"></script>
-<script type="text/javascript" src="../../js/jquery.js"></script>
-<script type="text/javascript" src="../../js/linkage.js"></script>
-<script type="text/javascript" src="../../js/form.js"></script>
 <script type="text/javascript" src="../../js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../js/same.js"></script>
+<script type="text/javascript" src="../../js/linkage.js"></script>
 <script type="text/javascript" src="../../js/same2.js"></script>
 <script type="text/javascript">
-$("#btn").on("click",function(){
-	$('.btn1').addClass('magictime swashIn');
-		setTimeout(function(){
-		  	$('.btn3,.btn4,.btn5').addClass('magictime swashIn');
-	    },900)
-	    setTimeout(function(){
-			$(".btn3,.btn4,.btn5").css("opacity",1);
-		},900)
-	$('#effect2,#effect3').addClass('magictime slideDownRetourn'); 
-})
+$(document).ready(function(){
+	$("#btn").on("click",function(){
+		$('.btn1').addClass('magictime swashIn');
+			setTimeout(function(){
+			  	$('.btn3,.btn4,.btn5').addClass('magictime swashIn');
+		    },900)
+		    setTimeout(function(){
+				$(".btn3,.btn4,.btn5").css("opacity",1);
+			},900)
+		$('#effect2,#effect3').addClass('magictime slideDownRetourn'); 
+	})
+});
 </script>
 </body>
 </html>

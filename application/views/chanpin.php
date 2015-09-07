@@ -204,7 +204,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 					</ul>
 			</div>
 			<div class="jizhe_b">
-				<div class="info">《交大青年》是日新网旗下</br><span style="margin-left:37px">杂志，于2011年3月由华东交通大学学</br></span><span style="margin-left:17px">工处、校团委、日新网联合发起筹备创办，目</span></br>前发行量数千册。其具体定位为“综合类校园杂</br>志”，旨在传播知识、交流观点、启迪心灵，树立</br>华东交大之精神。 杂志目前由日新网新闻出版中心</br>负责编辑出版，通常情况下杂志固定为两月出版一</br>期，假期停刊。除固定出版的双月刊外，日新网新</br>闻出版中心也会根据需要出版特刊（如交大40周</br>&nbsp;年校庆专刊，建团九十周年特刊等）。《交大青</br>&nbsp;&nbsp;&nbsp;&nbsp;年》创办短短两年，但已覆盖整个交大校园。</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此外，通过与校外媒体间的交流，《交</br>
+				<div class="info">《交大青年》是日新网旗下<br/><span style="margin-left:37px">杂志，于2011年3月由华东交通大学学<br/></span><span style="margin-left:17px">工处、校团委、日新网联合发起筹备创办，目</span><br/>前发行量数千册。其具体定位为“综合类校园杂<br/>志”，旨在传播知识、交流观点、启迪心灵，树立<br/>华东交大之精神。 杂志目前由日新网新闻出版中心<br/>负责编辑出版，通常情况下杂志固定为两月出版一<br/>期，假期停刊。除固定出版的双月刊外，日新网新<br/>闻出版中心也会根据需要出版特刊（如交大40周<br/>&nbsp;年校庆专刊，建团九十周年特刊等）。《交大青<br/>&nbsp;&nbsp;&nbsp;&nbsp;年》创办短短两年，但已覆盖整个交大校园。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此外，通过与校外媒体间的交流，《交<br/>
 				<span style="margin-left:60px">大青年》已名闻全国众多高校。</span>
 				</div>
 			</div>
@@ -224,7 +224,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 			<div class="jizhe_t">
 				<div class="info">
-				日新网微博是华东交通大学</br>校园门户网站日新网官方微博，</br>是专为服务“花椒”而设，新</br>&nbsp;&nbsp;闻爆料，热点时事，趣事百</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科，花椒求助等等。
+				日新网微博是华东交通大学<br/>校园门户网站日新网官方微博，<br/>是专为服务“花椒”而设，新<br/>&nbsp;&nbsp;闻爆料，热点时事，趣事百<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科，花椒求助等等。
 				</div>				
 			</div>			
 		</div>
@@ -273,7 +273,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 					</ul>
 			</div>
 			<div class="main">
-				<div class="info">日新影视工作室脱胎于原日</br><span style="margin-left:30px">新视频部。工作室集影视前期策划、</br></span><span style="margin-left:17px">拍摄 、后期制作特效合成等专业影视制</span></br>作。我们有强大的影视制作及创意班底，有专</br>业摄像队伍及后期剪辑制作人员，更有优秀的</br>导演进行视频指导。工作室致力于新理念微电</br>&nbsp;&nbsp;&nbsp;影创作，创作有《织梦》、《遇·青梅》等</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;优秀作品，其中《织梦》更是荣获</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校微电影大赛“最佳影片奖”</br>
+				<div class="info">日新影视工作室脱胎于原日<br/><span style="margin-left:30px">新视频部。工作室集影视前期策划、<br/></span><span style="margin-left:17px">拍摄 、后期制作特效合成等专业影视制</span><br/>作。我们有强大的影视制作及创意班底，有专<br/>业摄像队伍及后期剪辑制作人员，更有优秀的<br/>导演进行视频指导。工作室致力于新理念微电<br/>&nbsp;&nbsp;&nbsp;影创作，创作有《织梦》、《遇·青梅》等<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;优秀作品，其中《织梦》更是荣获<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校微电影大赛“最佳影片奖”<br/>
 				<span style="margin-left:130px">。</span>
 				</div>
 			</div>
@@ -294,7 +294,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 			<div class="jizhe_t">
 				<div class="info">
-				华东交通大学日新网手机客户端</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——日新青梅竹马，交大手机客户端，我</br>&nbsp;&nbsp;&nbsp;&nbsp;们一直以花椒视角为主线 ，并以关心花椒为重&nbsp;&nbsp;&nbsp;&nbsp;</br>&nbsp;&nbsp;&nbsp;头，不断开发符合花椒习惯和爱好的活动和栏目。</br>逛交大，评老师，看学院；火速知活动，提前晓电影</br>。来青梅，给你一个在交大不孤独的机会。这里有你</br>们正在逝去的校园情怀，正在发生的校园当下，本校</br>和你一样神奇的小伙伴，以及诸多的不可复制能力。</br>&nbsp;&nbsp;&nbsp;来竹马，一起来温柔的撬动整个校园吧。日新</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机客户端，给你一个在交大忒 骄傲的</br><span style="margin-left:137px">生活。</span>
+				华东交通大学日新网手机客户端<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——日新青梅竹马，交大手机客户端，我<br/>&nbsp;&nbsp;&nbsp;&nbsp;们一直以花椒视角为主线 ，并以关心花椒为重&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;头，不断开发符合花椒习惯和爱好的活动和栏目。<br/>逛交大，评老师，看学院；火速知活动，提前晓电影<br/>。来青梅，给你一个在交大不孤独的机会。这里有你<br/>们正在逝去的校园情怀，正在发生的校园当下，本校<br/>和你一样神奇的小伙伴，以及诸多的不可复制能力。<br/>&nbsp;&nbsp;&nbsp;来竹马，一起来温柔的撬动整个校园吧。日新<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机客户端，给你一个在交大忒 骄傲的<br/><span style="margin-left:137px">生活。</span>
 				</div>				
 			</div>			
 		</div>
@@ -330,11 +330,11 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			<h2>报名表</h2>
 			<div id="form">
 				<form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
-					<p><span>姓名-</span>&nbsp;<input type="text" name="user_name" class="text_input"></p>
-					<p><span>性别-</span><input type="radio"style="margin-left:46px;" name="user_sex" class="radio" value="男" checked/> 男
-					<input type="radio" name="user_sex" class="radio" value="女" /> 女</p>
+					<p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
+					<p><span>性别-</span><input type="radio"style="margin-left:46px;" name="user_sex" class="radio" value="男" checked/> <label for="male">男</label>
+					<input type="radio" name="user_sex" class="radio" value="女" /> <label for="female">女</label></p>
 					<p><span>手机-</span><input type="tel" name="user_phone" maxlength="11" /></p>
-					<p><span>QQ&nbsp;-&nbsp;</span><input type="number" name="user_qq" /></p>
+					<p><span>QQ&nbsp;-</span><input type="number" name="user_qq" /></p>
 					<p class="select"><span>学院-</span>
 						<select name="user_college" class="text_input">
 							<option value=""></option>
@@ -354,20 +354,20 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 							<option value="国防生学院">国防生学院</option>
 						</select>
 					</p>
-					<p><span>专业-&nbsp;</span>
+					<p><span>专业-</span>
 						<input type="text" name="user_major" class="text_input">
 					</p>
 					<p class="select"><span class="select">选择中心-</span>
-						<select id="selCentre" name="user_center">
+						<select id="selCentre" name="user_center" style="margin:0 8px;">
 							<option value=""></option>
 						</select>
 					</p>
 					<p class="select"><span class="select">部门方向-</span>
-						<select id="selApart" name="user_department">
+						<select id="selApart" name="user_department" style="margin:0 8px;">
 						</select>
 					</p>
 					<p><span id="personal" style="margin-top:10px;">个人简介-</span>
-						<textarea name="user_remarks" cols="30" rows="10"></textarea>
+						<textarea name="user_remarks" cols="30" rows="10" style="margin:0 8px;text-indent:10px;"></textarea>
 					</p>
 					<h3>
 						<input type="submit" value="提交"></input>
@@ -377,26 +377,26 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 		</div>
 </div>
-<script type="text/javascript" src="../../js/same.js"></script>
-<script type="text/javascript" src="../../js/jquery.js"></script>
-<script type="text/javascript" src="../../js/linkage.js"></script>
-<script type="text/javascript" src="../../js/form.js"></script>
 <script type="text/javascript" src="../../js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../js/same.js"></script>
+<script type="text/javascript" src="../../js/linkage.js"></script>
 <script type="text/javascript" src="../../js/same2.js"></script>
 <script type="text/javascript">
-$("#btn").on("click",function(){
-	$('.btn1').addClass('magictime swashIn');
-		setTimeout(function(){
-		  	$('.btn0').addClass('magictime spaceInRight');
-		  	$('.btn3').addClass('magictime spaceInLeft');
-	    },800)
-	    setTimeout(function(){
-			$(".btn0,.btn3").css("opacity",1);
-		},800)
-	$('#effect3').addClass('magictime slideRightRetourn');
-	$('#effect4,#effect6').addClass('magictime slideUpRetourn');
-	$('#effect5').addClass('magictime slideLeftRetourn');
-})
+$(document).ready(function(){
+	$("#btn").on("click",function(){
+		$('.btn1').addClass('magictime swashIn');
+			setTimeout(function(){
+			  	$('.btn0').addClass('magictime spaceInRight');
+			  	$('.btn3').addClass('magictime spaceInLeft');
+		    },800)
+		    setTimeout(function(){
+				$(".btn0,.btn3").css("opacity",1);
+			},800)
+		$('#effect3').addClass('magictime slideRightRetourn');
+		$('#effect4,#effect6').addClass('magictime slideUpRetourn');
+		$('#effect5').addClass('magictime slideLeftRetourn');
+	})
+});
 </script>
 </body>
 </html>
