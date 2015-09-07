@@ -125,7 +125,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			<div id="form">
 				<form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
 					<p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
-					<p><span>性别-</span><input type="radio"style="margin-left:46px;" name="user_sex" class="radio" value="男" checked/> <label for="male">男</label>
+					<p><span>性别-</span><input type="radio" style="margin-left:46px;" name="user_sex" class="radio" value="男" checked/> <label for="male">男</label>
 					<input type="radio" name="user_sex" class="radio" value="女" /> <label for="female">女</label></p>
 					<p><span>手机-</span><input type="tel" name="user_phone" maxlength="11" /></p>
 					<p><span>QQ&nbsp;-</span><input type="number" name="user_qq" /></p>
@@ -164,7 +164,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 						<textarea name="user_remarks" cols="30" rows="10" style="margin:0 8px;text-indent:10px;"></textarea>
 					</p>
 					<h3>
-						<input type="submit" value="提交"></input>
+						<input type="submit" value="提交" />
 						<a id="back2index" onclick="returnRegister()">返回首页</a>
 					</h3>
 				</form>
