@@ -51,7 +51,7 @@ class Admin_mdl extends CI_Model
 		$this->db->from('hr_user');
 		$this->db->join('user_info','user_info.user_id = hr_user.user_id');
 		$this->db->join('hr_info','hr_info.hr_id = hr_user.hr_id');
-		$this->db->where('term','2014.1');
+		$this->db->where('term','2015.1');
 		$query=$this->db->get("admin",$num,$offset);
 		$result = $query->result();
 		if($query)
@@ -75,7 +75,7 @@ class Admin_mdl extends CI_Model
 		$this->db->from('hr_user');
 		$this->db->join('user_info','user_info.user_id = hr_user.user_id');
 		$this->db->join('hr_info','hr_info.hr_id = hr_user.hr_id');
-		$this->db->where('term','2014.1');
+		$this->db->where('term','2015.1');
 		$query=$this->db->get();
 		$result = $query->num_rows();
 		if($query)
@@ -90,7 +90,7 @@ class Admin_mdl extends CI_Model
 		$this->db->from('hr_user');
 		$this->db->join('user_info','user_info.user_id = hr_user.user_id');
 		$this->db->join('hr_info','hr_info.hr_id = hr_user.hr_id');
-		$this->db->where('term','2014.1');
+		$this->db->where('term','2015.1');
 		$this->db->where('hr_info.hr_department',$department);
 		$query=$this->db->get();
 		$result = $query->num_rows();
