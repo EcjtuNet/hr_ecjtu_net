@@ -190,12 +190,10 @@ img{
 		</div>
 	<div id="btn_btm" onclick="changeBg()"></div>
 </div>
-<script type="text/javascript" src="js/same.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
 <script type="text/javascript">
 function changeBg(){
-    toggleClass(gId('img1'),"none"); 
-    toggleClass(gId('img2'),"none"); 
-    toggleClass(gId('nav'),"none");
+$("#img1,#img2,#nav").toggleClass("none"); 
 }
 </script>
 </body>
