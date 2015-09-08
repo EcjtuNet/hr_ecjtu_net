@@ -34,24 +34,18 @@
 		<legend>登入注册</legend>
 		<?php echo form_open('bg/rinsert')?>
 		<?php $options = array(
-                  '网站建设部'         => '网站建设部',
-                  '体验设计部'         => '体验设计部',
-                  '安全运维部'         => '安全运维部',
+                  'UED'                => 'UED',
+                  'DOD'                => 'DOD',
                   '记者团'             => '记者团',
-                  '编辑部'		         => '编辑部',
-                  '办公室'		         => '办公室',
-                  '财务部'		         => '财务部',
-                  '企划部'		         => '企划部',
-                  '市场部'		         => '市场部',
-                  '人力资源部'         => '人力资源部',
-                  '校园文化'	         => '校园文化',
+                  '编辑部'             => '编辑部',
+                  '办公室'             => '办公室',
+                  '外联部'             => '外联部',
                   '《交大青年》杂志社' => '《交大青年》杂志社',
-                  'WEB应用产品项目部'  => 'WEB应用产品项目部',
-                  '日新博客'		       => '日新博客',
-                  '日新论坛'		       => '日新论坛',
-                  '日新手机客户端'	   => '日新手机客户端',
-                  '日新微博'	         => '日新微博',
-                  '日新微信'	         => '日新微信',
+                  '日新手机客户端'     => '日新手机客户端',
+                  '日新微博'           => '日新微博',
+                  '日新影视工作室'     => '日新影视工作室',
+                  '日新视觉摄影产品'   => '日新视觉摄影产品',
+
                 );
               $arr =array('技术研发中心'=>'技术研发中心','新闻出版中心'=>'新闻出版中心','行政管理中心'=>'行政管理中心','产品运营中心'=>'产品运营中心');
                 ?>
@@ -59,7 +53,7 @@
 		<span><span class="labe">密&nbsp;&nbsp;码：</span><?php echo form_password($data).form_error('Rpassword')?></span><br/>
 		<span><span class="labe">验证码：</span><?php echo form_input('Ranswer','办公室的wifi密码','id="Ranswer"').form_error('Ranswer')?></span><br/>
 		<span><span class="labe">中&nbsp;&nbsp;心：</span><?php echo form_dropdown('Rcenter', $arr, '技术研发中心').form_error('Rcenter')?></span><br/>
-		<span><span class="labe">部&nbsp;&nbsp;门：</span><?php echo form_dropdown('Rdepartment', $options, '网站建设部').form_error('Rdepartment')?></span><br/>
+		<span><span class="labe">部&nbsp;&nbsp;门：</span><?php echo form_dropdown('Rdepartment', $options, 'UED').form_error('Rdepartment')?></span><br/>
 		<span><?php echo form_submit('rlogin',"提交")?><?php echo form_reset('reset',"重置").anchor('bg', '返回','title="返回亲"')?></span>
 	</fieldset>
 </body>
