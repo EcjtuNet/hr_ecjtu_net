@@ -143,7 +143,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 					</a>
 				</div>
 				<div class="btns_btm">
-					<a class="btn0">视觉摄影产品</a>
+					<a class="btn0" id="wuwenan" onmouseover="showWuwenan('wuwenan')" onmouseout="cleanWuwenan1()">视觉摄影产品</a>
 				</div>
 				<!-- 此时return为返回到首页 -->
 				<a id="return" onclick="hideXinwen()"></a>
