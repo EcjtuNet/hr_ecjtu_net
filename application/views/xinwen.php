@@ -42,15 +42,15 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 		<input id="btn" type="button" onclick="showXinwen()" />
 		<div id="effect">
 			<div class="content">
-				<a class="btn0" onclick="changeReturn();hideEffectTemplate2('effect4','effect2')" >编辑部</a>
-				<a class="btn3" onclick="changeReturn();hideEffectTemplate2('effect2','effect4')" >记者团</a>
+				<a class="btn0" onclick="changeReturn();hideEffectTemplate('effect4','effect2')" >编辑部</a>
+				<a class="btn3" onclick="changeReturn();hideEffectTemplate('effect2','effect4')" >记者团</a>
 				<div class="btn1">
 					<div class="btn2" style="background: url(../../images/xinwen2.png) no-repeat center;background-color: #FACC9E;"></div>
 				</div>
 				<!-- 此时return为返回到首页 -->
 				<a id="return" onclick="hideXinwen()"></a>
 				<!-- 此时return为返回到上一页 -->
-				<a id="return2" onclick="hideEffectTemplate4('return','effect2','effect4','return2')"></a>
+				<a id="return2" onclick="hideEffectTemplate('return','effect2','effect4','return2')"></a>
 			</div>	
 		</div>
 	</div>

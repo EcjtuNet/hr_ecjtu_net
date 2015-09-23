@@ -53,13 +53,6 @@ function changeReturn(){
 }
 /***结束****/
 
-/***********display block的几个函数*************/
-// function hideEffectTemplate(block,array){
-//     $("block").css("display","block");
-//     for (var i = 0; i = array.length; ++i) {
-//         $("#array["+i+"]").css("display","none");
-//     }
-// }
 /**********点击报名**********/
 function register(){
     $("#edit,#mask").css("display","block");
@@ -69,3 +62,4 @@ function returnRegister(){
     $("#edit,#mask").css("display","none");
     $("#main,#footer").toggleClass("blur");
 }
+

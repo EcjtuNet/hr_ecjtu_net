@@ -131,15 +131,15 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 		<div id="effect">
 			<div class="content">
 				<div class="btns_top">
-					<a id="app" class="btn0" onclick="changeReturn();hideEffectTemplate4('effect6','effect3','effect5','effect4')">青梅竹马</a>
-					<a  class="btn3" onclick="changeReturn();hideEffectTemplate3('effect4','effect3','effect5')" >日新微博</a>
+					<a id="app" class="btn0" onclick="changeReturn();hideEffectTemplate('effect6','effect3','effect5','effect4')">青梅竹马</a>
+					<a  class="btn3" onclick="changeReturn();hideEffectTemplate('effect4','effect3','effect5')" >日新微博</a>
 				</div>
 				<div class="btns_mid">
-					<a class="btn0" onclick="changeReturn();hideEffectTemplate4('effect5','effect3','effect4','effect6')" >日新影视工作室</a>
+					<a class="btn0" onclick="changeReturn();hideEffectTemplate('effect5','effect3','effect4','effect6')" >日新影视工作室</a>
 					<div class="btn1">
 						<div class="btn2" style="background: url(../../images/chanpin2.png) no-repeat center;background-color: #FACC9E;"></div>
 					</div>
-					<a class="btn3" onclick="changeReturn();hideEffectTemplate4('effect3','effect4','effect5','effect6')" ><span>《交大青年》</span><span>杂志社</span>
+					<a class="btn3" onclick="changeReturn();hideEffectTemplate('effect3','effect4','effect5','effect6')" ><span>《交大青年》</span><span>杂志社</span>
 					</a>
 				</div>
 				<div class="btns_btm">
@@ -150,7 +150,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 		</div>
 		<!-- 此时return为返回到上一页 -->
-				<a id="return2" onclick="hideEffectTemplate6('return','effect3','effect4','return2','effect5','effect6')"></a>
+				<a id="return2" onclick="hideEffectTemplate('return','effect3','effect4','return2','effect5','effect6')"></a>
 	<!-- effect2为点击视频部出现的介绍页面
 		<div id="effect2">
 			<div class="jizhe_r">
