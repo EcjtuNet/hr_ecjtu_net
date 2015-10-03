@@ -46,8 +46,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 		<div id="effect">
 			<div class="content">
 				<a class="btn3" id="caiwu" onmouseover="showRenyuanzanman('caiwu')" onmouseout="cleanRenyuanzanman1()">财务部</a>
-				<div class="btn1">
-					<div class="btn2" style="background: url(../../images/xingzheng2.png) no-repeat center;background-color: #FACC9E;"></div>
+				<div class="btn1" style="background: url(../../images/xingzheng2.png) no-repeat center;background-color: #FACC9E;">
 				</div>
 				<a class="btn4" onclick="changeReturn();hideEffectTemplate('effect2','effect3')">办公室</a>
 				<a class="btn5" onclick="changeReturn();hideEffectTemplate('effect3','effect2')" >外联部</a>

@@ -32,28 +32,14 @@
 }
 #effect .btn1{
 	margin:0 auto;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	border: 10px solid rgba(227, 226, 224, 0.84);
-	z-index: 2000;
-	position: relative;
-}
-#effect .btn2{
-	position: absolute;
-	top: 6px;
-	left: 6px;
+	top: 16px;
 	width: 127px;
 	height: 127px;
 	border-radius: 50%;
 	border: 5px solid #666666;
-	box-shadow: 0 0 0 8px #D5D5D3;
-	color: #666666;
-	text-align: center;
-	font-size: 17px;
-	font-weight: bold;
-	line-height: 127px;
+	box-shadow: 0 0 0 8px #D5D5D3,0 0 0 17px rgba(227, 226, 224, 0.84);
 	z-index: 2000;
+	position: relative;
 }
 #mask{
 	position: fixed;

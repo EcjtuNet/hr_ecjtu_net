@@ -25,7 +25,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	position: absolute;
 	left: 50%;
 	margin-left: -330px;
-	top: 10%;
+	top: 5%;
 }
 #effect .btns_top .btn0{
 	width: 105px;
@@ -136,8 +136,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 				</div>
 				<div class="btns_mid">
 					<a class="btn0" onclick="changeReturn();hideEffectTemplate('effect5','effect3','effect4','effect6')" >日新影视工作室</a>
-					<div class="btn1">
-						<div class="btn2" style="background: url(../../images/chanpin2.png) no-repeat center;background-color: #FACC9E;"></div>
+					<div class="btn1" style="background: url(../../images/chanpin2.png) no-repeat center;background-color: #FACC9E;">
 					</div>
 					<a class="btn3" onclick="changeReturn();hideEffectTemplate('effect3','effect4','effect5','effect6')" ><span>《交大青年》</span><span>杂志社</span>
 					</a>
