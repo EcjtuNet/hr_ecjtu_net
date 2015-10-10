@@ -7,34 +7,11 @@ $(document).ready(function() {
         url = "http://hr.ecjtu.net/index.php/register/check";
         $.post(url, $(this).serialize());
     });
-    /*******点击屏幕介绍消失*******/
-    $("#effect2").click(function(){
-        $("#effect2,#return2").css("display","none");
-        $("#return").css("display","block");
-
-    })
-    $("#effect3").click(function(){
-        $("#effect3,#return2").css("display","none");
-        $("#return").css("display","block");
-
-    })
-    $("#effect4").click(function(){
-        $("#effect4,#return2").css("display","none");
-        $("#return").css("display","block");
-
-    })
-    $("#effect5").click(function(){
-        $("#effect5,#return2").css("display","none");
-        $("#return").css("display","block");
-
-    })
-    $("#effect6").click(function(){
-        $("#effect6,#return2").css("display","none");
-        $("#return").css("display","block");
-
-    })
-    /***结束****/
 });
+/**首页换背景***/
+function changeBg(){
+$("#img1,#img2,#nav").toggleClass("none"); 
+}
 /**中心按钮函数*/
 function showXinwen(){
     $("#effect,#mask,#return").css("display","block");
@@ -47,12 +24,6 @@ function hideXinwen(){
     $("#btn,#register").css("display","block");
     $("#info,#footer").toggleClass("blur"); 
 }
-function changeReturn(){
-    $("#return").css("display","none");
-    $("#return2").css("display","block");
-}
-/***结束****/
-
 /**********点击报名**********/
 function register(){
     $("#edit,#mask").css("display","block");

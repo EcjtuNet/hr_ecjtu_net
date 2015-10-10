@@ -2,13 +2,16 @@
 	background-color: #545454;
 }
 #main #btn{
-	margin: 11.6% auto auto;
+	margin: 15% auto auto;
 }
 #info .title {
 	width: 110px;
 	height: 23px;
  }
 /************点击start出现的效果*************/
+#effect{
+	margin: 2% auto auto auto;
+}
 #effect{
 	width: 530px;
 	position: absolute;

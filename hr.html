@@ -33,18 +33,6 @@ img{
 	position: absolute;
 	background-color: #FFCC99;
 }
-#btn_btm{
-	display: block;
-	width: 51px;
-	height: 50px;
-	background: url(images/on1.png) no-repeat top center;
-	position: absolute;
-	bottom: 4.1%;
-	right: 3.1%
-}
-#btn_btm:hover{
-	background: url(images/on2.png) no-repeat top center;
-}
 .none{
 	display: none;
 }
@@ -164,8 +152,8 @@ img{
 </head>
 <body>
 <div id="wrapper_index">
-	<img id="img1" src="images/index1.png">
-	<img id="img2" class="none" src="images/index2.png">
+	<img id="img1" src="images/index1.png" onclick="changeBg()">
+	<img id="img2" class="none" src="images/index2.png" onclick="changeBg()">
 		<div class="nav none" id="nav">
 			<div class="line">
 				<div class="l1"></div>
@@ -188,13 +176,8 @@ img{
 				<a href="" class="t5" style="width:96px;height:20px;background-image:url(images/chanpin1.png)"></a>
 			</div>
 		</div>
-	<div id="btn_btm" onclick="changeBg()"></div>
 </div>
 <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
-<script type="text/javascript">
-function changeBg(){
-$("#img1,#img2,#nav").toggleClass("none"); 
-}
-</script>
+<script type="text/javascript" src="js/same2.js"></script>
 </body>
 </html>

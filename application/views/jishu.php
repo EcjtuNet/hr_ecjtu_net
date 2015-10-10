@@ -12,7 +12,10 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	<link type="text/css" rel="stylesheet" href="../../css/register.css" >
 <style type="text/css">
 #main #btn{
-	margin: 3% auto auto;
+	margin: 9% auto auto;
+}
+#effect{
+	margin: 8% auto auto auto;
 }
 /*********点击DOD出现的效果**************/
 #effect4 .jizhe_l{
@@ -53,30 +56,23 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 	<div id="main">
 		<div id="info">
 			<p><img class="title" src="../../images/jishu3.png">
-		日新网技术研发中心是日新工作室所属中心之一，现有面向用户的设计开发（UED）部门和面向数据的设计开发（DOD）部门。中心主要负责校内外网站建设、软件开发及全校师生的电脑维护等工作。</p>
-			<p>下属部门及职务：</p>
-			<p>-UED-面向用户的设计开发部门</p>
-			<p>全面负责所有面向用户的开发和设计，包括，交互设计，视觉设计，页面重构，前端开发，app开发</p>
-			<p>-DOD-面向数据的设计开发部门</p>
-			<p>全面负责日新网所有产品的数据提供，数据保存，数据挖掘和数据维护，包括数据接口开发，数据库开发，数据部署，数据挖掘，服务器维护，服务器升级。</p> 
+		日新网技术研发中心是日新工作室所属中心之一，现有面向用户的设计开发（UED）部门和面向数据的设计开发（DOD）部门。中心主要负责校内外网站建设、软件开发及全校师生的电脑维护等工作。UED部门全面负责所有面向用户的开发和设计，包括，交互设计，视觉设计，页面重构，前端开发，app开发。而DOD则负责日新网所有产品的数据提供，数据保存，数据挖掘和数据维护，包括数据接口开发，数据库开发，数据部署，数据挖掘，服务器维护，服务器升级。</p>
 		</div>
 		<input id="btn" type="button" onclick="showXinwen()" />
 	<!-- effect为点击start出现的页面 -->
 		<div id="effect">
 			<div class="content">					
-				<a class="btn0" onclick="changeReturn();hideEffectTemplate('effect2','effect4')" >UED</a>
-				<a class="btn3" onclick="changeReturn();hideEffectTemplate('effect4','effect2')" >DOD</a>
+				<a class="btn0" onclick="hideEffectTemplate('effect2','effect4','return')" >UED</a>
+				<a class="btn3" onclick="hideEffectTemplate('effect4','effect2','return')" >DOD</a>
 				<div class="btn1" style="background: url(../../images/jishu2.png) no-repeat center;background-color: #FACC9E;">
 				</div>
 				<!-- 此时return为返回到首页 -->
 				<a id="return" onclick="hideXinwen()"></a>
-				<!-- 此时return为返回到上一页 -->
-				<a id="return2" onclick="hideEffectTemplate('return','effect2','effect4','return2')"></a>
 			</div>
 		</div>
 	</div>
 	<!-- effect2为点击UED出现的介绍页面 -->
-		<div id="effect2">
+		<div id="effect2" onclick="hideEffectTemplate('return','effect2')">
 			<div class="jizhe_t">
 				<h2>技术实习生</h2>
 					<ul>
@@ -91,7 +87,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>	
 		</div>
 	<!-- effect4为点击DOD出现的介绍页面 -->
-		<div id="effect4">
+		<div id="effect4" onclick="hideEffectTemplate('return','effect4')">
 			<div class="jizhe_l">
 				<h2>技术实习生</h2>
 					<ul>

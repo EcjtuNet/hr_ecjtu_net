@@ -48,16 +48,14 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 				<a class="btn3" id="caiwu" onmouseover="showRenyuanzanman('caiwu')" onmouseout="cleanRenyuanzanman1()">财务部</a>
 				<div class="btn1" style="background: url(../../images/xingzheng2.png) no-repeat center;background-color: #FACC9E;">
 				</div>
-				<a class="btn4" onclick="changeReturn();hideEffectTemplate('effect2','effect3')">办公室</a>
-				<a class="btn5" onclick="changeReturn();hideEffectTemplate('effect3','effect2')" >外联部</a>
+				<a class="btn4" onclick="hideEffectTemplate('effect2','effect3','return')">办公室</a>
+				<a class="btn5" onclick="hideEffectTemplate('effect3','effect2','return')" >外联部</a>
 			<!-- 此时return为返回到首页 -->
 			<a id="return" onclick="hideXinwen()"></a>			
 			</div>	
 		</div>
-		<!-- 此时return为返回到上一页 -->
-			<a id="return2" onclick="hideEffectTemplate('return','effect2','effect3','return2')"></a>	
 	<!-- effect2为点击办公室出现的介绍页面 -->
-		<div id="effect2">
+		<div id="effect2" onclick="hideEffectTemplate('return','effect2')">
 			<div class="jizhe_r">
 				<h2>办公室文员</h2>
 				<ul>
@@ -73,7 +71,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>
 		</div>
 	<!-- effect3为点击外联部出现的介绍页面 -->
-		<div id="effect3">
+		<div id="effect3" onclick="hideEffectTemplate('return','effect3')">
 			<div class="jizhe_r">
 				<h2>外联部文员</h2>
 				<ul>

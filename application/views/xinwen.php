@@ -42,19 +42,17 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 		<input id="btn" type="button" onclick="showXinwen()" />
 		<div id="effect">
 			<div class="content">
-				<a class="btn0" onclick="changeReturn();hideEffectTemplate('effect4','effect2')" >编辑部</a>
-				<a class="btn3" onclick="changeReturn();hideEffectTemplate('effect2','effect4')" >记者团</a>
+				<a class="btn0" onclick="hideEffectTemplate('effect4','effect2','return')" >编辑部</a>
+				<a class="btn3" onclick="hideEffectTemplate('effect2','effect4','return')" >记者团</a>
 				<div class="btn1" style="background: url(../../images/xinwen2.png) no-repeat center;background-color: #FACC9E;">
 				</div>
 				<!-- 此时return为返回到首页 -->
 				<a id="return" onclick="hideXinwen()"></a>
-				<!-- 此时return为返回到上一页 -->
-				<a id="return2" onclick="hideEffectTemplate('return','effect2','effect4','return2')"></a>
 			</div>	
 		</div>
 	</div>
 	<!-- effect4为点击编辑部出现的介绍页面 -->
-		<div id="effect4">
+		<div id="effect4" onclick="hideEffectTemplate('return','effect4')">
 			<div class="jizhe_l">
 				<h2>助理编辑</h2>
 				<ul>
@@ -76,7 +74,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 			</div>			
 		</div>
 	<!-- effect2为点击记者团出现的介绍页面 -->
-		<div id="effect2">
+		<div id="effect2" onclick="hideEffectTemplate('return','effect2')">
 			<div class="jizhe_r">
 				<h2>文字记者</h2>
 				<ul>
