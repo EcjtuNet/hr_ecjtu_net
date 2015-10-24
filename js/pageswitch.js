@@ -35,10 +35,10 @@
 			if(opts.direction == "horizontal"){
 			initLayout();
 			}
-
-			if(opts.pagination){
-				initPagination();
-			}
+            //
+			//if(opts.pagination){
+			//	initPagination();
+			//}
 
 			if(opts.keyboard){
 				keyDown();
@@ -100,18 +100,20 @@
 	}
 
 	//初始化分页
-	function initPagination(){
-		var length = sections.length;
-		if(length){
+	//function initPagination(){
+	//	var length = sections.length;
+	//	if(length){
+    //
+	//	}
+	//	var pageHtml = '<ul id="pages"><li class="active"></li>';
+	//	for(var i=1;i<length;i++){
+	//		pageHtml += '<li></li>';
+	//	}
+	//	pageHtml += '</ul>';
+	//	$("body").append(pageHtml);
+	//}
 
-		}
-		var pageHtml = '<ul id="pages"><li class="active"></li>';
-		for(var i=1;i<length;i++){
-			pageHtml += '<li></li>';
-		}
-		pageHtml += '</ul>';
-		$("body").append(pageHtml);
-	}
+
 
 	//分页事件
 	function paginationHandler(){
