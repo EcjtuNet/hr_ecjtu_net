@@ -1,183 +1,675 @@
 <!DOCTYPE html>
 <!--
-华东交通大学团委、学工处 [ 版权所有 交大日新 ] 赣ICP备05003322号 日新工作室 维护 联系：214@ecjtu.net
+华东交通大学团委、学工处 [ 版权所有 交大日新 ] 赣ICP备04003322号 日新工作室 维护 联系：214@ecjtu.net
 CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 <html lang="zh-CN">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
 	<title>日新招新啦</title>
-<style type="text/css">
-*{
-	margin: 0;
-	padding: 0; 
-	outline: none;
-}
-img{
-	border: 0;
-}
-#wrapper_index{
-	width: 100%;
-	height: 100%;
-}
-#img1{
-	width: 58.1%;
-	height: 88.8%;
-	position: absolute;
-	left: 50%;
-	margin-left: -31.6%;
-}
-#img2{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background-color: #FFCC99;
-}
-.none{
-	display: none;
-}
-/******复用*******/
-.nav{
-	width: 558px;
-	height: 84px;
-	position: absolute;
-	bottom: 1%;
-	left: 50%;
-	margin-left: -279px;
-}
-.line{
-	width: 530px;
-	height: 8px;
-	border: 1px dotted #A0A0A0;
-	margin-top: 23px;
-	float: left;
-}
-.line a{
-	display: block;
-	opacity: 1;
-}
-.line .l1{
-	width: 21px;
-	height: 8px;
-	float: left;
-	background-color: #545454;
-}
-.line .circle{
-	width: 20px;
-	height: 20px;
-	float: left;
-	margin-top: -11px;
-	border-radius: 50%;
-	border: 4px solid #545454;
-	background-color:#FFCC99; 
-}
-.line .circle:active{
-	border: 14px solid #545454;
-	width: 0px;
-	height: 0px;
-	transition:all 0.1s ease-in-out 0s;
-	-moz-transition:all 0.1s ease-in-out 0s;
-	-o-transition:all 0.1s ease-in-out 0s;
-	-webkit-transition:all 0.1s ease-in-out 0s;
-}
-.line .l2{
-	width: 103px;
-	height: 8px;
-	float: left;
-	background-color: #545454;
-}
-.line .logo{
-  	float: left;
-	width: 55px;
-	height: 49px;
-	margin-left: -28px;
-	margin-top: -27px;
-	background: url(images/logo.png) no-repeat 0px -2px;
-} 
-.line .l3_e{
-	width: 78px;
-	height: 8px;
-	float: left;
-}
-.line .l3{
-	width: 89px;
-	height: 8px;
-	float: left;
-}
-.line .l4{
-	width: 21px;
-	height: 8px;
-	float: left;
-}
-.nav .tips{
-	width: 100%;
-	height: 20px;
-}
-.nav .tips a{
-	display: block;
-	float: left;
-}
-.nav .tips .t1{
-	margin: 30px 10px auto 7px;
-}
-.nav .tips .t3{
-	margin: 31px -13px auto 39px;
-}
-.nav .tips .t4{
-	margin: 31px 0 auto 36px;
-}
-.nav .tips .t5{
-	margin: 31px 0 auto 20px;
-}
-#footer #register{
-	width: 73px;
-	height: 24px;
-	float: right;
-	margin-top: -23px;
-  	margin-right: 34px;
-  	display: block;
-	background: url(../images/join.png) no-repeat;
-}
-#footer #register:hover,#effect #return:hover,#effect #return2:hover{
-	transform:scale(1.15);
-	-moz-transform:scale(1.15);
-	-o-transform:scale(1.15);
-	-webkit-transform:scale(1.15);
-	transition:all 0.1s ease-in 0s;
-	-moz-transition:all 0.1s ease-in 0s;
-	-o-transition:all 0.1s ease-in 0s;
-	-webkit-transition:all 0.1s ease-in 0s;
-}
-</style>
+	<link type="text/css" rel="stylesheet" href="css/xinwen.css">
+	<link type="text/css" rel="stylesheet" href="css/same.css">
+	<link type="text/css" rel="stylesheet" href="css/register.css">
+	<link type="text/css" rel="stylesheet" href="sass/shake.scss">
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
 </head>
 <body>
-<div id="wrapper_index">
-	<img id="img1" src="images/index1.png" onclick="changeBg()">
-	<img id="img2" class="none" src="images/index2.png" onclick="changeBg()">
-		<div class="nav none" id="nav">
-			<div class="line">
-				<div class="l1"></div>
-				<a class="logo" href="#"></a>
-				<div class="l3_e"></div>
-				<a class="circle" href="/index.php/hr/xinwen"></a>
-				<div class="l3"></div>
-				<a class="circle" href="/index.php/hr/jishu"></a>
-				<div class="l3"></div>
-				<a class="circle" href="/index.php/hr/xingzheng"></a>
-				<div class="l3"></div>
-				<a class="circle" href="/index.php/hr/chanpin"></a>
-				<div class="l4"></div>
+<div class="main" id="container">
+	<!---section0-->
+	<section id="section0" class="section active">
+		<div id="wrapper_index">
+			<div class="target" onmouseover="templateBlock('#img2','.tip')"></div>
+			<img id="img1" src="images/index1.png">
+			<img id="img2" src="images/index2.png">
+			<img class="tip shake" src="images/tip.png">
+		</div>	
+	</section>
+	<!---section1-->
+	<section id="section1" class="section">
+		<div class="wrapper" onmousemove="mousePosition('#section1 #bg')">
+			<img id="bg" src="images/HR.png">
+			<div class="box"></div>
+			<div id="main">
+				<div id="info">
+					<p><img class="title" src="images/xinwen3.png">
+					隶属于华东交通大学新闻中心日新网，下设编辑部和记者团两个部门。现有成员30余人，设有总编辑一名，中文编辑两名，记者团团长一名，助理编辑若干，记者若干。曾多次获得教育部中国大学生在线高校百佳网站，江西省十大科教文网站等荣誉。目前主要负责日新网网站内容的更新，在做好这些工作的同时，我们积极进取，进行网页专题制作，同时积极迎接新媒体变革，开始制作信息图表，微信H5专题等内容，紧随发展。在未来的工作中，新闻出版中心全体成员将牢记“责任，合作，进取，创新”八字站训，不断的提升自身的多方面建设，为日新网的发展做出更大的贡献。</p>
+				</div>			
+				<input id="btn" type="button" onclick='
+				disBlock("section:nth-child(2) #effect","section:nth-child(2) #mask","section:nth-child(2) #register","section:nth-child(2) #btn","#return");
+				changeBlur("section:nth-child(2) #info","section:nth-child(2) #footer","section:nth-child(2) #bg");
+				$(this).css("display","none")' />
+				<div id="effect" class="none">
+					<div class="content">
+						<a class="btn0" onclick="disBlock('#effect4','#return')" >编辑部</a>
+						<a class="btn3" onclick="disBlock('#effect2','#return')" >记者团</a>
+						<div class="btn1" style="background: url(images/xinwen2.png) no-repeat center;background-color: #FACC9E;">
+						</div>
+		
+					</div>	
+				</div>
 			</div>
-			<div class="tips">
-				<a href="" class="t1" style="width:35px;height:20px;background-image:url(images/shouye.png)"></a>
-				<a href="" class="t3" style="width:93px;height:20px;background-image:url(images/xinwen1.png);margin-left:43px;"></a>
-				<a href="" class="t3" style="width:94px;height:20px;background-image:url(images/jishu1.png)"></a>
-				<a href="" class="t4" style="width:95px;height:20px;background-image:url(images/xingzheng1.png)"></a>
-				<a href="" class="t5" style="width:96px;height:20px;background-image:url(images/chanpin1.png)"></a>
+			<!-- 此时return为返回到首页 -->
+			<a id="return" class="none" onclick='
+			disBlock("section:nth-child(2) #effect","section:nth-child(2) #mask","section:nth-child(2) #btn","section:nth-child(2) #register","#return");
+			changeBlur("section:nth-child(2) #info","section:nth-child(2) #footer","section:nth-child(2) #bg");
+			$("section:nth-child(2) #btn").css("display","block");
+			'></a>
+			<!-- effect4为点击编辑部出现的介绍页面 -->
+				<div id="effect4" class="none" onclick="disBlock('#effect4','#return')">
+					<div class="jizhe_l">
+						<h2>助理编辑</h2>
+						<ul>
+							<li>职位要求：</li>
+							<li>1、熟悉学校的主要情况和历史和日新网的组织架构。</li>
+							<li>2、对日新网的新闻网站的稿件有所熟悉和了解。</li>
+							<li>3、具有一位编辑人员的基本素养和随机应变能力。</li>
+							<li>4、对现在新流行的各种媒体的基本功能和初步应用的理解。</li>
+							<li>5、简单使用ps进行图集图标制作</li>
+							<li>6、具有合作意识和团队精神。</li>
+							<li>7、具有良好的思维逻辑能力和口头表达能力。</li>
+							<li>8、2014级以上人员可以报名。</li>
+						</ul>
+					</div>
+					<div class="jizhe_t">
+						<div class="info">
+						编辑<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;部由原先日新网新闻<br/>&nbsp;&nbsp;出版中心新闻部改编而来，<br/>现有编辑十名，主要负责编辑<br/>日新网记者团的各类新闻稿件<br/>&nbsp;，按时进行值班，参加封闭<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;训练和外出考察活动等<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;待。
+						</div>				
+					</div>			
+				</div>
+			<!-- effect2为点击记者团出现的介绍页面 -->
+				<div id="effect2" class="none" onclick="disBlock('#effect2','#return')">
+					<div class="jizhe_r">
+						<h2>文字记者</h2>
+						<ul>
+							<li>职位要求：</li>
+							<li>1、新闻敏感性强，需要有一定的文字功底；</li>
+							<li>2、有团队合作精神，并有较强的责任心和工作热情；</li>
+							<li>3、熟悉常规办公软件常用操作（如word等)。</li>
+						</ul>
+					</div>
+					<div class="jizhe_t">
+						<div class="info">记者团由原南北区记者站合并而成，<br/><span style="margin-left:47px">主要负责校内外各类新闻的采写。<br/></span>&nbsp;&nbsp;&nbsp;目前，记者团已经发展成为拥有20余名文字记<br/>者、体育记者的优秀记者团队，除完成日常校园新<br/>闻的报道外，在一些日新网组织、参与的校内外重<br/><span style="margin-left:64px">大活动中发挥着巨大的作用。<br/></span>&nbsp;记者团先后涌现出了"世博会注册大学生记者"、"<br/>&nbsp;&nbsp;世博会香港传播大使"、" 亚运会注册大学生记<br/><span style="margin-left:28px">者"、"大运会注册大学生记者"、"城运会<br/></span><span style="margin-left:38px">注册记者"等多名优秀校园新闻人<br/></span><span style="margin-left:143px">。</span>
+						</div>
+					</div>
+				</div>
+			<div id="mask"  class="none"></div>
+			<div id="footer">
+				<a id="register" class="register" onclick="changeBlur('#section1 #main','#section1 #footer','#section1 #bg');$('#section1 #edit').fadeIn(400);$('#section1 #mask').fadeIn(400);";></a>
+			</div>
+			<!-- 报名表--> 
+				<div id="edit" class="none">
+					<h2>报名表</h2>
+					<div id="form">
+						<form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
+							<p><span>姓名-</span><label>
+								<input type="text" name="user_name" class="text_input">
+							</label></p>
+							<p><span>性别-</span><label for="male"><input type="radio"style="margin-left:46px;" name="user_sex" class="radio" id="male" value="男" checked/> 男</label>
+							<label for="female"><input type="radio" name="user_sex" class="radio" id="female" value="女" /> 女</label></p>
+							<p><span>手机-</span><label>
+								<input type="tel" name="user_phone" maxlength="11"/>
+							</label></p>
+							<p><span>QQ&nbsp;-</span><label>
+								<input type="number" name="user_qq"/>
+							</label></p>
+							<p class="select"><span>学院-</span>
+								<label>
+									<select name="user_college" class="text_input">
+										<option value=""></option>
+										<option value="土木建筑学院">土木建筑学院</option>
+										<option value="电气与电子工程学院">电气与电子工程学院</option>
+										<option value="机电工程学院">机电工程学院</option>
+										<option value="经济管理学院">经济管理学院</option>
+										<option value="外国语学院">外国语学院</option>
+										<option value="信息工程学院">信息工程学院</option>
+										<option value="基础科学学院">基础科学学院</option>
+										<option value="人文社会科学学院">人文社会科学学院</option>
+										<option value="国际学院">国际学院</option>
+										<option value="软件学院">软件学院</option>
+										<option value="体育学院">体育学院</option>
+										<option value="轨道交通学院">轨道交通学院</option>
+										<option value="艺术学院">艺术学院</option>
+										<option value="国防生学院">国防生学院</option>
+									</select>
+								</label>
+							</p>
+							<p><span>专业-</span>
+								<label>
+									<input type="text" name="user_major" class="text_input">
+								</label>
+							</p>
+							<p class="select"><span class="select">选择中心-</span>
+								<label for="selCentre"></label><select id="selCentre" name="user_center" style="margin:0 8px;">
+									<option value=""></option>
+								</select>
+							</p>
+							<p class="select"><span class="select">部门方向-</span>
+								<label for="selApart"></label><select id="selApart" name="user_department" style="margin:0 8px;">
+								</select>
+							</p>
+							<p><span id="personal" style="margin-top:10px;">个人简介-</span>
+								<label>
+									<textarea name="user_remarks" cols="30" rows="10"
+											  style="margin:0 8px;text-indent:10px;"></textarea>
+								</label>
+							</p>
+							<h3>
+								<input type="submit" value="提交" />
+								<a id="back2index" onclick="changeBlur('#section1 #main','#section1 #footer','#section1 #bg');$('#section1 #edit').fadeOut(200);$('#section1 #mask').fadeOut(200);">返回首页</a>
+							</h3>
+						</form>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!---section2-->
+	<section id="section2" class="section">
+		<div class="wrapper" onmousemove="mousePosition('#section2 #bg')">
+            <img id="bg" src="images/HR.png">
+			<div class="box"></div>
+			<div id="main">
+				<div id="info">
+					<p><img class="title" src="images/jishu3.png">
+				日新网技术研发中心是日新工作室所属中心之一，现有面向用户的设计开发（UED）部门和面向数据的设计开发（DOD）部门。中心主要负责校内外网站建设、软件开发及全校师生的电脑维护等工作。UED部门全面负责所有面向用户的开发和设计，包括，交互设计，视觉设计，页面重构，前端开发，app开发。而DOD则负责日新网所有产品的数据提供，数据保存，数据挖掘和数据维护，包括数据接口开发，数据库开发，数据部署，数据挖掘，服务器维护，服务器升级。</p> 
+				</div>
+				<input id="btn" type="button" onclick='
+				disBlock("section:nth-child(3) #effect","section:nth-child(3) #mask","section:nth-child(3) #register","section:nth-child(3) #btn","#return2");
+				changeBlur("section:nth-child(3) #info","section:nth-child(3) #footer","section:nth-child(3) #bg");
+				$(this).css("display","none")' />
+			    <!-- effect为点击start出现的页面 -->
+				<div id="effect" class="none">
+					<div class="content">					
+						<a class="btn0" onclick="disBlock('#effect1','#return2')">UED</a>
+						<a class="btn3" onclick="disBlock('#effect3','#return2')">DOD</a>
+						<div class="btn1" style="background: url(images/jishu2.png) no-repeat center;background-color: #FACC9E;">
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- 此时return为返回到首页 -->
+		<a id="return2" class="none" onclick='
+			disBlock("section:nth-child(3) #effect","section:nth-child(3) #mask","section:nth-child(3) #btn","section:nth-child(3) #register","#return2");
+			changeBlur("section:nth-child(3) #info","section:nth-child(3) #footer","section:nth-child(3) #bg");
+			$("section:nth-child(3) #btn").css("display","block");'></a>
+			<!-- effect1为点击UED出现的介绍页面 -->
+				<div id="effect1" class="none" onclick="disBlock('#effect1','#return2')">
+					<div class="jizhe_t">
+						<h2>技术实习生</h2>
+							<ul>
+								<li>职位要求：</li>
+								<li>1. WEB前端开发语言（HTML/CSS/JS）</li>
+								<li>2. WEB后端开发语言（PHP/Python/Ruby） </li>
+								<li>3. 服务器运维部署（Linux） </li>
+								<li>4. 视觉/交互设计（PS）；</li>
+								<li>5. 客户端开发（Android/iOS） </li>
+								<li>6. 用户调研、产品设计</li>
+							</ul>
+					</div>	
+				</div>
+			<!-- effect3为点击DOD出现的介绍页面 -->
+				<div id="effect3" class="none" onclick="disBlock('#effect3','#return2')">
+					<div class="jizhe_l">
+						<h2>技术实习生</h2>
+							<ul>
+								<li>职位要求：</li>
+								<li>1. WEB前端开发语言（HTML/CSS/JS）</li>
+								<li>2. WEB后端开发语言（PHP/Python/Ruby） </li>
+								<li>3. 服务器运维部署（Linux） </li>
+								<li>4. 视觉/交互设计（PS）；</li>
+								<li>5. 客户端开发（Android/iOS） </li>
+								<li>6. 用户调研、产品设计</li>
+							</ul>
+					</div>
+				</div>
+			<div id="mask"  class="none"></div>
+			<div id="footer">
+				<a id="register" class="register" onclick="changeBlur('#section2 #main','#section2 #footer','#section2 #bg');$('#section2 #edit').fadeIn(400);$('#section2 #mask').fadeIn(400);"></a>
+			</div>
+			<!-- 报名表 -->
+				<div id="edit" class="none">
+					<h2>报名表</h2>
+					<div id="form">
+						<form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
+							<p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
+							<p><span>性别-</span><label for="male"><input type="radio"style="margin-left:46px;" name="user_sex" class="radio" id="male" value="男" checked/> 男</label>
+							<label for="female"><input type="radio" name="user_sex" class="radio" id="female" value="女" /> 女</label></p>
+							<p><span>手机-</span><input type="tel" name="user_phone" maxlength="11" /></p>
+							<p><span>QQ&nbsp;-</span><input type="number" name="user_qq" /></p>
+							<p class="select"><span>学院-</span>
+								<select name="user_college" class="text_input">
+									<option value=""></option>
+									<option value="土木建筑学院">土木建筑学院</option>
+									<option value="电气与电子工程学院">电气与电子工程学院</option>
+									<option value="机电工程学院">机电工程学院</option>
+									<option value="经济管理学院">经济管理学院</option>
+									<option value="外国语学院">外国语学院</option>
+									<option value="信息工程学院">信息工程学院</option>
+									<option value="基础科学学院">基础科学学院</option>
+									<option value="人文社会科学学院">人文社会科学学院</option>
+									<option value="国际学院">国际学院</option>
+									<option value="软件学院">软件学院</option>
+									<option value="体育学院">体育学院</option>
+									<option value="轨道交通学院">轨道交通学院</option>
+									<option value="艺术学院">艺术学院</option>
+									<option value="国防生学院">国防生学院</option>
+								</select>
+							</p>
+							<p><span>专业-</span>
+								<input type="text" name="user_major" class="text_input">
+							</p>
+							<p class="select"><span class="select">选择中心-</span>
+								<select id="selCentre" name="user_center" style="margin:0 8px;">
+									<option value=""></option>
+								</select>
+							</p>
+							<p class="select"><span class="select">部门方向-</span>
+								<select id="selApart" name="user_department" style="margin:0 8px;">
+								</select>
+							</p>
+							<p><span id="personal" style="margin-top:10px;">个人简介-</span>
+								<textarea name="user_remarks" cols="30" rows="10" style="margin:0 8px;text-indent:10px;"></textarea>
+							</p>
+							<h3>
+								<input type="submit" value="提交" />
+								<a id="back2index" onclick="changeBlur('#section2 #main','#section2 #footer','#section2 #bg');$('#section2 #edit').fadeOut(200);$('#section2 #mask').fadeOut(200);">返回首页</a>
+							</h3>
+						</form>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!---section3-->
+	<section id="section3" class="section">
+		<div class="wrapper" onmousemove="mousePosition('#section3 #bg')">
+            <img id="bg" src="images/HR.png">
+			<div class="box"></div>
+			<div id="main">
+				<div id="info">
+					<p><img class="title" src="images/xingzheng3.png">
+						是日新工作室部门之一，其前身为日新行政部。下设办公室、财务部、外联部三个部门。对内主要负责网站内部的行政建设，运行日新部分网络产品及线下精品活动，做好网站的后勤服务、组织内部人员活动。</p>
+				</div>
+				<input id="btn" type="button" onclick='
+				disBlock("section:nth-child(4) #effect","section:nth-child(4) #mask","section:nth-child(4) #register","section:nth-child(4) #btn","#return3");
+				changeBlur("section:nth-child(4) #info","section:nth-child(4) #footer","section:nth-child(4) #bg");
+				$(this).css("display","none")' />
+			</div>
+			<!-- effect为点击start出现三角鼎立页面 -->
+			<div id="effect" class="none">
+				<div class="content">
+					<a class="btn3" id="caiwu" onmouseover="document.getElementById('caiwu').innerHTML='人员暂满'";
+                       onmouseout="document.getElementById('caiwu').innerHTML='财务部'">财务部</a>
+					<div class="btn1" style="background: url(images/xingzheng2.png) no-repeat center;background-color: #FACC9E;">
+					</div>
+					<a class="btn4" onclick="disBlock('#effect5','#return3')">办公室</a>
+					<a class="btn5" onclick="disBlock('#effect6','#return3')" >外联部</a>
+					<!-- 此时return为返回到首页 -->
+					<a id="return3" class="none" onclick='
+			disBlock("section:nth-child(4) #effect","section:nth-child(4) #mask","section:nth-child(4) #btn","section:nth-child(4) #register","#return3");
+			changeBlur("section:nth-child(4) #info","section:nth-child(4) #footer","section:nth-child(4) #bg");
+			$("section:nth-child(4) #btn").css("display","block");'></a>
+				</div>
+			</div>
+			<!-- effect5为点击办公室出现的介绍页面 -->
+			<div id="effect5" class="none" onclick="disBlock('#effect5','#return3')">
+				<div class="jizhe_r">
+					<h2>办公室文员</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>1、工作有高度的热情、有较强的执行力和责任心；</li>
+						<li>2、具备较强的组织协调、管理、创新能力；</li>
+						<li>3、强烈的团队合作精神、敬业奉献精神。</li>
+					</ul>
+				</div>
+				<div class="jizhe_t">
+					<div class="info">办公<br/><span style="margin-left:54px">室是日新网行政管理中<br/></span><span style="margin-left:25px">心部门之一，办公室主要负责协<br/></span>&nbsp;&nbsp;&nbsp;助全站进行网站的行政建设与校内外<br/>&nbsp;单位的走访交流合作，以及日新网的线<br/>&nbsp;下精品活动栏目，同时负责学校南区礼<br/>&nbsp;堂周末影院的日常管理工作，此外，办<br/>&nbsp;&nbsp;&nbsp;公室负责对办公场所的使用情况进行<br/><span style="margin-left:25px">登记归档，负责对来访人员的<br/></span><span style="margin-left:80px">欢迎接待工作。</span>
+					</div>
+				</div>
+			</div>
+			<!-- effect6为点击外联部出现的介绍页面 -->
+			<div id="effect6" class="none" onclick="disBlock('#effect6','#return3')">
+				<div class="jizhe_r">
+					<h2>外联部文员</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>1、工作有高度的热情和强烈的责任心；</li>
+						<li>2、有一定的沟通交际能力，团队协作意识强；</li>
+						<li>3、对于市场开拓以及活动对接有兴趣；</li>
+						<li>4、学习能力强，会使用office系列办公软件。</li>
+					</ul>
+				</div>
+				<div class="jizhe_t">
+					<div class="info">驻外办隶属于行政管理中心，<br/><span style="margin-left:27px">主要负责日新网的对外联络工作。重<br/></span>&nbsp;&nbsp;&nbsp;点对接中国江西高校传媒联盟以及江西高校<br/>网络联盟（负责承接江西高校网盟和江西高校<br/>传媒联盟的活动，从策划到组织到执行）。能<br/>够与学校各大社团社长对接，与全省各大高校<br/>媒体交流，与全国各大校园媒体联系。到省级<br/>&nbsp;&nbsp;活动上积极宣传推广日新网，并能参加全国<br/>&nbsp;&nbsp;&nbsp;活动去对外交流经验，学习先进的理念。
+					</div>
+				</div>
+			</div>
+			<div id="mask" class="none"></div>
+			<div id="footer">
+				<a id="register" class="register" onclick="changeBlur('#section3 #main','#section3 #footer','#section3 #bg');$('#section3 #edit').fadeIn(400);$('#section3 #mask').fadeIn(400);"></a>
+			</div>
+			<!-- 报名表 -->
+			<div id="edit" class="none">
+				<h2>报名表</h2>
+				<div id="form">
+					<form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
+						<p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
+						<p><span>性别-</span><label for="male"><input type="radio"style="margin-left:46px;" name="user_sex" class="radio" id="male" value="男" checked/> 男</label>
+							<label for="female"><input type="radio" name="user_sex" class="radio" id="female" value="女" /> 女</label></p>
+						<p><span>手机-</span><input type="tel" name="user_phone" maxlength="11" /></p>
+						<p><span>QQ&nbsp;-</span><input type="number" name="user_qq" /></p>
+						<p class="select"><span>学院-</span>
+							<select name="user_college" class="text_input">
+								<option value=""></option>
+								<option value="土木建筑学院">土木建筑学院</option>
+								<option value="电气与电子工程学院">电气与电子工程学院</option>
+								<option value="机电工程学院">机电工程学院</option>
+								<option value="经济管理学院">经济管理学院</option>
+								<option value="外国语学院">外国语学院</option>
+								<option value="信息工程学院">信息工程学院</option>
+								<option value="基础科学学院">基础科学学院</option>
+								<option value="人文社会科学学院">人文社会科学学院</option>
+								<option value="国际学院">国际学院</option>
+								<option value="软件学院">软件学院</option>
+								<option value="体育学院">体育学院</option>
+								<option value="轨道交通学院">轨道交通学院</option>
+								<option value="艺术学院">艺术学院</option>
+								<option value="国防生学院">国防生学院</option>
+							</select>
+						</p>
+						<p><span>专业-</span>
+							<input type="text" name="user_major" class="text_input">
+						</p>
+						<p class="select"><span class="select">选择中心-</span>
+							<select id="selCentre" name="user_center" style="margin:0 8px;">
+								<option value=""></option>
+							</select>
+						</p>
+						<p class="select"><span class="select">部门方向-</span>
+							<select id="selApart" name="user_department" style="margin:0 8px;">
+							</select>
+						</p>
+						<p><span id="personal" style="margin-top:10px;">个人简介-</span>
+							<textarea name="user_remarks" cols="30" rows="10" style="margin:0 8px;text-indent:10px;"></textarea>
+						</p>
+						<h3>
+							<input type="submit" value="提交" />
+							<a id="back2index" onclick="changeBlur('#section3 #main','#section3 #footer','#section3 #bg');$('#section3 #edit').fadeOut(200);$('#section3 #mask').fadeOut(200);">返回首页</a>
+						</h3>
+					</form>
+				</div>
 			</div>
 		</div>
+	</section>
+	<!---section4-->
+	<section id="section4" class="section">
+		<div class="wrapper" onmousemove="mousePosition('#section4 #bg')">
+			<img id="bg" src="images/HR.png">
+			<div class="box"></div>
+			<div id="main">
+				<div id="info">
+					<p><img class="title" src="images/chanpin3.png">
+						是日新工作室部门之一，于2012年正式成立，日新网所有上线产品均在产品运营中心运营，每个产品都由相应的产品经理负责管理，目前下设产品有：论坛产品、微博产品、博客产品、青梅手机客户端产品、Web应用产品、《交大青年》杂志、维权产品和短期项目。产品部门思维活跃，勇于创新，努力为广大网友提供最新最快的校园时讯。逛论坛，织围脖，写博客，上青梅，玩应用，品评《交大青年》，当然也可以通过我们来维护自己在校权益，参加我们举办的“缘来是你”相亲活动，因为我们的职责就是为在校师生提供互动交流的服务平台。</p>
+				</div>
+				<input id="btn" type="button" onclick='
+				disBlock("section:nth-child(5) #effect","section:nth-child(5) #mask","section:nth-child(5) #register","section:nth-child(5) #btn","#return4");
+				changeBlur("section:nth-child(5) #info","section:nth-child(5) #footer","section:nth-child(5) #bg");
+				$(this).css("display","none")' />
+			</div>
+			<!-- effect为点击start出现的页面 -->
+			<div id="effect" class="none">
+				<div class="content">
+					<div class="btns_top">
+						<a id="app" class="btn0" onclick="disBlock('#effect10','#return4')">青梅竹马</a>
+						<a  class="btn3" onclick="disBlock('#effect8','#return4')">日新微博</a>
+					</div>
+					<div class="btns_mid">
+						<a class="btn0" onclick="disBlock('#effect9','#return4')" >日新影视工作室</a>
+						<div class="btn1" style="background: url(images/chanpin2.png) no-repeat center;background-color: #FACC9E;">
+						</div>
+						<a class="btn3" onclick="disBlock('#effect7','#return4')"><span>《交大青年》</span><span>杂志社</span>
+						</a>
+					</div>
+					<div class="btns_btm">
+						<a class="btn0" id="wuwenan" onmouseover="document.getElementById('wuwenan').innerHTML='暂无文案'";
+                           onmouseout="document.getElementById('wuwenan').innerHTML='视觉摄影产品'">视觉摄影产品</a>
+					</div>
+					<!-- 此时return为返回到首页 -->
+					<a id="return4" class="none" onclick='
+			disBlock("section:nth-child(5) #effect","section:nth-child(5) #mask","section:nth-child(5) #btn","section:nth-child(5) #register","#return4");
+			changeBlur("section:nth-child(5) #info","section:nth-child(5) #footer","section:nth-child(5) #bg");
+			$("section:nth-child(5) #btn").css("display","block");'></a>
+				</div>
+			</div>
+			<!-- effect2为点击视频部出现的介绍页面
+                <div id="effect2">
+                    <div class="jizhe_r">
+                        <h2>视频产品专员</h2>
+                        <ul>
+                            <li>职位要求：</li>
+                            <li>1、有很强的学习能力，有合作精神，责任心强；</li>
+                            <li>2、对摄影方面有兴趣，有一定的想象和创作能力，对微电影有自己的见解和看法；</li>
+                            <li>3、热爱和关注生活，能从生活中提取素材，勇于创新；</li>
+                            <li>4、有一定的文学功底，和交流沟通能力以及组织能力。</li>
+                        </ul>
+                    </div>
+                    <div class="jizhe_t">
+                        <div class="info">视频</br><span style="margin-left:70px">部，隶属于华东交大日新网</br></span><span style="margin-left:33px">旗下的产品之一，成立于2014年。本</br></span>&nbsp;&nbsp;&nbsp;&nbsp;产品囊括了导演组、策划组、摄影组、演员</br>&nbsp;&nbsp;组、创作组六大组，具有培养写作、表演、策</br>划、摄影能力等多种功能。视频部自成立以来，</br>致力于服务广大师生，为他们提供视频拍摄，也</br>&nbsp;会制作精彩微电影给大家欣赏。日新视频部是</br><span style="margin-left:13px">以校园为基础，贴近师生生活，打造文化校</br></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;园的视频平台，同时希望广大师生喜欢</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;并支持我们的工作，欢迎各位的</br><span style="margin-left:127px">光顾！</span>
+
+                        </div>
+                    </div>
+                </div> -->
+			<!-- effect7为点击交大青年出现的介绍页面 -->
+			<div id="effect7" class="none" onclick="disBlock('#effect7','#return4')">
+				<div class="jizhe_r">
+					<h2>《交大青年》产品专员</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>1、责任心强，有良好的学习和团队协作能力；</li>
+						<li>2、对杂志的采编、排版有一定的了解；</li>
+						<li>3、能较快的学习并掌握publisher、PS等相关杂志排版软件；</li>
+						<li>4、具备一定的文字功底、摄影基础、美编能力（一项或一项以上）。</li>
+					</ul>
+				</div>
+				<div class="jizhe_t">
+					<h2>《交大青年》产品经理</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>1、能准确把握杂志的定位和方向，结合产品特性和日新文化完成每期杂志的选题、策划、组织和管理工作；</li>
+						<li>2、熟悉校园平面媒体的运作模式，具有一定的营销能力；</li>
+						<li>3、热爱工作，具备敬业精神和职业操守，有良好的团队精神和协调能力；</li>
+						<li>4、有良好的大局观，在主持编校过程中发现并解决问题，全面把控、提高稿件质量；</li>
+						<li>5、熟悉publisher,PS等相关杂志排版软件。</li>
+					</ul>
+				</div>
+				<div class="jizhe_l">
+					<h2>责任编辑</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>1、具有较强的文字处理、专题策划能力，能够按期保质保量地完成约稿、撰稿 、校对、编辑工作，对媒体的内容策划有独特见解；</li>
+						<li>2、平面设计能力强，思维活跃，能够根据需要进行创意设计与制作，具有较好的审美能力；</li>
+						<li>3、熟练掌握publisher、PS等相关杂志排版软件；</li>
+						<li>4、具有独立撰写重要选题的能力；</li>
+						<li>5、学习能力强，具有较好的团队合作意识和强烈的责任感。</li>
+					</ul>
+				</div>
+				<div class="jizhe_b">
+					<div class="info">《交大青年》是日新网旗下<br/><span style="margin-left:37px">杂志，于2011年3月由华东交通大学学<br/></span><span style="margin-left:17px">工处、校团委、日新网联合发起筹备创办，目</span><br/>前发行量数千册。其具体定位为“综合类校园杂<br/>志”，旨在传播知识、交流观点、启迪心灵，树立<br/>华东交大之精神。 杂志目前由日新网新闻出版中心<br/>负责编辑出版，通常情况下杂志固定为两月出版一<br/>期，假期停刊。除固定出版的双月刊外，日新网新<br/>闻出版中心也会根据需要出版特刊（如交大40周<br/>&nbsp;年校庆专刊，建团九十周年特刊等）。《交大青<br/>&nbsp;&nbsp;&nbsp;&nbsp;年》创办短短两年，但已覆盖整个交大校园。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此外，通过与校外媒体间的交流，《交<br/>
+						<span style="margin-left:60px">大青年》已名闻全国众多高校。</span>
+					</div>
+				</div>
+			</div>
+			<!-- effect8为点击微博出现的介绍页面 -->
+			<div id="effect8" class="none" onclick="disBlock('#effect8','#return4')">
+				<div class="jizhe_l">
+					<h2>微博产品专员</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>1、积极活泼，有责任心；</li>
+						<li>2、喜欢微博，具有团队意识和合作精神；</li>
+						<li>3、思维活跃，具有创新思维和沟通能力;</li>
+						<li>4、关注微博热点，经常出没各种论坛网站，最好是个微博控；</li>
+						<li>5、善于接受新事物，拥有较好的学习能力和执行能力，最好会ps简单操作。</li>
+					</ul>
+				</div>
+				<div class="jizhe_t">
+					<div class="info">
+						日新网微博是华东交通大学<br/>校园门户网站日新网官方微博，<br/>是专为服务“花椒”而设，新<br/>&nbsp;&nbsp;闻爆料，热点时事，趣事百<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科，花椒求助等等。
+					</div>
+				</div>
+			</div>
+			<!-- effect9为点击日新影视工作室出现的介绍页面 -->
+			<div id="effect9" class="none" onclick="disBlock('#effect9','#return4')">
+				<div class="bianju yinshi">
+					<h2>编剧</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>能编写剧本，即创作出故事、台词，主戏以及过场戏，突出故事中心，塑造人物性格。能把一定内容以剧本或稿本形式表现出来，掌握一定的写作技巧，善于运用视听造型来表达事情。</li>
+					</ul>
+				</div>
+				<div class="cehua yinshi">
+					<h2>策划</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>具有较强策划能力，工作与沟通能力强，能够熟练处理剧组内的繁杂事物。</li>
+					</ul>
+				</div>
+				<div class="texiaoshi yinshi">
+					<h2>特效师</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>有一定美术功底，有较好的色彩感和画面感，良好的镜头感和节奏感；熟练操作After Effect等二维、三维特效软件，熟悉三维特效（粒子、动力学、流体、布料）制作方法。</li>
+					</ul>
+				</div>
+				<div class="daoyan yinshi">
+					<h2>导演</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>具有熟练的蒙太奇思想，熟悉电影制作流程，能研究和分析剧本，为剧本找到恰当的表达形式，同时需要较强现场指导能力。</li>
+					</ul>
+				</div>
+				<div class="yanyuan yinshi">
+					<h2>演员</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>具有姣好的面容，有较强的舞台表现能力和学习能力。</li>
+					</ul>
+				</div>
+				<div class="jianjishi yinshi">
+					<h2>剪辑师</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>能够选择、整理、剪裁全部分割拍摄的镜头素材（画面素材和声音素材），能够运用pr等视频编辑软件进行视频合成。</li>
+					</ul>
+				</div>
+				<div class="maininfo">
+					<div class="info">日新影视工作室脱胎于原日<br/><span style="margin-left:30px">新视频部。工作室集影视前期策划、<br/></span><span style="margin-left:17px">拍摄 、后期制作特效合成等专业影视制</span><br/>作。我们有强大的影视制作及创意班底，有专<br/>业摄像队伍及后期剪辑制作人员，更有优秀的<br/>导演进行视频指导。工作室致力于新理念微电<br/>&nbsp;&nbsp;&nbsp;影创作，创作有《织梦》、《遇·青梅》等<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;优秀作品，其中《织梦》更是荣获<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校微电影大赛“最佳影片奖”<br/>
+						<span style="margin-left:130px">。</span>
+					</div>
+				</div>
+			</div>
+			<!-- effect10为点击日新青梅出现的介绍页面 -->
+			<div id="effect10"  class="none" onclick="disBlock('#effect10','#return4')">
+				<div class="jizhe_l">
+					<h2>青梅、竹马手机客户端产品专员</h2>
+					<ul>
+						<li>职位要求：</li>
+						<li>1.有较强的责任心，使用的手机为安卓或iOS系统：</li>
+						<li>2.手机控，熟悉各种手机应用，有较多的时间；</li>
+						<li>3.有良好的学习能力和沟通能力，组织能力，团队意识强；</li>
+						<li>4.有责任心，无拖延症；</li>
+						<li>5.有较强的自主工作能力；</li>
+						<li>6.有想法、有创造、有自己的坚持、敢于挑战。</li>
+					</ul>
+				</div>
+				<div class="jizhe_t">
+					<div class="info">
+						华东交通大学日新网手机客户端<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——日新青梅竹马，交大手机客户端，我<br/>&nbsp;&nbsp;&nbsp;&nbsp;们一直以花椒视角为主线 ，并以关心花椒为重&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;头，不断开发符合花椒习惯和爱好的活动和栏目。<br/>逛交大，评老师，看学院；火速知活动，提前晓电影<br/>。来青梅，给你一个在交大不孤独的机会。这里有你<br/>们正在逝去的校园情怀，正在发生的校园当下，本校<br/>和你一样神奇的小伙伴，以及诸多的不可复制能力。<br/>&nbsp;&nbsp;&nbsp;来竹马，一起来温柔的撬动整个校园吧。日新<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机客户端，给你一个在交大忒 骄傲的<br/><span style="margin-left:137px">生活。</span>
+					</div>
+				</div>
+			</div>
+			<div id="mask" class="none"></div>
+			<div id="footer">
+				<a id="register" class="register" onclick="changeBlur('#section4 #main','#section4 #footer','#section4 #bg');$('#section4 #edit').fadeIn(400);$('#section4 #mask').fadeIn(400);"></a>
+			</div>
+			<!-- 报名表 -->
+			<div id="edit" class="none">
+				<h2>报名表</h2>
+				<div id="form">
+					<form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
+						<p><span>姓名-</span>
+							<label>
+							<input type="text" name="user_name" class="text_input">
+							</label>
+						</p>
+						<p><span>性别-</span>
+							<label for="male">
+								<input type="radio"style="margin-left:46px;" name="user_sex" class="radio" id="male" value="男" checked/> 男</label>
+							<label for="female">
+								<input type="radio" name="user_sex" class="radio" id="female" value="女" /> 女</label></p>
+						<p><span>手机-</span>
+							<label>
+							<input type="tel" name="user_phone" maxlength="11"/>
+							</label>
+						</p>
+						<p><span>QQ&nbsp;-</span>
+							<label>
+							<input type="number" name="user_qq"/>
+							</label>
+						</p>
+						<p class="select"><span>学院-</span>
+							<label>
+								<select name="user_college" class="text_input">
+									<option value=""></option>
+									<option value="土木建筑学院">土木建筑学院</option>
+									<option value="电气与电子工程学院">电气与电子工程学院</option>
+									<option value="机电工程学院">机电工程学院</option>
+									<option value="经济管理学院">经济管理学院</option>
+									<option value="外国语学院">外国语学院</option>
+									<option value="信息工程学院">信息工程学院</option>
+									<option value="基础科学学院">基础科学学院</option>
+									<option value="人文社会科学学院">人文社会科学学院</option>
+									<option value="国际学院">国际学院</option>
+									<option value="软件学院">软件学院</option>
+									<option value="体育学院">体育学院</option>
+									<option value="轨道交通学院">轨道交通学院</option>
+									<option value="艺术学院">艺术学院</option>
+									<option value="国防生学院">国防生学院</option>
+								</select>
+							</label>
+						</p>
+						<p><span>专业-</span>
+							<label>
+								<input type="text" name="user_major" class="text_input">
+							</label>
+						</p>
+						<p class="select"><span class="select">选择中心-</span>
+							<select id="selCentre" name="user_center" style="margin:0 8px;">
+								<option value=""></option>
+							</select>
+						</p>
+						<p class="select"><span class="select">部门方向-</span>
+							<select id="selApart" name="user_department" style="margin:0 8px;">
+							</select>
+						</p>
+						<p><span id="personal" style="margin-top:10px;">个人简介-</span>
+							<label>
+								<textarea name="user_remarks" cols="30" rows="10"
+										  style="margin:0 8px;text-indent:10px;"></textarea>
+							</label>
+						</p>
+						<h3>
+							<input type="submit" value="提交" />
+							<a id="back2index" onclick="changeBlur('#section4 #main','#section4 #footer','#section4 #bg');$('#section4 #edit').fadeOut(200);$('#section4 #mask').fadeOut(200);">返回首页</a>
+						</h3>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 </div>
-<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
-<script type="text/javascript" src="js/same2.js"></script>
+<script type="text/javascript" src="js/linkage.js"></script>
+<script type="text/javascript" src="js/same.js"></script>
+<script type="text/javascript" src="js/pageswitch.js"></script>
 </body>
 </html>

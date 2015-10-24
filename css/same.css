@@ -2,7 +2,7 @@
 *{
 	margin: 0 ;
 	padding: 0 ;
-	font-family: "微软雅黑";
+    font-family: "微软雅黑", serif;
 	outline: none;
 }
 a{
@@ -12,11 +12,65 @@ body{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color:#F1F0EE; 
+	background-color:#F1F0EE;
+    overflow: hidden;
 }
 ul li{
 	list-style: none;
 
+}
+.none{
+  display: none;
+}
+img{
+  border: 0;
+}
+.left{
+  float: left;
+}
+/*******pageswitch************/
+#container,.section{
+  height: 100%;
+  position: relative;
+}@-webkit-keyframes sectitle0{
+   0%{
+     -webkit-transform: translateX(-100%);
+     transform: translateX(-100%);
+   }
+   100%{
+     -webkit-transform: translateX(0);
+     transform: translateX(0);
+   }
+ }
+@keyframes sectitle0{
+  0%{
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes sec0{
+  0%{
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes sec0{
+  0%{
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 /* 混入文件  */
 @keyframes circleMove {
@@ -44,6 +98,15 @@ ul li{
 .wrapper{
 	width: 100%;
 	height: 100%;	
+    position: absolute;
+}
+#bg{
+  position: absolute;
+  background-position: top center;
+  width: 100%;
+  height:100%;
+  bottom: -20px;
+  left: 0;
 }
 .box{
 	width: 100%;
@@ -59,8 +122,8 @@ ul li{
 	width: 100%;
 }
 #info .title{
-	width: 115px;
-	height: 24px;
+	width: 112px;
+	height: 26px;
 	float: left;
 	margin: 4px auto auto 34px;
 	text-indent: 34px;
@@ -95,170 +158,102 @@ ul li{
 	width: 100%;
 	height: 29%;
 	color: #383838;
-}
-.wind{
-	width: 100%;
-	height: 100%;
-	z-index: -9999;
-}
-#footer .nav{
-	width: 558px;
-	height: 84px;
-	position: absolute;
-	left: 50%;
-	margin-left: -279px;
-	bottom: 10px;
-}
-#footer .line{
-	width: 530px;
-	height: 8px;
-	border: 1px dotted #A0A0A0;
-	margin-top: 23px;
-	float: left;
-}
-.line a{
-	display: block;
-	opacity: 1;
-}
-.line .l1{
-	width: 21px;
-	height: 8px;
-	float: left;
-	background-color: #545454;
-}
-.line .circle{
-	width: 20px;
-	height: 20px;
-	float: left;
-	margin-top: -11px;
-	border-radius: 50%;
-	border: 4px solid #545454;
-	background-color:#FFCC99; 
-}
-.line .circle:active{
-	border: 14px solid #545454;
-	width: 0px;
-	height: 0px;
-	transition:all 0.1s ease-in-out 0s;
-	-moz-transition:all 0.1s ease-in-out 0s;
-	-o-transition:all 0.1s ease-in-out 0s;
-	-webkit-transition:all 0.1s ease-in-out 0s;
-}
-.line .l2{
-	width: 103px;
-	height: 8px;
-	float: left;
-	background-color: #545454;
-}
-.line .logo{
-  	float: left;
-	width: 55px;
-	height: 49px;
-	margin-left: -28px;
-	margin-top: -27px;
-	background: url(../images/logo.png) no-repeat 0px -2px;
-} 
-.line .l3_e{
-	width: 78px;
-	height: 8px;
-	float: left;
-}
-.line .l3{
-	width: 89px;
-	height: 8px;
-	float: left;
-}
-.line .l4{
-	width: 21px;
-	height: 8px;
-	float: left;
-}
-.nav .tips{
-	width: 100%;
-	height: 20px;
-}
-.nav .tips a{
-	display: block;
-	float: left;
-}
-.nav .tips .t1{
-	margin: 30px 10px auto 20px;
-}
-.nav .tips .t3{
-	margin: 31px -13px auto 40px;
-}
-.nav .tips .t4{
-	margin: 31px 0 auto 36px;
-}
-.nav .tips .t5{
-	margin: 31px 0 auto 20px;
+  position: absolute;
+
 }
 #footer #register{
-	width: 73px;
-	height: 24px;
+	width:110px;
+	height: 28px;
 	position: absolute;
 	right: 0;
-	bottom: 7px;
-	margin-right: 34px;
+	bottom: 23px;
+	margin-right: 24px;
 	display: block;
+    transform:scale(1);
 	background: url(../images/join.png) no-repeat;
 }
 #footer #register:hover{
-	transform:scale(1.25);
-	-moz-transform:scale(1.25);
-	-o-transform:scale(1.25);
-	-webkit-transform:scale(1.25);
+	transform:scale(1.35);
+	-moz-transform:scale(1.35);
+	-o-transform:scale(1.35);
+	-webkit-transform:scale(1.35);
 	transition:all 0.1s ease-in 0s;
 	-moz-transition:all 0.1s ease-in 0s;
 	-o-transition:all 0.1s ease-in 0s;
 	-webkit-transition:all 0.1s ease-in 0s;
 }
-#effect #return:hover,#return2:hover{
-	transform:scale(1.15);
-	-moz-transform:scale(1.15);
-	-o-transform:scale(1.15);
-	-webkit-transform:scale(1.15);
+#return:hover,#return2:hover,#return3:hover,#return4:hover{
+	transform:scale(1.35);
+	-moz-transform:scale(1.35);
+	-o-transform:scale(1.35);
+	-webkit-transform:scale(1.35);
 	transition:all 0.1s ease-in 0s;
 	-moz-transition:all 0.1s ease-in 0s;
 	-o-transition:all 0.1s ease-in 0s;
 	-webkit-transition:all 0.1s ease-in 0s;
 }
 /**********特效方面相同的部分***********/
-#return2{
-	position: fixed;
-	right: 10px;
-	bottom: 8px;
-	width: 39px;
-	height: 34px;
-	display: block;
-	background: url(../images/return.png) no-repeat;
-	display: none;
-	z-index: 9000;
-}
-#effect #return{
-	position: fixed;
-	right: 20px;
-	bottom: 18px;
-	width: 78px;
-	height: 72px;
-	display: block;
+
+#return,#return2,#return3,#return4{
+	position: absolute;
+    right: 5%;
+    top: 13%;
+    width: 3em;
+    height: 3em;
 	background: url(../images/return.png) no-repeat;
 	background-size: cover;
-	display: none;
+	/*display: none;*/
 	z-index: 9000;
 }
-#effect2,#effect3,#effect4,#effect5,#effect6{
+#effect1,#effect2,#effect3,#effect4,#effect5,#effect6,#effect7,#effect8,#effect9,#effect10{
 	width: 100%;
 	height: 100%;
 	top: 0;
 	right: 0;
 	position: absolute;
-	display: none;
+	/*display: none;*/
 	z-index: 3000;
 }
-/*********上线后加的特效********/
 .btn0,.btn3,.btn4,.btn5{
-	opacity: 0;
+   opacity: 0;
+ }
+#pages{
+  position:fixed;
+  right: 10px;
+  top: 40%;
+  list-style: none;
+}
+#pages li{
+  width: 20px;
+  height: 20px;
+  background: url("../images/dot2.png") no-repeat;
+  margin: 0 0 5px 5px;
+}
+#pages li.active{
+  width: 20px;
+  height: 20px;
+  background: url("../images/dot1.png") no-repeat;
+  margin-left: 2px;
+}
+#pages li:nth-child(2):hover{
+    width: 87px;
+    margin-left: -87px;
+    background: url("../images/rightbar1.png") no-repeat;
+}
+#pages li:nth-child(3):hover{
+  width: 87px;
+  margin-left: -87px;
+  background: url("../images/rightbar2.png") no-repeat;
+}
+#pages li:nth-child(4):hover{
+  width: 87px;
+  margin-left: -87px;
+  background: url("../images/rightbar3.png") no-repeat;
+}
+#pages li:nth-child(5):hover{
+  width: 87px;
+  margin-left: -87px;
+  background: url("../images/rightbar4.png") no-repeat;
 }
 /*!
 Magic - Ver 1.1.0 - http://minimamente.com
@@ -298,6 +293,21 @@ Copyright (c) 2014 Christian Pucci
 .slideUpRetourn {
   -webkit-animation-name: slideUpRetourn;
   animation-name: slideUpRetourn;
+}
+.register{
+  -weblkit-animation-name : joinScale;
+  animation-name : joinScale;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;/*IE10+才支持*/
+}
+@keyframes joinScale {
+  0%{transform :scale(1);}
+  30%{transform :scale(1.3);}
+  60%{transform :scale(0.9);}
+  100%{transform :scale(1);}
 }
 @keyframes swashIn {
   0% {

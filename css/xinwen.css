@@ -1,21 +1,68 @@
-/************点击start出现的效果*************/
-#effect{
+/******首页section1****/
+#wrapper_index{
+	width: 100%;
+	height: 100%;
+}
+.target{
+	width:48%;
+	height: 78%;
+	position: absolute;
+	left: 50%;
+	margin-left: -24%;
+	z-index: 9999;
+	background-color: hsla(0, 8%, 97%, 0);
+}
+#img1{
+	width: 58.1%;
+	height: 88.8%;
+	position: absolute;
+	left: 50%;
+	margin-left: -31.6%;
+}
+#img2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #FFCC99;
+	display: none;
+}
+.tip{
+	width: 24.7%;
+	position: absolute;
+	bottom: 3%;
+	left:50%;
+	margin-left: -12%;
+	display: none;
+}
+#footer #register:hover,#effect #return:hover,#effect #return2:hover{
+	transform:scale(1.15);
+	-moz-transform:scale(1.15);
+	-o-transform:scale(1.15);
+	-webkit-transform:scale(1.15);
+	transition:all 0.1s ease-in 0s;
+	-moz-transition:all 0.1s ease-in 0s;
+	-o-transition:all 0.1s ease-in 0s;
+	-webkit-transition:all 0.1s ease-in 0s;
+}
+/********SECTION2*******************/
+/**点击start出现的效果**/
+ #effect{
 	width: 617px;
 	height: 170px;
 	margin: 5% auto auto auto;
-	display: none;
+	/*display: none;*/
 	z-index: 2000;
 }
-#effect .content{
+ #effect .content{
 	width: 100%;
 	height: auto;
 }
-#effect .btn0,#effect .btn3{
+ #effect .btn0,#effect .btn3{
 	position: relative;
 	width: 108px;
 	height: 108px;
 	background-color: #666666;
-	font-size: 14px;
+	font-size: 15px;
 	color: #DFDFDF;
 	float: left;
 	margin-top: 27px;
@@ -23,14 +70,13 @@
 	line-height: 108px;
 	text-align: center;
 	outline: none;
-	border: 0;
 	z-index: 2000;
 	border:solid 4px #D5D5D3;
 }
-#effect .btn3{
+ #effect .btn3{
 	float: right;
 }
-#effect .btn1{
+ #effect .btn1{
 	margin:0 auto;
 	top: 16px;
 	width: 127px;
@@ -41,31 +87,33 @@
 	z-index: 2000;
 	position: relative;
 }
-#mask{
+ #mask{
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	z-index: 1000;
-	display: none;
+	/*display: none;*/
 	background: rgba(241, 240, 238, 0.14);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.blur{
+ .blur{
 	-webkit-filter: blur(10px); /* Chrome, Opera */
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
     -ms-filter: blur(10px);    
     	filter: blur(10px);
 }
-/************点击记者团出现的效果*************/
-#effect2 .jizhe_r{
+/**点击记者团出现的效果**/
+ #effect2 .jizhe_r,#effect5 .jizhe_r{
 	width: 25.99%;
 	position: absolute;
+	right: 2.5%;
+	top: 50.27%;
 	padding: 15px;
 	display: block;
 	background-color: #FCFCFC;
@@ -73,38 +121,38 @@
 	font-size: 14px;
 	color: #4C4C4C;
 }
-}
-#effect2  h2,#effect3 h2,#effect4 h2{
-	font-size: 17px;
-}
-#effect2 ul,#effect3 ul,#effect4 ul,#effect6 ul{
+#effect1 ul,#effect2 ul, #effect3 ul, #effect4 ul,#effect5 ul,#effect6 ul,#effect7 ul,#effect8 ul,#effect10 ul{
 	margin: 9px auto auto 8px;
 }
-#effect2 ul li,#effect3 ul li,#effect4 ul li{
+#effect1 ul li,#effect2 ul li, #effect3 ul li, #effect4 ul li,#effect5 ul li,#effect6 ul li,#effect7 ul li,#effect8 ul li,#effect10 ul li{
 	line-height: 25px;
 }
-#effect2 .jizhe_t{
+ #effect2 .jizhe_t,#effect5 .jizhe_t{
 	width: 390px;
 	height: 390px;
 	position: absolute;
+	right: 30.62%;
+	top: -65px;
 	border-radius: 50%;
 	background-color: #696968;
 	background-color: rgba(102, 102, 102, 0.86);
 	color: #DDDDDD;
 	font-size: 14px;
 }
-.jizhe_t .info{
+ .jizhe_t .info{
 	margin:90px 40px auto 40px;;
 	border-radius: 50%; 
 	line-height: 22px;
 	font-size: 14px;
 	text-indent: 43px;
 }
-/*********点击编辑部出现的效果**************/
-#effect4 .jizhe_t{
+/**点击编辑部出现的效果**/
+ #effect4 .jizhe_t,#effect8 .jizhe_t{
 	width: 240px;
 	height: 240px;
 	position: absolute;
+	left: 25.87%;
+	top: 48%;
 	padding: 15px;
 	border-radius: 50%;
 	background-color: #696968;
@@ -112,18 +160,418 @@
 	color: #DDDDDD;
 	font-size: 14px;
 }
-#effect4 .jizhe_t .info{
+ #effect4 .jizhe_t .info,#effect8 .jizhe_t .info{
 	margin: 15px auto auto 30px;
   text-indent: 70px;
   line-height: 26px;
 }
-#effect4 .jizhe_l{
+ #effect4 .jizhe_l,#effect8 .jizhe_l{
 	width: 23.5%;
 	padding: 15px;
 	position: absolute;
+	left: 15px;
+	top: 0;
 	line-height: 25px;
 	background-color: #FCFCFC;
 	background-color: rgba(255, 255, 255, 0.8);
 	font-size: 14px;
 	color: #4C4C4C;
+}
+/**********SECTION3*******************/
+/**技术的覆盖样式**/
+section:nth-child(3) #info .title {
+	width: 114px;
+	height: 25px;
+}
+section:nth-child(3) #main #btn{
+	margin: 9% auto auto;
+}
+/**点击DOD出现的效果**/
+#effect3 .jizhe_l,#effect6 .jizhe_l,#effect10 .jizhe_l {
+	position: absolute;
+	width: 30.89%;
+	height: auto;
+	right: 0;
+	top: 10%;
+	padding: 15px;
+	float: left;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+}
+/**点击UED出现的效果**/
+#effect1 .jizhe_t{
+	width: 30.89%;
+	height: auto;
+	padding: 15px;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	border-radius: 0;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+}
+section:nth-child(3) #effect{
+	margin: 8.5% auto auto auto;
+}
+/************SECTION4*****************/
+/**行政的覆盖样式**/
+section:nth-child(4) #main #btn{
+	margin: 15.5% auto auto;
+}
+section:nth-child(4) #info .title {
+	width: 114px;
+	height: 26px;
+}
+section:nth-child(4) #return3{
+	right: -66%;
+	top: -120%;
+}
+/**点击start出现的效果**/
+section:nth-child(4) #effect{
+	width: 530px;
+	position: absolute;
+	left: 50%;
+	margin-left: -265px;
+	top: 33%;
+}
+section:nth-child(4) #effect .btn1{
+	margin-top: -50px;
+}
+section:nth-child(4) #effect .btn3{
+	float: left;
+	position: absolute;
+	left: 50%;
+	margin-left: -58px;
+	margin-top: -165px;
+	z-index: 2000;
+	bottom: auto;
+}
+section:nth-child(4) #effect .btn4{
+	position: relative;
+	width: 108px;
+	height: 108px;
+	background-color: #666666;
+	font-size: 14px;
+	color: #DFDFDF;
+	float: left;
+	margin-top: -7px;
+	border-radius: 50%;
+	line-height: 108px;
+	text-align: center;
+	outline: none;
+	z-index: 2000;
+	border:solid 4px #D5D5D3;
+}
+section:nth-child(4) #effect .btn5{
+	position: relative;
+	width: 108px;
+	height: 108px;
+	margin-left: 211px;
+	background-color: #666666;
+	font-size: 14px;
+	color: #DFDFDF;
+	float: right;
+	margin-top: -7px;
+	border-radius: 50%;
+	line-height: 108px;
+	text-align: center;
+	outline: none;
+	z-index: 2000;
+	border:solid 4px #D5D5D3;
+}
+/**点击办公室出现的效果**/
+#effect5 .jizhe_t{
+	width: 307px;
+	height: 307px;
+	position: absolute;
+	z-index: 3000;
+}
+#effect5 .jizhe_t .info{
+	border-radius: 50%;
+	margin: 40px 30px auto 30px;
+	font-size: 14px;
+	text-indent: 110px;
+	line-height: 21px;
+}
+ #effect5 .jizhe_r{
+	width: 25.99%;
+	position: absolute;
+}
+#effect5 .jizhe_t{
+	left: 7.61%;
+	top: 44%;
+}
+#effect5 .jizhe_r{
+	top: 37.94%;
+	left: 37.85%;
+}
+/**点击外联部出现的效果**/
+#effect6 .jizhe_r,#effect10 .jizhe_r{
+	width: 24.16%;
+	padding: 15px;
+	position: absolute;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+}
+#effect6 .jizhe_t,#effect10 .jizhe_t{
+	width: 360px;
+	height: 360px;
+	font-size: 14px;
+	border-radius: 50%;
+	background-color: #696968;
+	background-color: rgba(102, 102, 102, 0.86);
+	color: #DDDDDD;
+}
+#effect6 .jizhe_t .info,#effect10 .jizhe_t .info{
+	margin: 55px 38px auto 38px;
+	text-indent: 55px;
+	line-height: 21px;
+}
+#effect6 .jizhe_r{
+	right: 6.59%;
+	top: 29.1%;
+}
+#effect6 .jizhe_t{
+	position: absolute;
+	bottom: -12.64%;
+	right: 34.92%;
+}
+/***********SECTION5*******************/
+/**覆盖产品**/
+section:nth-child(5) #return4{
+	right: -44%;
+	top: 3%;
+}
+section:nth-child(5) #main #btn {
+	margin: 9.5% auto auto;
+}
+section:nth-child(5) #info .title {
+	width: 114px;
+	height: 26px;
+}
+section:nth-child(5) #effect .content{
+	margin: 0 auto;
+}
+section:nth-child(5) #effect .btns_top{
+	height: 166px;
+}
+
+section:nth-child(5) #effect .btns_mid{
+	height: 185px;
+}
+section:nth-child(5) .jizhe_t .info {
+	margin: 40px 41px auto 39px;
+	text-indent: 125px;
+	line-height: 24px;
+}
+/**点击产品中心出现的效果**/
+section:nth-child(5) #effect{
+	width: 660px;
+	height:515px;
+	position: absolute;
+	margin: 3% auto auto auto;
+	left: 50%;
+	margin-left: -330px;
+	top: 5%;
+
+}
+section:nth-child(5) #effect .btns_top .btn0{
+	width: 105px;
+	height: 105px;
+	line-height: 105px;
+	margin-left: 188px;
+	margin-top: 0;
+}
+section:nth-child(5) #effect .btns_top .btn3{
+	width: 77px;
+	height: 77px;
+	line-height: 77px;
+	text-align: center;
+	margin: 30px 127px auto auto;
+}
+section:nth-child(5) #effect .btns_mid .btn0{
+	height: 109px;
+	height: 109px;
+	line-height: 109px;
+	margin-top: 0;
+}
+section:nth-child(5) #effect .btns_mid .btn3{
+	height: 107px;
+	line-height: 107px;
+	position: relative;
+	margin-right: 58px;
+	top: -172px;
+}
+section:nth-child(5) #effect .btns_mid .btn3 span{
+	display: block;
+	width: 90px;
+	height: 20px;
+	margin: 0 auto;
+	line-height: 90px;
+}
+section:nth-child(5) #effect .btns_btm .btn0{
+	width: 93px;
+	height: 93px;
+	line-height: 93px;
+	text-align: center;
+	margin: 65px auto auto 325px;
+}
+/**点击《交大青年》出现的效果**/
+#effect7 .jizhe_r{
+	position: absolute;
+	top: 5.75%;
+	right: 4.34%;
+	width:22%;
+	height: auto;
+	padding: 15px;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+}
+#effect7 .jizhe_t{
+	position: absolute;
+	width: 34.04%;
+	right: 36.23%;
+	top: 55%;
+	height: auto;
+	border-radius: 0;
+	padding: 15px;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+	margin-right: 8px;
+}
+#effect7 .jizhe_l,#effect6 .jizhe_l{
+	position: absolute;
+	width: 34.41%;
+	height: auto;
+	padding: 15px;
+	top: 9.12%;
+	right: 38.65%;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+}
+#effect7 .jizhe_b{
+	position: absolute;
+	right: 6.35%;
+	top: 45%;
+	width: 385px;
+	height: 385px;
+	font-size: 14px;
+	border-radius: 50%;
+	background-color: #696968;
+	background-color: rgba(102, 102, 102, 0.86);
+	color: #DDDDDD;
+}
+#effect7 .jizhe_b .info{
+	margin: 50px 35px auto 35px;
+	text-indent: 70px;
+	line-height: 22px;
+}
+/*******点击微博出现的效果********/
+#effect8 .jizhe_t{
+	width: 240px;
+	height: 240px;
+	left: auto;
+	top: -11%;
+	right: 39%;
+}
+#effect8 .jizhe_t .info{
+	margin: 75px auto auto 25px;
+	text-indent: 7px;
+}
+#effect8 .jizhe_l{
+	width: 30.21%;
+	height: auto;
+	left: auto;
+	top: 25%;
+	right: 2.93%;
+}
+/*******点击青梅出现的效果********/
+#effect10 .jizhe_t{
+	width: 380px;
+	height: 380px;
+	position: relative;
+	top: 5%;
+	left: 13%;
+}
+#effect10 .jizhe_t .info{
+	position: absolute;
+	margin: 60px auto auto 30px;
+	text-indent: 56px;
+	line-height: 24px;
+}
+#effect10 .jizhe_l{
+	width: 28.21%;
+	height: auto;
+	top: 0%;
+	left: 48%;
+}
+/**点击日新影视工作室出现的效果**/
+#effect9 .yinshi{
+	position: absolute;
+	height: auto;
+	padding: 15px;
+	background-color: #FCFCFC;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	color: #4C4C4C;
+}
+#effect9 .bianju{
+	width: 25.92%;
+	top: 10%;
+	left: 30%;
+}
+#effect9 .cehua{
+	width: 34.67%;
+	top: 36%;
+	left: 35%;
+}
+#effect9 .texiaoshi{
+	width: 23.57%;
+	top: 50%;
+	left: 1%;
+}
+#effect9 .daoyan{
+	width: 30.92%;
+	top: 53%;
+	left: 30%;
+}
+#effect9 .yanyuan{
+	width: 23.57%;
+	top: 76%;
+	left: 1%;
+}
+#effect9 .jianjishi{
+	width: 20.16%;
+	top: 73%;
+	left: 28%;
+}
+#effect9 .maininfo{
+	position: absolute;
+	left: 3.6%;
+	top: -10%;
+	width: 350px;
+	height: 350px;
+	font-size: 14px;
+	border-radius: 50%;
+	background-color: #696968;
+	background-color: rgba(102, 102, 102, 0.86);
+	color: #DDDDDD;
+	font-size: 14px;
+}
+#effect9 .maininfo .info{
+	margin: 75px 35px auto 35px;
+	text-indent: 52px;
+	line-height: 24px;
 }
