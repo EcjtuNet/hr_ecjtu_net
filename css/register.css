@@ -1,4 +1,4 @@
-  #edit {
+  .edit {
     /*display: none;*/
     /*position: relative;*/
     position: absolute;
@@ -8,32 +8,32 @@
     text-align: center; 
     z-index: 4000;
     /*margin-top: 10px;*/}
-    #edit h2 {
+    .edit h2 {
       text-align: center;
       font: normal 36px/48px Microsoft Yahei, Arial, sans-serif;
       color: #534d4d; }
-     #edit #form {
+     .edit .form {
       position: relative;
       display: inline-block; }
-       #edit #form p {
+       .edit .form p {
         position: relative;
         left: 0;
         min-width: 301px;
         text-align: left;
         margin: 12px 0 0;
         font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
-         #edit #form p span {
+         .edit .form p span {
           float: left; }
-         #edit #form p span.select {
+         .edit .form p span.select {
           display: block; }
-         #edit #form p span#personal {
+         .edit .form p span.personal {
           float: left; }
-       #edit #form input,  #edit #form select,  #edit #form textarea {
+       .edit .form input,  .edit .form select,  .edit .form textarea {
         font: normal 16px/28px Microsoft Yahei, Arial, sans-serif; }
-       #edit #form input[type=radio],  #edit #form select {
+       .edit .form input[type=radio],  .edit .form select {
         border: none;
         /* background: url($imagepath) 0 -319px no-repeat; */ }
-       #edit #form input[type=text],  #edit #form input[type=number],  #edit #form input[type=tel] {
+       .edit .form input[type=text],  .edit .form input[type=number],  .edit .form input[type=tel] {
         position: relative;
         left: 28px;
         max-width: 170px;
@@ -42,9 +42,9 @@
         padding: 0 12px;
         border: 2px solid #313131;
         border-radius: 30px; }
-       #edit #form input[type=radio] {
+       .edit .form input[type=radio] {
         margin-left: 42px; }
-       #edit #form select {
+       .edit .form select {
         appearance: button;
         -webkit-appearance: button;
         -moz-appearance: button;
@@ -79,7 +79,7 @@
         margin: 0 12px;
         padding: 0 12px;
         background: #fff; }
-       #edit #form p.select:before {
+       .edit .form p.select:before {
         content: "";
         position: absolute;
         right: 32px;
@@ -89,18 +89,18 @@
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-bottom: none; }
-       #edit #form #selCentre,  #edit #form #selApart {
+       .edit .form .selCentre,  .edit .form .selApart {
         position: relative;
         left: 0; }
-       #edit #form textarea {
+       .edit .form textarea {
         max-width: 194px;
         max-height: 97px;
         margin: 12px;
         border-radius: 15px;
         border: 2px solid #313131; }
-       #edit #form h3 {
+       .edit .form h3 {
         text-align: center; }
-         #edit #form h3 input[type=submit],  #edit #form h3 a#back2index {
+         .edit .form h3 input[type=submit],  .edit .form h3 a.back2index {
           width: 110px;
           min-width: 55px;
           height: 36px;
@@ -114,13 +114,13 @@
           cursor: pointer;
           border: 2px solid #313131;
           border-radius: 10px; }
-         #edit #form h3 input[type=submit]:active,  #edit #form h3 a:active,  #edit #form h3 a#back2index:active {
+         .edit .form h3 input[type=submit]:active,  .edit .form h3 a:active,  .edit .form h3 a.back2index:active {
           background-color: #FFCC99;
           color: #534d4d; }
-         #edit #form h3 input[type=submit] {
+         .edit .form h3 input[type=submit] {
           /*border: none;*/
           width: 114px;
           min-width: 55px;
           height: 40px;}
-         #edit #form h3 a#back2index {
+         .edit .form h3 a.back2index {
           display: inline-block; }

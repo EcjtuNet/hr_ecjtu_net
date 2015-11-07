@@ -27,7 +27,7 @@ function templateBlock(){
 /******effect的Animation*****/
 //$('.main').onepage_scroll();
 $(document).ready(function(){
-    $("#section1 #btn").on("click",function(){
+    $("#section1 .btn").on("click",function(){
         $("#section1 .btn1").addClass('magictime swashIn');
         setTimeout(function(){
             $("#section1 .btn0").addClass('magictime spaceInRight');
@@ -40,7 +40,7 @@ $(document).ready(function(){
         $("#section1 #effect2").addClass('magictime slideRightRetourn');
     });
 
-    $("#section2 #btn").on("click",function(){
+    $("#section2 .btn").on("click",function(){
         $('#section2 .btn1').addClass('magictime swashIn');
         setTimeout(function(){
             $('#section2 .btn0').addClass('magictime spaceInRight');
@@ -51,7 +51,7 @@ $(document).ready(function(){
         },800);
         $('#section2 #effect1,#section2 #effect3').addClass('magictime slideUpRetourn');
     });
-    $("#section3 #btn").on("click",function(){
+    $("#section3 .btn").on("click",function(){
         $('#section3 .btn1').addClass('magictime swashIn');
         setTimeout(function(){
             $('#section3 .btn3,#section3 .btn4,#section3 .btn5').addClass('magictime swashIn');
@@ -61,7 +61,7 @@ $(document).ready(function(){
         },900);
         $('#section3 #effect5,#section3 #effect6').addClass('magictime slideDownRetourn');
     });
-    $("#section4 #btn").on("click",function(){
+    $("#section4 .btn").on("click",function(){
         $('#section4 .btn1').addClass('magictime swashIn');
         setTimeout(function(){
             $('#section4 .btn0').addClass('magictime spaceInRight');

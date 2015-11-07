@@ -34,7 +34,7 @@
 	margin-left: -12%;
 	display: none;
 }
-#footer #register:hover,#effect #return:hover,#effect #return2:hover{
+.footer .register:hover,.effect #return:hover,.effect #return2:hover{
 	transform:scale(1.15);
 	-moz-transform:scale(1.15);
 	-o-transform:scale(1.15);
@@ -46,18 +46,18 @@
 }
 /********SECTION2*******************/
 /**点击start出现的效果**/
- #effect{
+ .effect{
 	width: 617px;
 	height: 170px;
 	margin: 5% auto auto auto;
 	/*display: none;*/
 	z-index: 2000;
 }
- #effect .content{
+ .effect .content{
 	width: 100%;
 	height: auto;
 }
- #effect .btn0,#effect .btn3{
+ .effect .btn0,.effect .btn3{
 	position: relative;
 	width: 108px;
 	height: 108px;
@@ -73,10 +73,10 @@
 	z-index: 2000;
 	border:solid 4px #D5D5D3;
 }
- #effect .btn3{
+ .effect .btn3{
 	float: right;
 }
- #effect .btn1{
+ .effect .btn1{
 	margin:0 auto;
 	top: 16px;
 	width: 127px;
@@ -87,7 +87,7 @@
 	z-index: 2000;
 	position: relative;
 }
- #mask{
+ .mask{
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -179,11 +179,11 @@
 }
 /**********SECTION3*******************/
 /**技术的覆盖样式**/
-section:nth-child(3) #info .title {
+section:nth-child(3) .main_info .title {
 	width: 114px;
 	height: 25px;
 }
-section:nth-child(3) #main #btn{
+section:nth-child(3) .main .btn{
 	margin: 9% auto auto;
 }
 /**点击DOD出现的效果**/
@@ -214,15 +214,15 @@ section:nth-child(3) #main #btn{
 	font-size: 14px;
 	color: #4C4C4C;
 }
-section:nth-child(3) #effect{
+section:nth-child(3) .effect{
 	margin: 8.5% auto auto auto;
 }
 /************SECTION4*****************/
 /**行政的覆盖样式**/
-section:nth-child(4) #main #btn{
+section:nth-child(4) .main .btn{
 	margin: 15.5% auto auto;
 }
-section:nth-child(4) #info .title {
+section:nth-child(4) .main_info .title {
 	width: 114px;
 	height: 26px;
 }
@@ -231,17 +231,17 @@ section:nth-child(4) #return3{
 	top: -120%;
 }
 /**点击start出现的效果**/
-section:nth-child(4) #effect{
+section:nth-child(4) .effect{
 	width: 530px;
 	position: absolute;
 	left: 50%;
 	margin-left: -265px;
 	top: 33%;
 }
-section:nth-child(4) #effect .btn1{
+section:nth-child(4) .effect .btn1{
 	margin-top: -50px;
 }
-section:nth-child(4) #effect .btn3{
+section:nth-child(4) .effect .btn3{
 	float: left;
 	position: absolute;
 	left: 50%;
@@ -250,7 +250,7 @@ section:nth-child(4) #effect .btn3{
 	z-index: 2000;
 	bottom: auto;
 }
-section:nth-child(4) #effect .btn4{
+section:nth-child(4) .effect .btn4{
 	position: relative;
 	width: 108px;
 	height: 108px;
@@ -266,7 +266,7 @@ section:nth-child(4) #effect .btn4{
 	z-index: 2000;
 	border:solid 4px #D5D5D3;
 }
-section:nth-child(4) #effect .btn5{
+section:nth-child(4) .effect .btn5{
 	position: relative;
 	width: 108px;
 	height: 108px;
@@ -348,21 +348,21 @@ section:nth-child(5) #return4{
 	right: -44%;
 	top: 3%;
 }
-section:nth-child(5) #main #btn {
+section:nth-child(5) .main .btn {
 	margin: 9.5% auto auto;
 }
-section:nth-child(5) #info .title {
+section:nth-child(5) .main_info .title {
 	width: 114px;
 	height: 26px;
 }
-section:nth-child(5) #effect .content{
+section:nth-child(5) .effect .content{
 	margin: 0 auto;
 }
-section:nth-child(5) #effect .btns_top{
+section:nth-child(5) .effect .btns_top{
 	height: 166px;
 }
 
-section:nth-child(5) #effect .btns_mid{
+section:nth-child(5) .effect .btns_mid{
 	height: 185px;
 }
 section:nth-child(5) .jizhe_t .info {
@@ -371,7 +371,7 @@ section:nth-child(5) .jizhe_t .info {
 	line-height: 24px;
 }
 /**点击产品中心出现的效果**/
-section:nth-child(5) #effect{
+section:nth-child(5) .effect{
 	width: 660px;
 	height:515px;
 	position: absolute;
@@ -381,41 +381,41 @@ section:nth-child(5) #effect{
 	top: 5%;
 
 }
-section:nth-child(5) #effect .btns_top .btn0{
+section:nth-child(5) .effect .btns_top .btn0{
 	width: 105px;
 	height: 105px;
 	line-height: 105px;
 	margin-left: 188px;
 	margin-top: 0;
 }
-section:nth-child(5) #effect .btns_top .btn3{
+section:nth-child(5) .effect .btns_top .btn3{
 	width: 77px;
 	height: 77px;
 	line-height: 77px;
 	text-align: center;
 	margin: 30px 127px auto auto;
 }
-section:nth-child(5) #effect .btns_mid .btn0{
+section:nth-child(5) .effect .btns_mid .btn0{
 	height: 109px;
 	height: 109px;
 	line-height: 109px;
 	margin-top: 0;
 }
-section:nth-child(5) #effect .btns_mid .btn3{
+section:nth-child(5) .effect .btns_mid .btn3{
 	height: 107px;
 	line-height: 107px;
 	position: relative;
 	margin-right: 58px;
 	top: -172px;
 }
-section:nth-child(5) #effect .btns_mid .btn3 span{
+section:nth-child(5) .effect .btns_mid .btn3 span{
 	display: block;
 	width: 90px;
 	height: 20px;
 	margin: 0 auto;
 	line-height: 90px;
 }
-section:nth-child(5) #effect .btns_btm .btn0{
+section:nth-child(5) .effect .btns_btm .btn0{
 	width: 93px;
 	height: 93px;
 	line-height: 93px;

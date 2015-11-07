@@ -100,7 +100,7 @@ img{
 	height: 100%;	
     position: absolute;
 }
-#bg{
+.bg{
   position: absolute;
   background-position: top center;
   width: 100%;
@@ -112,28 +112,28 @@ img{
 	width: 100%;
 	height: 4.5%;
 }
-#main{
+.main{
 	width: 72%;
 	height: 66%;
 	margin: 0 auto;
 	position: relative;
 }
-#main #info{
+.main .main_info{
 	width: 100%;
 }
-#info .title{
+.main_info .title{
 	width: 112px;
 	height: 26px;
 	float: left;
 	margin: 4px auto auto 34px;
 	text-indent: 34px;
 }
-#main #info p{
+.main .main_info p{
 	font-size: 15px;
 	font-weight: bold;
 	line-height: 30px;
 }
-#main #btn{
+.main .btn{
 	display: block;
 	margin: 6% auto auto;
 	width: 142px;
@@ -143,7 +143,7 @@ img{
  	border-radius: 50%;
  	border: 5px solid #666666;
 }
-#main #btn:hover,#effect .btn3:hover,#effect .btn4:hover,#effect .btn5:hover,#effect .btn0:hover{
+.main .btn:hover,.effect .btn3:hover,.effect .btn4:hover,.effect .btn5:hover,.effect .btn0:hover{
 	transform:scale(0.95);
 	-moz-transform:scale(0.95);
 	-o-transform:scale(0.95);
@@ -154,14 +154,14 @@ img{
 	-webkit-transition:all 0.2s ease-in-out 0s;
 }
 /******底部的云朵导航*****/
-#footer{
+.footer{
 	width: 100%;
 	height: 29%;
 	color: #383838;
   position: absolute;
 
 }
-#footer #register{
+.footer .register{
 	width:110px;
 	height: 28px;
 	position: absolute;
@@ -172,7 +172,7 @@ img{
     transform:scale(1);
 	background: url(../images/join.png) no-repeat;
 }
-#footer #register:hover{
+.footer .register:hover{
 	transform:scale(1.35);
 	-moz-transform:scale(1.35);
 	-o-transform:scale(1.35);
@@ -294,11 +294,11 @@ Copyright (c) 2014 Christian Pucci
   -webkit-animation-name: slideUpRetourn;
   animation-name: slideUpRetourn;
 }
-.register{
+.register_effect{
   -weblkit-animation-name : joinScale;
   animation-name : joinScale;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   animation-iteration-count:infinite;/*IE10+才支持*/
