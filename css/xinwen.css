@@ -397,7 +397,6 @@ section:nth-child(5) .effect .btns_top .btn3{
 }
 section:nth-child(5) .effect .btns_mid .btn0{
 	height: 109px;
-	height: 109px;
 	line-height: 109px;
 	margin-top: 0;
 }
@@ -514,7 +513,7 @@ section:nth-child(5) .effect .btns_btm .btn0{
 #effect10 .jizhe_l{
 	width: 28.21%;
 	height: auto;
-	top: 0%;
+	top: 0;
 	left: 48%;
 }
 /**点击日新影视工作室出现的效果**/

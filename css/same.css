@@ -1,3 +1,11 @@
+/* HR
+ * @author            psychola lee
+ * @version           0.0.1
+ * @last-time         2015.11
+ *华东交通大学团委、学工处 [ 版权所有 交大日新 ] 赣ICP备04003322号
+ *日新工作室 维护 联系：214@ecjtu.net
+ *CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved
+ */
 /*********开始的全局*************/
 *{
 	margin: 0 ;
@@ -295,7 +303,7 @@ Copyright (c) 2014 Christian Pucci
   animation-name: slideUpRetourn;
 }
 .register_effect{
-  -weblkit-animation-name : joinScale;
+  -webkit-animation-name : joinScale;
   animation-name : joinScale;
   -webkit-animation-duration: 1.4s;
   animation-duration: 1.4s;
