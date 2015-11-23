@@ -482,7 +482,7 @@ Copyright (c) 2014 Christian Pucci
 }
 
 /*****大于1366*768分辨率时****/
-@media (min-width: 1366px){
+@media (min-width: 1367px){
   /******PAGE2&& the same part*****/
   .main .main_info p {
     font-size: 1.2em;
