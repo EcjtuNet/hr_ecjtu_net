@@ -480,3 +480,317 @@ Copyright (c) 2014 Christian Pucci
     transform: translateY(0%);
   }
 }
+
+/*****大于1366*768分辨率时****/
+@media (min-width: 1366px){
+  /******PAGE2&& the same part*****/
+  .main .main_info p {
+    font-size: 1.2em;
+    line-height: 2.1em;
+  }
+  section:nth-child(n) .main_info .title {
+    width: 152px;
+    height: 35px;
+    float: left;
+    margin: 5px auto auto 40px;
+    text-indent: 34px;
+  }
+  .main .btn{
+    margin: 13% auto auto;
+  }
+  .main .btn {
+    width: 170px;
+    height: 170px;
+    background-size: 70%;
+    border: 6px solid #666666;
+  }
+  .footer .register {
+    width: 140px;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    bottom: 43px;
+    margin-right: 44px;
+    background-size: 100%;
+  }
+  .effect {
+    margin: 12% auto auto auto;
+}
+  .effect .btn1 {
+    width: 158px;
+    height: 158px;
+    background-size: 70%;
+    border: 6px solid #666666;
+    box-shadow: 0 0 0 10px #D5D5D3,0 0 0 20px rgba(227, 226, 224, 0.84);
+    z-index: 2000;
+    position: relative;
+  }
+  .effect .btn0, .effect .btn3 {
+    width: 125px;
+    height: 125px;
+    font-size: 17px;
+    margin-top: 33px;
+    line-height: 125px;
+    border: solid 6px #D5D5D3;
+  }
+  #return, #return2, #return3, #return4 {
+    width: 4em;
+    height: 4em;
+  }
+  .effect {
+    width: 800px;
+    height: 210px;
+  }
+  #effect4 .jizhe_l {
+    padding: 20px 20px 30px;
+    line-height: 30px;
+    font-size: 1em;
+    top: 5%;
+    left: 30px;
+  }
+  #effect4 .jizhe_t {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    left: 25.87%;
+    top: 51%;
+    padding: 20px;
+  }
+  #effect4 .jizhe_t .info, #effect8 .jizhe_t .info {
+    margin: 13px auto auto 33px;
+    text-indent: 80px;
+    line-height: 30px;
+    font-size: 1.1em;
+  }
+  #effect2 .jizhe_t, #effect5 .jizhe_t {
+    width: 440px;
+    height: 440px;
+    font-size: 1em;
+  }
+  .jizhe_t .info {
+    margin: 90px 40px auto 47px;
+    line-height: 27px;
+    font-size: 1em;
+    text-indent: 40px;
+  }
+  #effect2 .jizhe_r, #effect5 .jizhe_r {
+    width: 25.99%;
+    right: 2.5%;
+    top: 50.27%;
+    padding: 20px;
+    font-size: 1em;
+  }
+  /******PAGE3*******/
+  section:nth-child(3) .main .btn {
+    margin: 13% auto auto;
+  }
+  section:nth-child(3) .effect {
+    margin: 12% auto auto auto;
+  }
+  #effect1 .jizhe_t {
+    width: 26.89%;
+    padding: 20px;
+    top: 13%;
+    font-size: 1em;
+  }
+  #effect3 .jizhe_l, #effect6 .jizhe_l, #effect10 .jizhe_l {
+    position: absolute;
+    width: 26.89%;
+    top: 13%;
+    padding: 20px;
+    font-size: 1em;
+  }
+  /******PAGE4******/
+  section:nth-child(4) .main .btn {
+    margin: 19% auto auto;
+  }
+  section:nth-child(4) .effect {
+    width: 800px;
+    margin-left: -400px;
+    top: 19%;
+  }
+  section:nth-child(4) .effect .btn3 {
+    margin-left: -68px;
+    margin-top: -255px;
+  }
+  section:nth-child(4) .effect .btn4 {
+    width: 125px;
+    height: 125px;
+    font-size: 17px;
+    margin-top: 30px;
+    line-height: 125px;
+    border: solid 6px #D5D5D3;
+  }
+  section:nth-child(4) .effect .btn5 {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    margin-left: 211px;
+    font-size: 17px;
+    margin-top: 30px;
+    line-height: 125px;
+    border: solid 6px #D5D5D3;
+  }
+  #effect5 .jizhe_t {
+    width: 410px;
+    height: 410px;
+    font-size: 1em;
+    left: 5.61%;
+    top: 50%;
+  }
+  #effect5 .jizhe_t .info {
+    margin: 50px 30px auto 65px;
+    font-size: 1em;
+    text-indent: 118px;
+    line-height: 30px;
+  }
+  #effect5 .jizhe_r {
+    width: 23.99%;
+    left: 35.85%;
+    top: 42.27%;
+  }
+  #effect6 .jizhe_t, #effect10 .jizhe_t {
+    width: 440px;
+    height: 440px;
+    font-size: 1em;
+  }
+  #effect6 .jizhe_t .info, #effect10 .jizhe_t .info {
+    margin: 55px 38px auto 58px;
+    text-indent: 57px;
+    line-height: 30px;
+  }
+  #effect6 .jizhe_t {
+    bottom: -8.64%;
+    right: 28.92%;
+}
+  #effect6 .jizhe_r, #effect10 .jizhe_r {
+    width: 24.16%;
+    padding: 20px;
+    font-size: 1em;
+  }
+  #effect6 .jizhe_r {
+    right: 4.59%;
+    top: 34.1%;
+  }
+  section:nth-child(4) #return3 {
+    right: -54%;
+    top: -129%;
+  }
+  /******Page5******/
+  section:nth-child(5) .main .btn {
+    margin: 13% auto auto;
+  }
+  section:nth-child(5) .effect {
+    width: 840px;
+    height: 600px;
+    position: absolute;
+    margin: 7% auto auto auto;
+    margin-left: -420px;
+    top: 0;
+  }
+  section:nth-child(5) .effect .btns_top {
+    height: 236px;
+  }
+  section:nth-child(5) .effect .btns_top .btn0 {
+    width: 125px;
+    height: 125px;
+    line-height: 125px;
+    margin-left: 218px;
+    margin-top: 15px;
+  }
+  section:nth-child(5) .effect .btns_top .btn3 {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: 55px 157px auto auto;
+  }
+  section:nth-child(5) .effect .btns_mid .btn0 {
+    height: 125px;
+    line-height: 125px;
+  }
+  section:nth-child(5) .effect .btns_mid .btn3 {
+    height: 125px;
+    line-height: 125px;
+    margin-right: 70px;
+    top: -226px;
+  }
+  section:nth-child(5) .effect .btns_mid .btn3 span {
+    display: block;
+    width: 125px;
+    height: 20px;
+    margin: 0 auto;
+    line-height: 105px;
+  }
+  section:nth-child(5) .effect .btns_btm .btn0 {
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    margin: 145px auto auto 425px;
+  }
+  #effect10 .jizhe_t {
+    width: 470px;
+    height: 470px;
+    margin: 75px 38px auto 58px;
+  }
+  #effect10 .jizhe_t .info {
+    margin: 65px 38px auto 58px;
+  }
+  #effect10 .jizhe_l {
+    top: 0;
+  }
+  #effect8 .jizhe_t {
+    width: 250px;
+    height: 250px;
+    top: -7%;
+  }
+  #effect8 .jizhe_t .info {
+    margin: 70px auto auto 23px;
+    text-indent: 10px;
+  }
+  #effect8 .jizhe_l {
+    font-size: 1em;
+    padding: 20px;  
+  }
+  #effect9 .maininfo {
+    left: 4.6%;
+    top: -5%;
+    width: 390px;
+    height: 390px;
+    line-height: 30px;
+    font-size: 14px;
+    font-size: 1em;
+  }
+  #effect9 .yinshi{
+    font-size: 1em;
+    padding: 20px;
+  }
+  #effect7 .jizhe_b {
+    width: 445px;
+    height: 445px;
+    font-size: 1em;
+    right: 6.35%;
+    top: auto;
+    bottom: -5%;
+  }
+  #effect7 .jizhe_b .info {
+    margin: 56px 35px auto 45px;
+    text-indent: 70px;
+    line-height: 24px;
+  }
+  #effect7 .jizhe_r,#effect7 .jizhe_t,#effect7 .jizhe_l,#effect7 .jizhe_b{
+    font-size: 1em;
+    padding: 20px;
+  }
+  #effect7 .jizhe_r {
+    top: 23.12%;
+    right: 6%;
+    width: 19%;
+  }
+  #effect7 .jizhe_l{
+    width: 30.41%;
+    top: 22.12%;
+  }
+  section:nth-child(5) #return4 {
+    right: -48%;
+  }
+}
