@@ -38,6 +38,7 @@ img{
 }
 /*******pageswitch************/
 #container,.section{
+  width: 100%;
   height: 100%;
   position: relative;
 }@-webkit-keyframes sectitle0{
@@ -106,7 +107,8 @@ img{
 .wrapper{
 	width: 100%;
 	height: 100%;	
-    position: absolute;
+  position: absolute;
+  overflow: hidden;
 }
 .bg{
   position: absolute;
