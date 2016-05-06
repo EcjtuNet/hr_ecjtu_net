@@ -115,7 +115,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
                 <h2>报名表</h2>
 
                 <div class="form">
-                    <form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
+                    <form method="post" accept-charset="UTF-8">
                         <p><span>姓名-</span><label>
                             <input type="text" name="user_name" class="text_input">
                         </label></p>
@@ -125,11 +125,11 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
                             <label><input type="radio" name="user_sex" class="radio female" value="女"/> 女</label></p>
 
                         <p><span>手机-</span><label>
-                            <input type="tel" name="user_phone" maxlength="11"/>
+                            <input type="tel" name="user_phone" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
                         </label></p>
 
                         <p><span>QQ&nbsp;-</span><label>
-                            <input type="number" name="user_qq"/>
+                            <input type="number" name="user_qq" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
                         </label></p>
 
                         <p class="select"><span>学院-</span>
@@ -264,7 +264,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
                 <h2>报名表</h2>
 
                 <div class="form">
-                    <form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
+                    <form method="post" accept-charset="UTF-8">
                         <p><span>姓名-</span><label>
                             <input type="text" name="user_name" class="text_input">
                         </label></p>
@@ -274,10 +274,10 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
                             <label><input type="radio" name="user_sex" class="radio female" value="女"/> 女</label></p>
 
                         <p><span>手机-</span><label>
-                            <input type="tel" name="user_phone" maxlength="11"/>
+                            <input type="tel" name="user_phone" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
                         </label></p>
 
-                        <p><span>QQ&nbsp;-</span><input type="number" name="user_qq"/></p>
+                        <p><span>QQ&nbsp;-</span><input type="number" name="user_qq" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" /></p>
 
                         <p class="select"><span>学院-</span>
                             <select name="user_college" class="text_input">
@@ -415,16 +415,16 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
                 <h2>报名表</h2>
 
                 <div class="form">
-                    <form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
+                    <form method="post" accept-charset="UTF-8">
                         <p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
 
                         <p><span>性别-</span><label><input type="radio" style="margin-left:46px;" name="user_sex"
                                                          class="radio male" value="男" checked/> 男</label>
                             <label><input type="radio" name="user_sex" class="radio female" value="女"/> 女</label></p>
 
-                        <p><span>手机-</span><input type="tel" name="user_phone" maxlength="11"/></p>
+                        <p><span>手机-</span><input type="tel" name="user_phone" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" /></p>
 
-                        <p><span>QQ&nbsp;-</span><input type="number" name="user_qq"/></p>
+                        <p><span>QQ&nbsp;-</span><input type="number" name="user_qq" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" /></p>
 
                         <p class="select"><span>学院-</span>
                             <select name="user_college" class="text_input">
@@ -682,7 +682,7 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
                 <h2>报名表</h2>
 
                 <div class="form">
-                    <form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
+                    <form method="post" accept-charset="UTF-8">
                         <p><span>姓名-</span>
                             <label>
                                 <input type="text" name="user_name" class="text_input">
@@ -698,13 +698,13 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
 
                         <p><span>手机-</span>
                             <label>
-                                <input type="tel" name="user_phone" maxlength="11"/>
+                                <input type="tel" name="user_phone" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
                             </label>
                         </p>
 
                         <p><span>QQ&nbsp;-</span>
                             <label>
-                                <input type="number" name="user_qq"/>
+                                <input type="number" name="user_qq" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
                             </label>
                         </p>
 

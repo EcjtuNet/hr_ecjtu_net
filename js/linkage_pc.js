@@ -12,7 +12,6 @@ $(document).ready(function () {
                 this.add(new Option(i, i));
             });
         }
-
     }
 
     $(".selCentre").bind('change', function () {
@@ -20,7 +19,10 @@ $(document).ready(function () {
         var centre = that.val();
         function setApart(centre) {
             //部门方向选项
-            var apart = that.parent().parent().parent().find(".selApart");
+            var parent = that.parent().parent().parent(),
+                apart = parent.find(".selApart");
+            apart.empty();
+
             //apart.length = 0;
             for (var i in apartmentList) {
                 if (i == centre) {
@@ -34,7 +36,23 @@ $(document).ready(function () {
         }
         //中心选项的值
         setApart(centre);
-
     });
+    var submit = $("input[type='submit']");
+    submit.bind("click",function(){
+        var that = $(this),
+            parent = that.parent().parent().parent(),
+            all_input = parent.find("input"),
+            validate_input = [all_input[0], all_input[3],all_input[4],all_input[5]],
+            selects = parent.find("select"),
+            texts = parent.find("textarea"),
+            submit = parent.find();
+        if(!(validate_input.val()&&selects.val()&&texts.val())){
+            alert("请输入全部信息！");
+            event.preventDefault();
+        }else{
+            submit.bind('click',function(event){ 
+                event.preventDefault(); }, false);
+        }  
+    })
     addEventListener('load', setCentre, false);
 });
