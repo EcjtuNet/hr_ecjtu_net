@@ -59,7 +59,19 @@ class Register extends CI_Controller{
 	public function check()
 	{
 		if($this->_check()==FALSE){
-            $errors = $this->form_validation->error_array();
+            $this->load->library('form_validation');
+            $this->form_validation->set_error_delimiters('', '');
+            $errors = array(
+                'user_name' => form_error('user_name'),
+                'user_sex' => form_error('user_sex'),
+                'user_center' => form_error('user_center'),
+                'user_department' => form_error('user_department'),
+                'user_college' => form_error('user_college'),
+                'user_major' => form_error('user_major'),
+                'user_phone' => form_error('user_phone'),
+                'user_qq' => form_error('user_qq'),
+                'user_remarks' => form_error('user_remarks')
+            );
             echo json_encode($errors);
 		}
 		else
