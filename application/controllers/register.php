@@ -62,17 +62,17 @@ class Register extends CI_Controller{
             $this->load->library('form_validation');
             $this->form_validation->set_error_delimiters('', '');
             $errors = array(
-                'status' => False,\
+                'status' => False,
                 'result' =>
                 array(
-                'user_name' => form_error('user_name'),\
-                'user_sex' => form_error('user_sex'),\
-                'user_center' => form_error('user_center'),\
-                'user_department' => form_error('user_department'),\
-                'user_college' => form_error('user_college'),\
-                'user_major' => form_error('user_major'),\
-                'user_phone' => form_error('user_phone'),\
-                'user_qq' => form_error('user_qq'),\
+                'user_name' => form_error('user_name'),
+                'user_sex' => form_error('user_sex'),
+                'user_center' => form_error('user_center'),
+                'user_department' => form_error('user_department'),
+                'user_college' => form_error('user_college'),
+                'user_major' => form_error('user_major'),
+                'user_phone' => form_error('user_phone'),
+                'user_qq' => form_error('user_qq'),
                 'user_remarks' => form_error('user_remarks')
             )
         );
@@ -83,7 +83,7 @@ class Register extends CI_Controller{
 			if($this->insert_info()==true)
 			{
                 $success = array(
-                    'status' => True,\
+                    'status' => True,
                     'result' =>
                     array(
                         'mes' => 'success'
@@ -94,10 +94,10 @@ class Register extends CI_Controller{
 			else
 			{
                 $failed = array(
-                    'status' => False,\
+                    'status' => False,
                     'result' =>
                     array(
-                        'mes' => 'you have registered';
+                        'mes' => 'you have registered'
                     )
                 );
 			}
