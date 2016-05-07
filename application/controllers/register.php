@@ -63,6 +63,8 @@ class Register extends CI_Controller{
             $this->form_validation->set_error_delimiters('', '');
             $errors = array(
                 'status' => False,
+                'result' =>
+                array(
                 'user_name' => form_error('user_name'),
                 'user_sex' => form_error('user_sex'),
                 'user_center' => form_error('user_center'),
@@ -72,7 +74,8 @@ class Register extends CI_Controller{
                 'user_phone' => form_error('user_phone'),
                 'user_qq' => form_error('user_qq'),
                 'user_remarks' => form_error('user_remarks')
-            );
+            )
+        );
             echo json_encode($errors);
 		}
 		else
