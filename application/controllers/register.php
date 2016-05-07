@@ -62,6 +62,7 @@ class Register extends CI_Controller{
             $this->load->library('form_validation');
             $this->form_validation->set_error_delimiters('', '');
             $errors = array(
+                'status' => False,
                 'user_name' => form_error('user_name'),
                 'user_sex' => form_error('user_sex'),
                 'user_center' => form_error('user_center'),
