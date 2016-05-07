@@ -63,9 +63,7 @@ $(document).ready(function () {
             if(data.status==1){
                 alert("您的表单已经提交成功！");
                 return true;
-                }
             }
-        error: function(data){
             if(data.status==2){
                 var arr = eval(data.result); //数组            
                 var name = arr.user_name,  
@@ -79,7 +77,6 @@ $(document).ready(function () {
                 return false;
             }
             if(data.status==3){
-                var result = data.result.;
                 alert("表单不可以重复提交！");
                 return false;
             }
