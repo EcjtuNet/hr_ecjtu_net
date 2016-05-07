@@ -100,6 +100,7 @@ class Register extends CI_Controller{
                         'mes' => 'you have registered'
                     )
                 );
+                echo json_encode($failed);
 			}
 		}
 	}
