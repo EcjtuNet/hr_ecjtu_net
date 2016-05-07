@@ -62,7 +62,7 @@ class Register extends CI_Controller{
             $this->load->library('form_validation');
             $this->form_validation->set_error_delimiters('', '');
             $errors = array(
-                'status' => False,
+                'status' => '2',
                 'result' =>
                 array(
                 'user_name' => form_error('user_name'),
@@ -83,7 +83,7 @@ class Register extends CI_Controller{
 			if($this->insert_info()==true)
 			{
                 $success = array(
-                    'status' => True,
+                    'status' => '1',
                     'result' =>
                     array(
                         'mes' => 'success'
@@ -94,7 +94,7 @@ class Register extends CI_Controller{
 			else
 			{
                 $failed = array(
-                    'status' => False,
+                    'status' => '3',
                     'result' =>
                     array(
                         'mes' => 'you have registered'
@@ -102,22 +102,6 @@ class Register extends CI_Controller{
                 );
                 echo json_encode($failed);
 			}
-		}
-	}
-	/** 手机端表单提交 **/
-	public function ajax_check()
-	{
-		if($this->_check()==FALSE)
-		{
-			echo json_encode(array('status'=>'error','error_code'=>'1','msg'=>'Check form failed.'));
-		}
-		elseif($this->insert_info()==true)
-		{
-			echo json_encode(array('status'=>'success','error_code'=>'','msg'=>'Success!'));
-		}
-		else
-		{
-			echo json_encode(array('status'=>'error','error_code'=>'2','msg'=>'Have already registered.'));
 		}
 	}
 	/** 用户信息写入数据库 **/
