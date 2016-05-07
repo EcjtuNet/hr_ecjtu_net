@@ -37,7 +37,7 @@ $(document).ready(function () {
         //中心选项的值
         setApart(centre);
     });
-    var submit = $("input[type='submit']");
+    /*var submit = $("input[type='submit']");
     submit.bind("click",function(){
         var that = $(this),
             parent = that.parent().parent().parent(),
@@ -53,6 +53,38 @@ $(document).ready(function () {
             submit.bind('click',function(event){ 
                 event.preventDefault(); }, false);
         }  
+    })*/
+    $.ajax({
+        url: 'http://hr.ecjtu.net/index.php/register/check',
+        type: 'POST',
+        dataType: 'json',
+        data: {},
     })
+    success:function(data){
+        if(data.status==1){
+            alert("您的表单已经提交成功！");
+            return true;
+        }
+    }
+    error: function(data){
+        if(data.status==2){
+            var arr = eval(data.result); //数组            
+            var name = arr.user_name,  
+                sex = arr.user_sex,  
+                college = arr.user_college,  
+                major = arr.user_major,
+                phone = arr.user_phone,
+                qq = arr.user_qq,
+                remarks = arr.user_remarks;
+            alert("您的表单格式有误，请检查后提交："+"<br/>"+"姓名："+name+"<br/>"+"性别："+sex+"<br/>"+"学院："+college+"<br/>"+"专业："+major+"<br/>"+"手机："+phone+"<br/>"+"QQ："+qq+"<br/>");
+            return false;
+        }
+        if(data.status==3){
+            var result = data.result.;
+            alert("表单不可以重复提交！");
+            return false;
+        }
+    }
+    
     addEventListener('load', setCentre, false);
 });
