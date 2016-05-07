@@ -159,14 +159,7 @@ class Register extends CI_Controller{
 			return true;
 		 }
 		 else{
-			 /*
-			echo <<< EOT
-				<span style=" display:block; width:150px; height:40px; margin:200px auto;">不好意思，你已经注册过咯~！</span>
-			EOT;
-			*/
-			//echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>对不起，您已经申请过该部门~！</b></span>";
-			//echo '不好意思，你已经注册过咯~！';
-			return false;
+			return False;
 		 }
 	 }
 }
