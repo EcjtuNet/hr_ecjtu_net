@@ -2,14 +2,14 @@
 /**
  *
  * 日新网2012招新专题
- * 
+ *
  * @package		hr_ecjtu_net
  * @author		Polly
  * @datatime	2012-08-16
  * @link		http://hr.ecjtu.net/
  * @version		1.0.0
  */
-  
+
  // ------------------------------------------------------------------------//
 
 /**
@@ -59,18 +59,18 @@ class Register extends CI_Controller{
 	public function check()
 	{
 		if($this->_check()==FALSE){
-			$this->load->view('register');
+            $errors = $this->form_validation->error_array();
+            echo json_encode($errors);
 		}
 		else
 		{
 			if($this->insert_info()==true)
 			{
-				echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>congratulations</b></span>";
-				//echo '恭喜你，注册成功~！';
+                echo 'success';
 			}
 			else
 			{
-				echo "<span style=\" display:block; width:250px; height:40px; margin:350px auto; color:red; text-align:center;\"><b>Congratulations</b></span>";
+                echo 'don\'t register again';
 			}
 		}
 	}
@@ -116,7 +116,7 @@ class Register extends CI_Controller{
 		 if($this->register_mdl->get_user_id($user_name, $user_phone)==NULL){
 			 $this->register_mdl->insert_user_info($data_user);
 		 }
-		 
+
 		 $user_id = $this->register_mdl->get_user_id($user_name, $user_phone);
 		 $hr_id   = $this->register_mdl->get_hr_id($hr_center, $hr_department);
 		 $data_register = array(
