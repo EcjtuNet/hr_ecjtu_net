@@ -36,6 +36,7 @@
        .edit .form input[type=text],  .edit .form input[type=number],  .edit .form input[type=tel] {
         position: relative;
         left: 28px;
+        width: 100%;
         max-width: 170px;
         height: 30px;
         margin: 0 12px;
