@@ -41,7 +41,15 @@ $(document).ready(function () {
 
     var submit = $("input[type='submit']");
     submit.bind("click",function(){
-        event.preventDefault();
+        var stopDefault = function(e) { 
+            if (e && e.preventDefault) {//如果是FF下执行这个
+                e.preventDefault(e); 
+            }else{ 
+                window.event.returnValue = false;//如果是IE下执行这个
+            }
+            return false;
+        }
+        stopDefault(e);
         var that = $(this),
             parent = that.parent().parent().parent(),
             name_input = parent.find("input[name='user_name']"),

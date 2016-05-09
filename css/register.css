@@ -4,7 +4,7 @@
     position: absolute;
     top: 2%;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -166px;
     text-align: center; 
     z-index: 4000;
     /*margin-top: 10px;*/}
@@ -37,7 +37,7 @@
         position: relative;
         left: 28px;
         width: 100%;
-        max-width: 170px;
+        max-width: 210px;
         height: 30px;
         margin: 0 12px;
         padding: 0 12px;
@@ -74,8 +74,8 @@
         white-space: nowrap;
         position: relative;
         left: 28px;
-        max-width: 198px;
-        min-width: 198px;
+        max-width: 237px;
+        min-width: 237px;
         height: 34px;
         margin: 0 12px;
         padding: 0 12px;
@@ -83,7 +83,7 @@
        .edit .form p.select:before {
         content: "";
         position: absolute;
-        right: 32px;
+        right: 28px;
         top: 15px;
         z-index: 3000;
         border-top: 8px solid #534d4d;
@@ -94,7 +94,7 @@
         position: relative;
         left: 0; }
        .edit .form textarea {
-        max-width: 194px;
+        max-width: 232px;
         max-height: 97px;
         margin: 12px;
         border-radius: 15px;
@@ -105,7 +105,7 @@
           width: 110px;
           min-width: 55px;
           height: 36px;
-          margin: 12px;
+          margin: 12px 26px;
           font: normal 16px/28px Microsoft Yahei, Arial, sans-serif;
           background-color: #FFCC99;
           line-height: 36px;
