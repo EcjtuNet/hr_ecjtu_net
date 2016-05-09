@@ -796,3 +796,42 @@ Copyright (c) 2014 Christian Pucci
     right: -48%;
   }
 }
+/* 
+* submit-form css
+*/
+.popup{
+  display: none;
+  position:absolute;
+  z-index:999999;
+  top:50%;
+  left:50%;
+  width:40%;
+  height:auto;
+  border-radius: 10px;
+  background-color: #FFCC99;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out; 
+  -moz-transition: all 0.3s ease-in-out; 
+}
+.popup .info{
+  font: normal 20px Microsoft Yahei, Arial, sans-serif;
+  color: #000;
+  padding: 50px 30px;
+}
+.close_tips{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

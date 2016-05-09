@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    /*
+    * 联动
+     */
     var apartmentList = {};
     apartmentList['新闻出版中心'] = ['编辑部', '记者团'];
     apartmentList['技术研发中心'] = ['UED', 'DOD'];
@@ -36,11 +39,15 @@ $(document).ready(function () {
         }
         //中心选项的值
         setApart(centre);
+
     });
     addEventListener('load', setCentre, false);
-
+    /*
+    * 提交表单
+     */
     var submit = $("input[type='submit']");
-    submit.bind("click",function(){
+    submit.bind("click",function(e){
+        //event.preventDault 兼容ie&&ff
         var stopDefault = function(e) { 
             if (e && e.preventDefault) {//如果是FF下执行这个
                 e.preventDefault(e); 
@@ -50,6 +57,7 @@ $(document).ready(function () {
             return false;
         }
         stopDefault(e);
+
         var that = $(this),
             parent = that.parent().parent().parent(),
             name_input = parent.find("input[name='user_name']"),
@@ -60,7 +68,16 @@ $(document).ready(function () {
             major_input = parent.find("input[name='user_major']"),
             selCentre = parent.find(".selCentre"),
             selApart = parent.find(".selApart"),
-            texts = parent.find("textarea");
+            texts = parent.find("textarea"),
+            wrapper = parent.parent().parent(),
+            main = wrapper.find(".main"),
+            footer = wrapper.find(".footer"),
+            bg = wrapper.find(".bg"),
+            edit = wrapper.find(".edit"),
+            mask = wrapper.find(".mask"),
+            popup = wrapper.find(".popup"),
+            info = popup.find(".info"),
+            close_tips = wrapper.find(".close_tips");
             
         $.ajax({
             url: 'http://hr.ecjtu.net/index.php/register/check',
@@ -77,11 +94,40 @@ $(document).ready(function () {
                     user_department:selApart.val(),
                     user_remarks:texts.val()
                 },
-            success:function(data){      
+            success:function(data){
+                /*
+                * alert tips funcs
+                 */
+                var openTips = function(){
+                    popup.fadeIn(200);
+                    edit.fadeOut(200);
+                }
+                var closeTips = function(){
+                    close_tips.bind("click",function(){
+                        popup.fadeOut(200);
+                        edit.fadeIn(200);
+                    })
+                }
+                var changeBlur = function(){
+                    for(i=0;i<arguments.length;++i){
+                        $(arguments[i]).removeClass("blur");
+                    }
+                }
+
+                info.text("");      
                 if(data.status==1){
-                    alert("您的表单已经提交成功！");
+                    openTips();
+                    info.append("<p>您的表单已经提交成功！</p>");
+                    close_tips.bind("click",function(){
+                        changeBlur(main,footer,bg);
+                        popup.fadeOut(200);
+                        edit.fadeOut(1);
+                        mask.fadeOut(200); 
+                    })
+                    window.canScroll = true;
                     return true;
                 }
+
                 if(data.status==2){
                     var result = data.result;
                     console.log(result);
@@ -91,6 +137,7 @@ $(document).ready(function () {
                     qq_input.attr("placeholder",result.user_qq);
                     texts.attr("placeholder",result.user_remarks);
 
+                    //input&&textarea的提示在placeholder显示
                     var setTips = function(obj){
                         if($(obj).attr("placeholder")!=""){
                             $(obj).val("");
@@ -101,27 +148,34 @@ $(document).ready(function () {
                     setTips(phone_input);
                     setTips(qq_input);
                     setTips(texts);
-                    if(college_input.val()==(0||null)){
-                        alert("请选择学院选项！");
+                    //alert-tips append
+                    if(college_input.val()==0){
+                        openTips();
+                        info.append("<p>请选择学院选项！</p>");
+                        closeTips();
                     }
-                    if(selCentre.val()==(0||null)){
-                        alert("请选择中心选项！");
+                    if(selCentre.val()==0){
+                        openTips();
+                        info.append("<p>请选择中心选项！</p>");
+                        closeTips();
                     }
                     //不知道部门提示怎么没用= =
-                    if(selApart.val()==(0||null)){
-                        alert("请选择部门方向选项！");
-                    }
                     return false;
                 }
+
                 if(data.status==3){
-                    alert("表单不可以重复提交！");
-                    return false;
+                    openTips();
+                    info.append("<p>表单不可以重复提交！</p>");
+                    close_tips.bind("click",function(){
+                        changeBlur(main,footer,bg);
+                        popup.fadeOut(200);
+                        edit.fadeOut(1);
+                        mask.fadeOut(200); 
+                    })
+                    window.canScroll = true;
+                    return true;
                 }
             }
         });
     })
-    
-    
-    
-    
 });

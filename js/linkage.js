@@ -32,6 +32,7 @@ $(document).ready(function() {
 
     var submit = $("input[type='submit']");
     submit.bind("click",function(){
+        //event.preventDault 兼容ie&&ff
         var stopDefault = function(e) { 
             if (e && e.preventDefault) {//如果是FF下执行这个
                 e.preventDefault(e); 
@@ -68,9 +69,17 @@ $(document).ready(function() {
                     user_department:selApart.val(),
                     user_remarks:texts.val()
                 },
-            success:function(data){      
+            success:function(data){
+                var changeBlur = function(){
+                    for(i=0;i<arguments.length;++i){
+                        $(arguments[i]).removeClass("blur");
+                    }
+                }      
                 if(data.status==1){
                     alert("您的表单已经提交成功！");
+                    changeBlur(main,footer,bg);
+                    edit.fadeOut(1);
+                    mask.fadeOut(200);
                     return true;
                 }
                 if(data.status==2){
@@ -106,7 +115,10 @@ $(document).ready(function() {
                 }
                 if(data.status==3){
                     alert("表单不可以重复提交！");
-                    return false;
+                    changeBlur(main,footer,bg);
+                    edit.fadeOut(1);
+                    mask.fadeOut(200);
+                    return true;
                 }
             }
         });
