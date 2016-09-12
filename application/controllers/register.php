@@ -47,10 +47,10 @@ class Register extends CI_Controller{
 		$this->form_validation->set_rules('user_center','中心','required');
 		$this->form_validation->set_rules('user_department','中心、部门','required');
 		$this->form_validation->set_rules('user_college','学院','required');
-		$this->form_validation->set_rules('user_major','专业','trim|required|xianzhi|min_length[2]');
+		$this->form_validation->set_rules('user_major','专业','trim|xianzhi|min_length[2]');
 		$this->form_validation->set_rules('user_phone','手机','trim|required|numeric|exact_length[11]');
 		$this->form_validation->set_rules('user_qq','QQ','trim|required|numeric|min_length[5]|max_length[10]');
-		$this->form_validation->set_rules('user_remarks','备注','trim|required|xss_clean');
+		$this->form_validation->set_rules('user_remarks','备注','trim|xss_clean');
 		return $this->form_validation->run();
 		//trim是去除两端空白符号，可以忽略，required是必填，min_length、max、exact_length是最短、最长、敲好的长度，限制是由郭斌添加的，不允许用户添加非法字符串。
 		//xss_clean是（我也忘了这个具体意思了……对了，记得是用户名的一个验证，算了，等下在查吧，我做的时候参考网上的一个表单认证，用户民名里有加这个）    ，numeric是数字
