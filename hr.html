@@ -112,27 +112,28 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
             </div>
             <!-- 报名表-->
             <div class="edit none">
-                <h2>报名表</h2>
+                <h2><img src="images/join_table.png" alt=""></h2>
 
                 <div class="form">
+                	<h3><img src="images/join_info.png" alt=""></h2>
                     <form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
-                        <p><span>姓名-</span><label>
+                        <p><span class="join_title"><img src="images/join_name.png" alt=""></span><label>
                             <input type="text" name="user_name" class="text_input">
                         </label></p>
 
-                        <p><span>性别-</span><label><input type="radio" style="margin-left:46px;" name="user_sex"
-                                                         class="radio male" value="男" checked/> 男</label>
-                            <label><input type="radio" style="margin-left:60px;" name="user_sex" class="radio female" value="女"/> 女</label></p>
+                        <p><span  class="join_title"><img src="images/join_sex.png" alt=""></span><label><input type="radio" style="margin-left:40px;" name="user_sex"
+                                                         class="radio male" value="男" checked/><img src="images/join_male.png" style="margin-left:8px;" alt=""></label>
+                            <label><input type="radio" style="margin-left:60px;" name="user_sex" class="radio female" value="女"/><img src="images/join_female.png" style="margin-left:8px;" alt=""></label></p>
 
-                        <p><span>手机-</span><label>
+                        <p><span  class="join_title"><img src="images/join_phone.png" alt=""></span><label>
                             <input type="tel" name="user_phone" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
                         </label></p>
 
-                        <p><span>QQ&nbsp;-</span><label>
+                        <p><span  class="join_title"><img src="images/join_qq.png" alt=""></span><label>
                             <input type="number" name="user_qq" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
                         </label></p>
 
-                        <p class="select"><span>学院-</span>
+                        <p class="select"><span  class="join_title"><img src="images/join_academy.png" alt=""></span>
                             <label>
                                 <select name="user_college" class="text_input">
                                     <option value="0"></option>
@@ -153,32 +154,32 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
                                 </select>
                             </label>
                         </p>
-                        <p><span>专业-</span>
+                        <!-- <p><span>专业-</span>
                             <label>
                                 <input type="text" name="user_major" class="text_input">
                             </label>
-                        </p>
-
-                        <p class="select"><span class="select">选择中心-</span>
+                        </p> -->
+						<h2><img src="images/join_aspect.png" alt=""></h2>
+                        <p class="select"><span class="select join_title"><img src="images/join_center.png" alt=""></span>
                             <label>
-                                <select class="selCentre" name="user_center" style="margin:0 8px;">
+                                <select class="selCentre" name="user_center">
                                     <option value=""></option>
                                 </select>
                             </label>
                         </p>
-                        <p class="select"><span class="select">部门方向-</span>
-                            <select class="selApart" name="user_department" style="margin:0 8px;">
+                        <p class="select"><span class="select join_title"><img src="images/join_department.png" alt=""></span>
+                            <select class="selApart" name="user_department">
                             </select>
                         </p>
 
-                        <p><span class="personal" style="margin-top:10px;">个人简介-</span>
+                        <!-- <p><span class="personal" style="margin-top:10px;">个人简介-</span>
                             <label>
 									<textarea name="user_remarks" cols="30" rows="10"
                                               style="margin:0 8px;text-indent:10px;"></textarea>
                             </label>
-                        </p>
+                        </p> -->
 
-                        <h3>
+                        <h3 class="join_submit">
                             <input type="submit" value="提交"/>
                             <!-->                            <a class="back2index"
                               onclick="changeBlur('#section1 .main','#section1 .footer','#section1 .bg');$('#section1 .edit').fadeOut(200);$('#section1 .mask').fadeOut(200);window.canScroll = true;">返回首页</a><!-->
@@ -265,25 +266,25 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
             </div>
             <!-- 报名表 -->
             <div class="edit none">
-                <h2>报名表</h2>
+                <h2><img src="images/join_table.png" alt=""></h2>
 
                 <div class="form">
                     <form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
-                        <p><span>姓名-</span><label>
+                        <p><span><img src="images/join_name.png" alt=""></span><label>
                             <input type="text" name="user_name" class="text_input">
                         </label></p>
 
-                        <p><span>性别-</span><label><input type="radio" style="margin-left:46px;" name="user_sex"
-                                                         class="radio male" value="男" checked/> 男</label>
-                            <label><input type="radio" style="margin-left:60px;" name="user_sex" class="radio female" value="女"/> 女</label></p>
+                        <p><span><img src="images/join_sex.png" alt=""></span><label><input type="radio" style="margin-left:46px;" name="user_sex"
+                                                         class="radio male" value="男" checked/> <img src="images/join_male.png" alt=""></label>
+                            <label><input type="radio" style="margin-left:60px;" name="user_sex" class="radio female" value="女"/><img src="images/join_female.png" alt=""></label></p>
 
-                        <p><span>手机-</span><label>
+                        <p><span><img src="images/join_phone.png" alt=""></span><label>
                             <input type="tel" name="user_phone" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
                         </label></p>
 
-                        <p><span>QQ&nbsp;-</span><input type="number" name="user_qq" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" /></p>
+                        <p><span><img src="images/join_qq.png" alt=""></span><input type="number" name="user_qq" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" /></p>
 
-                        <p class="select"><span>学院-</span>
+                        <p class="select"><span><img src="images/join_academy.png" alt=""></span>
                             <select name="user_college" class="text_input">
                                 <option value="0"></option>
                                 <option value="土木建筑学院">土木建筑学院</option>
@@ -302,30 +303,30 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
                                 <option value="国防生学院">国防生学院</option>
                             </select>
                         </p>
-                        <p><span>专业-</span>
+                        <!-- <p><span>专业-</span>
                             <label>
                                 <input type="text" name="user_major" class="text_input">
                             </label>
-                        </p>
+                        </p> -->
 
-                        <p class="select"><span class="select">选择中心-</span>
+                        <p class="select"><span class="select"><img src="images/join_center.png" alt=""></span>
                             <label>
-                                <select class="selCentre" name="user_center" style="margin:0 8px;">
+                                <select class="selCentre" name="user_center">
                                     <option value=""></option>
                                 </select>
                             </label>
                         </p>
-                        <p class="select"><span class="select">部门方向-</span>
-                            <select class="selApart" name="user_department" style="margin:0 8px;">
+                        <p class="select"><span class="select"><img src="images/join_department.png" alt=""></span>
+                            <select class="selApart" name="user_department">
                             </select>
                         </p>
 
-                        <p><span class="personal" style="margin-top:10px;">个人简介-</span>
+                        <!-- <p><span class="personal" style="margin-top:10px;">个人简介-</span>
                             <label>
 									<textarea name="user_remarks" cols="30" rows="10"
                                               style="margin:0 8px;text-indent:10px;"></textarea>
                             </label>
-                        </p>
+                        </p> -->
 
                         <h3>
                             <input type="submit" value="提交"/>
@@ -420,21 +421,21 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
             </div>
             <!-- 报名表 -->
             <div class="edit none">
-                <h2>报名表</h2>
+                <h2><img src="images/join_table.png" alt=""></h2>
 
                 <div class="form">
                     <form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
-                        <p><span>姓名-</span><input type="text" name="user_name" class="text_input"></p>
+                        <p><span><img src="images/join_name.png" alt=""></span><input type="text" name="user_name" class="text_input"></p>
 
-                        <p><span>性别-</span><label><input type="radio" style="margin-left:46px;" name="user_sex"
-                                                         class="radio male" value="男" checked/> 男</label>
-                            <label><input type="radio" style="margin-left:60px;" name="user_sex" class="radio female" value="女"/> 女</label></p>
+                        <p><span><img src="images/join_sex.png" alt=""></span><label><input type="radio" style="margin-left:46px;" name="user_sex"
+                                                         class="radio male" value="男" checked/><img src="images/join_male.png" alt=""></label>
+                            <label><input type="radio" style="margin-left:60px;" name="user_sex" class="radio female" value="女"/><img src="images/join_female.png" alt=""></label></p>
 
-                        <p><span>手机-</span><input type="tel" name="user_phone" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" /></p>
+                        <p><span><img src="images/join_phone.png" alt=""></span><input type="tel" name="user_phone" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" /></p>
 
-                        <p><span>QQ&nbsp;-</span><input type="number" name="user_qq" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" /></p>
+                        <p><span><img src="images/join_qq.png" alt=""></span><input type="number" name="user_qq" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" /></p>
 
-                        <p class="select"><span>学院-</span>
+                        <p class="select"><span><img src="images/join_academy.png" alt=""></span>
                             <select name="user_college" class="text_input">
                                 <option value="0"></option>
                                 <option value="土木建筑学院">土木建筑学院</option>
@@ -453,24 +454,24 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
                                 <option value="国防生学院">国防生学院</option>
                             </select>
                         </p>
-                        <p><span>专业-</span>
+                        <!-- <p><span>专业-</span>
                             <input type="text" name="user_major" class="text_input">
-                        </p>
-
-                        <p class="select"><span class="select">选择中心-</span>
-                            <select class="selCentre" name="user_center" style="margin:0 8px;">
+                        </p>-->
+                         
+                        <p class="select"><span class="select"><img src="images/join_center.png" alt=""></span>
+                            <select class="selCentre" name="user_center">
                                 <option value=""></option>
                             </select>
                         </p>
-                        <p class="select"><span class="select">部门方向-</span>
-                            <select class="selApart" name="user_department" style="margin:0 8px;">
+                        <p class="select"><span class="select"><img src="images/join_department.png" alt=""></span>
+                            <select class="selApart" name="user_department">
                             </select>
                         </p>
 
-                        <p><span class="personal" style="margin-top:10px;">个人简介-</span>
+                        <!-- <p><span class="personal" style="margin-top:10px;">个人简介-</span>
                             <textarea name="user_remarks" cols="30" rows="10"
                                       style="margin:0 8px;text-indent:10px;"></textarea>
-                        </p>
+                        </p> -->
 
                         <h3>
                             <input type="submit" value="提交"/>
@@ -691,36 +692,36 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
             </div>
             <!-- 报名表 -->
             <div class="edit none">
-                <h2>报名表</h2>
+                <h2><img src="images/join_table.png" alt=""></h2>
 
                 <div class="form">
                     <form method="post" accept-charset="UTF-8" action="http://hr.ecjtu.net/index.php/register/check">
-                        <p><span>姓名-</span>
+                        <p><span><img src="images/join_name.png" alt=""></span>
                             <label>
                                 <input type="text" name="user_name" class="text_input">
                             </label>
                         </p>
 
-                        <p><span>性别-</span>
+                        <p><span><img src="images/join_sex.png" alt=""></span>
                             <label>
                                 <input type="radio" style="margin-left:46px;" name="user_sex" class="radio male"
-                                       value="男" checked/> 男</label>
+                                       value="男" checked/><img src="images/join_male.png" alt=""></label>
                             <label>
-                                <input type="radio" style="margin-left:60px;" name="user_sex" class="radio female" value="女"/> 女</label></p>
+                                <input type="radio" style="margin-left:60px;" name="user_sex" class="radio female" value="女"/><img src="images/join_female.png" alt=""></label></p>
 
-                        <p><span>手机-</span>
+                        <p><span><img src="images/join_phone.png" alt=""></span>
                             <label>
                                 <input type="tel" name="user_phone" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
                             </label>
                         </p>
 
-                        <p><span>QQ&nbsp;-</span>
+                        <p><span><img src="images/join_qq.png" alt=""></span>
                             <label>
                                 <input type="number" name="user_qq" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
                             </label>
                         </p>
 
-                        <p class="select"><span>学院-</span>
+                        <p class="select"><span><img src="images/join_academy.png" alt=""></span>
                             <label>
                                 <select name="user_college" class="text_input">
                                     <option value="0"></option>
@@ -741,28 +742,28 @@ CopyRight 2001-2014 [ecjtu.net]. All Rights Reserved-->
                                 </select>
                             </label>
                         </p>
-                        <p><span>专业-</span>
+                        <!-- <p><span>专业-</span>
                             <label>
                                 <input type="text" name="user_major" class="text_input">
                             </label>
-                        </p>
+                        </p> -->
 
-                        <p class="select"><span class="select">选择中心-</span>
-                            <select class="selCentre" name="user_center" style="margin:0 8px;">
+                        <p class="select"><span class="select"><img src="images/join_center.png" alt=""></span>
+                            <select class="selCentre" name="user_center">
                                 <option value=""></option>
                             </select>
                         </p>
-                        <p class="select"><span class="select">部门方向-</span>
-                            <select class="selApart" name="user_department" style="margin:0 8px;">
+                        <p class="select"><span class="select"><img src="images/join_department.png" alt=""></span>
+                            <select class="selApart" name="user_department">
                             </select>
                         </p>
 
-                        <p><span class="personal" style="margin-top:10px;">个人简介-</span>
+                        <!-- <p><span class="personal" style="margin-top:10px;">个人简介-</span>
                             <label>
 								<textarea name="user_remarks" cols="30" rows="10"
                                           style="margin:0 8px;text-indent:10px;"></textarea>
                             </label>
-                        </p>
+                        </p> -->
 
                         <h3>
                             <input type="submit" value="提交"/>

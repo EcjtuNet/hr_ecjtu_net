@@ -59,7 +59,7 @@ $(document).ready(function () {
         stopDefault(e);
 
         var that = $(this),
-            parent = that.parent().parent().parent(),
+            parent = that.parent().parent(),
             name_input = parent.find("input[name='user_name']"),
             sex_input = parent.find("input[name='user_sex']"),
             phone_input = parent.find("input[name='user_phone']"),
@@ -78,7 +78,6 @@ $(document).ready(function () {
             popup = wrapper.find(".popup"),
             info = popup.find(".info"),
             close_tips = wrapper.find(".close_tips");
-            
         $.ajax({
             url: 'http://hr.ecjtu.net/index.php/register/check',
             type: 'POST',
@@ -124,6 +123,13 @@ $(document).ready(function () {
                         edit.fadeOut(1);
                         mask.fadeOut(200); 
                     })
+                    parent.find("input").each(function(){
+                        $(this).val("");
+                    });
+                    parent.find("select").each(function(){
+                        $(this).val("");
+                    })
+                    parent.find(texts).val("");
                     window.canScroll = true;
                     return true;
                 }

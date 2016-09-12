@@ -13,11 +13,14 @@
 	background-color: hsla(0, 8%, 97%, 0);
 }
 #img1{
-	width: 58.1%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/*width: 58.1%;
 	height: 88.8%;
 	position: absolute;
 	left: 50%;
-	margin-left: -31.6%;
+	margin-left: -31.6%;*/
 }
 #img2{
 	width: 100%;
@@ -573,4 +576,57 @@ section:nth-child(5) .effect .btns_btm .btn0{
 	margin: 75px 35px auto 35px;
 	text-indent: 52px;
 	line-height: 24px;
+}
+/********JOIN US*******/
+.edit{
+	position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%,-50%) !important;
+    margin-left: auto !important;
+}
+.edit .form input[type=text],  .edit .form input[type=number],  .edit .form input[type=tel] {
+    left: 20px !important;
+    max-width: 201px !important;
+    height: 29px !important;
+    padding:0 !important;
+    background-image: url(../images/join_input.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none !important;
+    text-indent: 1rem;
+}
+.edit .form select {
+	left: 20px !important;
+    border:none !important;
+    max-width: 201px !important;
+    min-width: 201px !important;
+    height: 29px !important;
+    background-image: url(../images/join_input.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    text-indent: 0.5rem;
+}
+.edit .form p.select:before {
+    right: 40px !important;
+    top: 12px !important;
+    border-top: 7px solid #534d4d !important;
+    border-left: 5px solid transparent !important;
+    border-right: 5px solid transparent !important;
+}
+.join_title{
+	margin-top: 7px;
+}
+.edit .form p {
+    margin: 20px 0 0 !important;
+}
+.edit .join_submit{
+	margin-top: 20px;
+}
+.edit .join_submit input,.edit .back2index{
+	color: #474747 !important;
+	font-weight: bold !important;
+}
+.edit .form h3 input[type=submit], .edit .form h3 a.back2index{
+	margin:12px 8px !important;
 }
