@@ -69,7 +69,7 @@ $(document).ready(function () {
             selCentre = parent.find(".selCentre"),
             selApart = parent.find(".selApart"),
             texts = parent.find("textarea"),
-            wrapper = parent.parent().parent(),
+            wrapper = parent.parent().parent().parent(),
             main = wrapper.find(".main"),
             footer = wrapper.find(".footer"),
             bg = wrapper.find(".bg"),
