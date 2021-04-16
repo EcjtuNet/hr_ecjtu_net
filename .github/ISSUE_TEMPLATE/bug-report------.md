@@ -7,11 +7,11 @@ assignees: ''
 
 ---
 
-**Describe the bug （请具体描述一下Bug的表现）**
+## Describe the bug （请具体描述一下Bug的表现）
 A clear and concise description of what the bug is.
 
 
-**To Reproduce（重现步骤）**
+## To Reproduce（重现步骤）
 Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
@@ -19,15 +19,15 @@ Steps to reproduce the behavior:
 4. See error
 
 
-**Expected behavio（期望的表现）r**
+## Expected behavio（期望的表现）
 A clear and concise description of what you expected to happen.
 
 
-**Screenshots（截图，如果有的话可以提供一下）**
+## Screenshots（截图，如果有的话可以提供一下）
 If applicable, add screenshots to help explain your problem.
 
 
-**please complete the following information（请提供以下信息，包括系统、浏览器、nohost、node版本）:**
+## please complete the following information（请提供以下信息，包括系统、浏览器、nohost、node版本）:
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
